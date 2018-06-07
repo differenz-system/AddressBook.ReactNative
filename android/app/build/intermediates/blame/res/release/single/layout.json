@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_small.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/com_facebook_login_fragment.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/31a5d9e3ee3aaa8156b39c854d8bf3d0/res/layout/com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/redbox_view.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/14d6fe63b85db0df5bd63b0fb0f31838/res/layout/redbox_view.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_large.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_small.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_select_dialog_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_menu_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_screen_toolbar.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_large.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f781c969976435ecc75eb154af4115be/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_dialog_title_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/select_dialog_item_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_alert_dialog_title_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/dev_loading_view.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/14d6fe63b85db0df5bd63b0fb0f31838/res/layout/dev_loading_view.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-login-4.28.0.aar/6012b7bff0d95e95fe17febbfb8d5da3/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/notification_template_icon_group.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f781c969976435ecc75eb154af4115be/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_mode_bar.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/notification_template_part_time.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f781c969976435ecc75eb154af4115be/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_search_view.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_screen_content_include.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/fps_view.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/14d6fe63b85db0df5bd63b0fb0f31838/res/layout/fps_view.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/tooltip.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/tooltip.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/31a5d9e3ee3aaa8156b39c854d8bf3d0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_white_round.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/notification_action.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f781c969976435ecc75eb154af4115be/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/messenger_button_send_blue_round.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.28.0.aar/559c0b107c24553b132796a34fdc9281/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/com_facebook_activity_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/31a5d9e3ee3aaa8156b39c854d8bf3d0/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/redbox_item_frame.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/14d6fe63b85db0df5bd63b0fb0f31838/res/layout/redbox_item_frame.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/31a5d9e3ee3aaa8156b39c854d8bf3d0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_screen_simple.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/redbox_item_title.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/14d6fe63b85db0df5bd63b0fb0f31838/res/layout/redbox_item_title.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/notification_action_tombstone.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f781c969976435ecc75eb154af4115be/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/layout/abc_action_mode_close_item_material.xml"
+    }
+]

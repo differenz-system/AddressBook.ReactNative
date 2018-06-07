@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_light.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_edittext.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_default.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/com_facebook_button_text_color.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-common-4.28.0.aar/31a5d9e3ee3aaa8156b39c854d8bf3d0/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_dark.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_search_url_text.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/com_facebook_send_button_text_color.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/facebook-share-4.28.0.aar/f764ec271da8c9ede27ca78ddf9527ef/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_spinner.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/switch_thumb_material_light.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/res/merged/release/color/abc_tint_switch_track.xml",
+        "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/1ba36aa6a5f7ca2676ad0b007809fb07/res/color/abc_tint_switch_track.xml"
+    }
+]
