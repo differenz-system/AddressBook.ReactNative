@@ -31,6 +31,14 @@ The app does the following:
 - **IDE:** Android studio, XCode, VSCode
 - **Framework:** React native
 
+## troubleshooting
+### (Mac OS)While running command (react-native run-ios), you are expected to have given error: "launchPackager.command" can't be opened.
+To resolve this you can attempt given steps:
+
+Go to System Preferences->Security & Privacy->Choose tab General->Allow launcherPackager.command and re-run command
+
+wait while node js loads all the bundles and then refresh in simulator.
+
 ## Screenshots
 ### Android
 <img src="https://github.com/differenz-system/AddressBook.ReactNative/blob/master/Screenshots/Android/login.JPEG" width="280"> <img src="https://github.com/differenz-system/AddressBook.ReactNative/blob/master/Screenshots/Android/list.JPEG" width="280"> <img src="https://github.com/differenz-system/AddressBook.ReactNative/blob/master/Screenshots/Android/detail.JPEG" width="280">
