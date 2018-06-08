@@ -31,7 +31,7 @@ The app does the following:
 - **IDE:** Android studio, XCode, VSCode
 - **Framework:** React native
 
-## troubleshooting
+## Troubleshooting
 ### (Mac OS)While running command (react-native run-ios), you are expected to have given error: "launchPackager.command" can't be opened.
 To resolve this you can attempt given steps:
 
