@@ -9,7 +9,6 @@ The app does the following:
 2. **Home:** 
     - It will list all the saved contacts. 
     - It has the option to add a new contact on the top right.
-    - Contact can be deleted by swiping card to left and clicking on trash icon.
     - User can edit contact by tapping on contact.
 3. **Create new contact:** 
     - User can add a new contact to his address book by filling details here.
