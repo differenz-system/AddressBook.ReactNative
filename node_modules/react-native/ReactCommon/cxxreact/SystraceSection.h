@@ -1,4 +1,9 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 #pragma once
 
@@ -20,26 +25,27 @@ namespace react {
  */
 #ifdef WITH_FBSYSTRACE
 struct ConcreteSystraceSection {
-public:
-  template<typename... ConvertsToStringPiece>
-  explicit
-  ConcreteSystraceSection(const char* name, ConvertsToStringPiece&&... args)
-    : m_section(TRACE_TAG_REACT_CXX_BRIDGE, name, args...)
-  {}
+ public:
+  template <typename... ConvertsToStringPiece>
+  explicit ConcreteSystraceSection(
+      const char *name,
+      ConvertsToStringPiece &&... args)
+      : m_section(TRACE_TAG_REACT_CXX_BRIDGE, name, args...) {}
 
-private:
+ private:
   fbsystrace::FbSystraceSection m_section;
 };
 using SystraceSection = ConcreteSystraceSection;
 #else
 struct DummySystraceSection {
-public:
-  template<typename... ConvertsToStringPiece>
-  explicit
-  DummySystraceSection(const char* name, ConvertsToStringPiece&&... args)
-    {}
+ public:
+  template <typename... ConvertsToStringPiece>
+  explicit DummySystraceSection(
+      __unused const char *name,
+      __unused ConvertsToStringPiece &&... args) {}
 };
 using SystraceSection = DummySystraceSection;
 #endif
 
-}}
+} // namespace react
+} // namespace facebook

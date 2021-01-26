@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,12 +7,8 @@
 
 package com.facebook.react.views.scroll;
 
-import javax.annotation.Nullable;
-
-import java.lang.Override;
-
-import android.support.v4.util.Pools;
-
+import androidx.annotation.Nullable;
+import androidx.core.util.Pools;
 import com.facebook.infer.annotation.Assertions;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
@@ -20,9 +16,7 @@ import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.events.Event;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
 
-/**
- * A event dispatched from a ScrollView scrolling.
- */
+/** A event dispatched from a ScrollView scrolling. */
 public class ScrollEvent extends Event<ScrollEvent> {
 
   private static final Pools.SynchronizedPool<ScrollEvent> EVENTS_POOL =
@@ -72,8 +66,7 @@ public class ScrollEvent extends Event<ScrollEvent> {
     EVENTS_POOL.release(this);
   }
 
-  private ScrollEvent() {
-  }
+  private ScrollEvent() {}
 
   private void init(
       int viewTag,
@@ -100,7 +93,7 @@ public class ScrollEvent extends Event<ScrollEvent> {
 
   @Override
   public String getEventName() {
-    return Assertions.assertNotNull(mScrollEventType).getJSEventName();
+    return ScrollEventType.getJSEventName(Assertions.assertNotNull(mScrollEventType));
   }
 
   @Override

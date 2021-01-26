@@ -1,0 +1,29 @@
+{
+  "name": "react-native-facebook-login",
+  "version": "1.6.2",
+  "summary": "React Native wrapper for native iOS Facebook SDK login button and manager",
+  "license": "MIT",
+  "authors": {
+    "name": "Noah"
+  },
+  "homepage": "https://github.com/magus/react-native-facebook-login",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/magus/react-native-facebook-login.git",
+    "tag": "v1.6.2"
+  },
+  "source_files": "RCTFBLogin/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ],
+    "FBSDKCoreKit": [
+      "~> 5.8.0"
+    ],
+    "FBSDKLoginKit": [
+      "~> 5.8.0"
+    ]
+  }
+}

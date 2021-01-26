@@ -1,4 +1,4 @@
-load("//ReactNative:DEFS.bzl", "rn_android_resource", "react_native_target")
+load("//tools/build_defs/oss:rn_defs.bzl", "react_native_target", "rn_android_resource")
 
 rn_android_resource(
     name = "devsupport",
@@ -31,6 +31,15 @@ rn_android_resource(
     name = "uimanager",
     package = "com.facebook.react",
     res = "views/uimanager",
+    visibility = [
+        "PUBLIC",
+    ],
+)
+
+rn_android_resource(
+    name = "systeminfo",
+    package = "com.facebook.react",
+    res = "systeminfo",
     visibility = [
         "PUBLIC",
     ],

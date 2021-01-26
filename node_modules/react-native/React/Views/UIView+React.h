@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -26,6 +26,12 @@
  * The native id of the view, used to locate view from native codes
  */
 @property (nonatomic, copy) NSString *nativeID;
+
+/**
+ * Determines whether or not a view should ignore inverted colors or not. Used to set
+ * UIView property accessibilityIgnoresInvertColors in iOS 11+.
+ */
+@property (nonatomic, assign) BOOL shouldAccessibilityIgnoresInvertColors;
 
 /**
  * Layout direction of the view.
@@ -66,7 +72,7 @@
 
 /**
  * Used by the UIIManager to set the view frame.
- * May be overriden to disable animation, etc.
+ * May be overridden to disable animation, etc.
  */
 - (void)reactSetFrame:(CGRect)frame;
 
@@ -101,10 +107,24 @@
 /**
  * The (sub)view which represents this view in terms of accessibility.
  * ViewManager will apply all accessibility properties directly to this view.
- * May be overriten in view subclass which needs to be accessiblitywise
+ * May be overridden in view subclass which needs to be accessiblitywise
  * transparent in favour of some subview.
  * Defaults to `self`.
  */
 @property (nonatomic, readonly) UIView *reactAccessibilityElement;
+
+/**
+ * Accessibility properties
+ */
+@property (nonatomic, copy) NSString *accessibilityRole;
+@property (nonatomic, copy) NSDictionary<NSString *, id> *accessibilityState;
+@property (nonatomic, copy) NSArray<NSDictionary *> *accessibilityActions;
+@property (nonatomic, copy) NSDictionary *accessibilityValueInternal;
+
+/**
+ * Used in debugging to get a description of the view hierarchy rooted at
+ * the current view.
+ */
+- (NSString *)react_recursiveDescription;
 
 @end

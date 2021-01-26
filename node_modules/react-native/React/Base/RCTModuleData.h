@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -13,12 +13,11 @@
 @protocol RCTBridgeModule;
 @class RCTBridge;
 
-typedef id<RCTBridgeModule>(^RCTBridgeModuleProvider)(void);
+typedef id<RCTBridgeModule> (^RCTBridgeModuleProvider)(void);
 
 @interface RCTModuleData : NSObject <RCTInvalidating>
 
-- (instancetype)initWithModuleClass:(Class)moduleClass
-                             bridge:(RCTBridge *)bridge;
+- (instancetype)initWithModuleClass:(Class)moduleClass bridge:(RCTBridge *)bridge;
 
 - (instancetype)initWithModuleClass:(Class)moduleClass
                      moduleProvider:(RCTBridgeModuleProvider)moduleProvider
@@ -45,6 +44,12 @@ typedef id<RCTBridgeModule>(^RCTBridgeModuleProvider)(void);
 @property (nonatomic, copy, readonly) NSArray<id<RCTBridgeMethod>> *methods;
 
 /**
+ * Returns a map of the module methods. Note that this will gather the methods the first
+ * time it is called and then memoize the results.
+ */
+@property (nonatomic, copy, readonly) NSDictionary<NSString *, id<RCTBridgeMethod>> *methodsByName;
+
+/**
  * Returns the module's constants, if it exports any
  */
 @property (nonatomic, copy, readonly) NSDictionary<NSString *, id> *exportedConstants;
@@ -69,7 +74,7 @@ typedef id<RCTBridgeModule>(^RCTBridgeModuleProvider)(void);
  * if it has not already been created. To check if the module instance exists
  * without causing it to be created, use `hasInstance` instead.
  */
-@property (nonatomic, strong, readonly) id<RCTBridgeModule> instance;
+@property (nonatomic, strong, readwrite) id<RCTBridgeModule> instance;
 
 /**
  * Returns the module method dispatch queue. Note that this will init both the

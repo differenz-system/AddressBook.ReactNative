@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -21,7 +21,6 @@ import com.facebook.react.testing.FakeWebSocketModule;
 import com.facebook.react.testing.ReactIntegrationTestCase;
 import com.facebook.react.testing.ReactTestHelper;
 import com.facebook.react.uimanager.PixelUtil;
-import com.facebook.react.uimanager.UIImplementationProvider;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.views.view.ReactViewGroup;
@@ -33,9 +32,13 @@ public class ViewRenderingTestCase extends ReactIntegrationTestCase {
 
   private interface ViewRenderingTestModule extends JavaScriptModule {
     void renderViewApplication(int rootTag);
+
     void renderMarginApplication(int rootTag);
+
     void renderBorderApplication(int rootTag);
+
     void updateMargins();
+
     void renderTransformApplication(int rootTag);
   }
 
@@ -48,8 +51,7 @@ public class ViewRenderingTestCase extends ReactIntegrationTestCase {
     super.setUp();
 
     List<ViewManager> viewManagers = Arrays.<ViewManager>asList(new ReactViewManager());
-    final UIManagerModule uiManager =
-        new UIManagerModule(getContext(), viewManagers, new UIImplementationProvider(), 0);
+    final UIManagerModule uiManager = new UIManagerModule(getContext(), viewManagers, 0);
     UiThreadUtil.runOnUiThread(
         new Runnable() {
           @Override
@@ -59,13 +61,14 @@ public class ViewRenderingTestCase extends ReactIntegrationTestCase {
         });
     waitForIdleSync();
 
-    mCatalystInstance = ReactTestHelper.catalystInstanceBuilder(this)
-        .addNativeModule(uiManager)
-        .addNativeModule(new AndroidInfoModule(getContext()))
-        .addNativeModule(new DeviceInfoModule(getContext()))
-        .addNativeModule(new AppStateModule(getContext()))
-        .addNativeModule(new FakeWebSocketModule())
-        .build();
+    mCatalystInstance =
+        ReactTestHelper.catalystInstanceBuilder(this)
+            .addNativeModule(uiManager)
+            .addNativeModule(new AndroidInfoModule(getContext()))
+            .addNativeModule(new DeviceInfoModule(getContext()))
+            .addNativeModule(new AppStateModule(getContext()))
+            .addNativeModule(new FakeWebSocketModule())
+            .build();
 
     mRootView = new ReactRootView(getContext());
     mRootTag = uiManager.addRootView(mRootView);
@@ -132,7 +135,8 @@ public class ViewRenderingTestCase extends ReactIntegrationTestCase {
   }
 
   public void testTransformations() {
-    mCatalystInstance.getJSModule(ViewRenderingTestModule.class)
+    mCatalystInstance
+        .getJSModule(ViewRenderingTestModule.class)
         .renderTransformApplication(mRootTag);
     waitForBridgeAndUIIdle();
 

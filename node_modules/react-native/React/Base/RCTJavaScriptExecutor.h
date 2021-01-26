@@ -1,13 +1,11 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
 #import <objc/runtime.h>
-
-#import <JavaScriptCore/JavaScriptCore.h>
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTInvalidating.h>
@@ -53,9 +51,7 @@ typedef void (^RCTJavaScriptCallback)(id result, NSError *error);
  * and optional additional arguments on the JS thread and calls the
  * given callback with JSValue, containing the next queue, and JSContext.
  */
-- (void)invokeCallbackID:(NSNumber *)cbID
-               arguments:(NSArray *)args
-                callback:(RCTJavaScriptCallback)onComplete;
+- (void)invokeCallbackID:(NSNumber *)cbID arguments:(NSArray *)args callback:(RCTJavaScriptCallback)onComplete;
 
 /**
  * Runs an application script, and notifies of the script load being complete via `onComplete`.
@@ -65,8 +61,8 @@ typedef void (^RCTJavaScriptCallback)(id result, NSError *error);
                       onComplete:(RCTJavaScriptCompleteBlock)onComplete;
 
 - (void)injectJSONText:(NSString *)script
-   asGlobalObjectNamed:(NSString *)objectName
-              callback:(RCTJavaScriptCompleteBlock)onComplete;
+    asGlobalObjectNamed:(NSString *)objectName
+               callback:(RCTJavaScriptCompleteBlock)onComplete;
 
 /**
  * Enqueue a block to run in the executors JS thread. Fallback to `dispatch_async`

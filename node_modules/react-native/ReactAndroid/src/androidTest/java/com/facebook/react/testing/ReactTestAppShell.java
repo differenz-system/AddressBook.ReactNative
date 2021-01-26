@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -15,9 +15,9 @@ import com.facebook.soloader.SoLoader;
 /**
  * Application class for the Catalyst Launcher to allow it to work as an exopackage.
  *
- * Any app-specific code that should run before secondary dex files are loaded
- * (like setting up crash reporting) should go in onBaseContextAttached.
- * Anything that should run after secondary dex should go in CatalystApplicationImpl.onCreate.
+ * <p>Any app-specific code that should run before secondary dex files are loaded (like setting up
+ * crash reporting) should go in onBaseContextAttached. Anything that should run after secondary dex
+ * should go in CatalystApplicationImpl.onCreate.
  */
 public class ReactTestAppShell extends ExopackageApplication<ApplicationLike> {
 

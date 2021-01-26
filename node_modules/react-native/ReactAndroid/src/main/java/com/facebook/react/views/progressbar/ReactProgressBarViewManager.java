@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,17 +7,18 @@
 
 package com.facebook.react.views.progressbar;
 
-import javax.annotation.Nullable;
-
 import android.content.Context;
 import android.widget.ProgressBar;
-
+import androidx.annotation.Nullable;
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException;
 import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.BaseViewManager;
-import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.uimanager.ThemedReactContext;
+import com.facebook.react.uimanager.ViewManagerDelegate;
 import com.facebook.react.uimanager.ViewProps;
+import com.facebook.react.uimanager.annotations.ReactProp;
+import com.facebook.react.viewmanagers.AndroidProgressBarManagerDelegate;
+import com.facebook.react.viewmanagers.AndroidProgressBarManagerInterface;
 
 /**
  * Manages instances of ProgressBar. ProgressBar is wrapped in a ProgressBarContainerView because
@@ -26,10 +27,11 @@ import com.facebook.react.uimanager.ViewProps;
  * one with the style given.
  */
 @ReactModule(name = ReactProgressBarViewManager.REACT_CLASS)
-public class ReactProgressBarViewManager extends
-    BaseViewManager<ProgressBarContainerView, ProgressBarShadowNode> {
+public class ReactProgressBarViewManager
+    extends BaseViewManager<ProgressBarContainerView, ProgressBarShadowNode>
+    implements AndroidProgressBarManagerInterface<ProgressBarContainerView> {
 
-  protected static final String REACT_CLASS = "AndroidProgressBar";
+  public static final String REACT_CLASS = "AndroidProgressBar";
 
   /* package */ static final String PROP_STYLE = "styleAttr";
   /* package */ static final String PROP_INDETERMINATE = "indeterminate";
@@ -39,6 +41,8 @@ public class ReactProgressBarViewManager extends
   /* package */ static final String DEFAULT_STYLE = "Normal";
 
   private static Object sProgressBarCtorLock = new Object();
+
+  private final ViewManagerDelegate<ProgressBarContainerView> mDelegate;
 
   /**
    * We create ProgressBars on both the UI and shadow threads. There is a race condition in the
@@ -51,6 +55,10 @@ public class ReactProgressBarViewManager extends
     }
   }
 
+  public ReactProgressBarViewManager() {
+    mDelegate = new AndroidProgressBarManagerDelegate<>(this);
+  }
+
   @Override
   public String getName() {
     return REACT_CLASS;
@@ -61,30 +69,43 @@ public class ReactProgressBarViewManager extends
     return new ProgressBarContainerView(context);
   }
 
+  @Override
   @ReactProp(name = PROP_STYLE)
-  public void setStyle(ProgressBarContainerView view, @Nullable String styleName) {
+  public void setStyleAttr(ProgressBarContainerView view, @Nullable String styleName) {
     view.setStyle(styleName);
   }
 
+  @Override
   @ReactProp(name = ViewProps.COLOR, customType = "Color")
   public void setColor(ProgressBarContainerView view, @Nullable Integer color) {
     view.setColor(color);
   }
 
+  @Override
   @ReactProp(name = PROP_INDETERMINATE)
   public void setIndeterminate(ProgressBarContainerView view, boolean indeterminate) {
     view.setIndeterminate(indeterminate);
   }
 
+  @Override
   @ReactProp(name = PROP_PROGRESS)
   public void setProgress(ProgressBarContainerView view, double progress) {
     view.setProgress(progress);
   }
 
+  @Override
   @ReactProp(name = PROP_ANIMATING)
   public void setAnimating(ProgressBarContainerView view, boolean animating) {
     view.setAnimating(animating);
   }
+
+  @Override
+  public void setTestID(ProgressBarContainerView view, @Nullable String value) {
+    super.setTestId(view, value);
+  }
+
+  @Override
+  public void setTypeAttr(ProgressBarContainerView view, @Nullable String value) {}
 
   @Override
   public ProgressBarShadowNode createShadowNodeInstance() {
@@ -106,13 +127,18 @@ public class ReactProgressBarViewManager extends
     view.apply();
   }
 
+  @Override
+  protected ViewManagerDelegate<ProgressBarContainerView> getDelegate() {
+    return mDelegate;
+  }
+
   /* package */ static int getStyleFromString(@Nullable String styleStr) {
     if (styleStr == null) {
       throw new JSApplicationIllegalArgumentException(
           "ProgressBar needs to have a style, null received");
     } else if (styleStr.equals("Horizontal")) {
       return android.R.attr.progressBarStyleHorizontal;
-    }  else if (styleStr.equals("Small")) {
+    } else if (styleStr.equals("Small")) {
       return android.R.attr.progressBarStyleSmall;
     } else if (styleStr.equals("Large")) {
       return android.R.attr.progressBarStyleLarge;

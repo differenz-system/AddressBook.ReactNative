@@ -1,16 +1,17 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTDecayAnimation.h"
+#import <React/RCTDecayAnimation.h>
 
 #import <UIKit/UIKit.h>
 #import <React/RCTConvert.h>
 
-#import "RCTValueAnimatedNode.h"
+#import <React/RCTAnimationUtils.h>
+#import <React/RCTValueAnimatedNode.h>
 
 @interface RCTDecayAnimation ()
 
@@ -36,7 +37,7 @@
 - (instancetype)initWithId:(NSNumber *)animationId
                     config:(NSDictionary *)config
                    forNode:(RCTValueAnimatedNode *)valueNode
-                  callBack:(nullable RCTResponseSenderBlock)callback;
+                  callBack:(nullable RCTResponseSenderBlock)callback
 {
   if ((self = [super init])) {
     _callback = [callback copy];
@@ -100,7 +101,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
 
   CGFloat value = _fromValue +
     (_velocity / (1 - _deceleration)) *
-    (1 - exp(-(1 - _deceleration) * (currentTime - _frameStartTime) * 1000.0));
+    (1 - exp(-(1 - _deceleration) * (currentTime - _frameStartTime) * 1000.0 / RCTAnimationDragCoefficient()));
 
   [self updateValue:value];
 

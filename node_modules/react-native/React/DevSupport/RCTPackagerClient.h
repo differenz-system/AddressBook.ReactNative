@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -29,7 +29,7 @@ extern const int RCT_PACKAGER_CLIENT_PROTOCOL_VERSION;
 
 @optional
 
-/** By default object will receive its methods on the main queue, unless this method is overriden. */
+/** By default object will receive its methods on the main queue, unless this method is overridden. */
 - (dispatch_queue_t)methodQueue;
 
 @end

@@ -1,158 +1,241 @@
 /**
- * Copyright (c) 2013-present, Facebook, Inc.
- * All rights reserved.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ * @format
  */
 
 'use strict';
 
 /**
  * This transform inlines top-level require(...) aliases with to enable lazy
- * loading of dependencies.
+ * loading of dependencies. It is able to inline both single references and
+ * child property references.
  *
- * Continuing with the example above, this replaces all references to `Foo` in
- * the module to `require('ModuleFoo')`.
+ * For instance:
+ *     var Foo = require('foo');
+ *     f(Foo);
+ *
+ * Will be transformed into:
+ *     f(require('foo'));
+ *
+ * When the assigment expression has a property access, it will be inlined too,
+ * keeping the property. For instance:
+ *     var Bar = require('foo').bar;
+ *     g(Bar);
+ *
+ * Will be transformed into:
+ *     g(require('foo').bar);
+ *
+ * Destructuring also works the same way. For instance:
+ *     const {Baz} = require('foo');
+ *     h(Baz);
+ *
+ * Is also successfully inlined into:
+ *     g(require('foo').Baz);
  */
-module.exports = function fbjsInlineRequiresTransform(babel) {
-  var t = babel.types;
+module.exports = babel => ({
+  name: 'inline-requires',
+  visitor: {
+    Program: {
+      exit(path, state) {
+        const ignoredRequires = new Set();
+        const inlineableCalls = new Set(['require']);
 
-  function buildRequireCall(name, inlineRequiredDependencyMap) {
-    var call = t.callExpression(
-      t.identifier('require'),
-      [t.stringLiteral(inlineRequiredDependencyMap.get(name))]
-    );
-    call.new = true;
-    return call;
-  }
-
-  function inlineRequire(path, inlineRequiredDependencyMap, identifierToPathsMap) {
-    var node = path.node;
-
-    if (path.isReferenced()) {
-      path.replaceWith(buildRequireCall(node.name, inlineRequiredDependencyMap));
-      var paths = identifierToPathsMap.get(node.name);
-      if (paths) {
-        paths.delete(path);
-      }
-    }
-  }
-
-  return {
-    visitor: {
-      Program(_, state) {
-        /**
-         * Map of require(...) aliases to module names.
-         *
-         * `Foo` is an alias for `require('ModuleFoo')` in the following example:
-         *   var Foo = require('ModuleFoo');
-         */
-        state.inlineRequiredDependencyMap = new Map();
-
-        /**
-         * Map of variable names that have not yet been inlined.
-         * We track them in case we later remove their require()s,
-         * In which case we have to come back and update them.
-         */
-        state.identifierToPathsMap = new Map();
-      },
-
-      /**
-       * Collect top-level require(...) aliases.
-       */
-      CallExpression: function(path, state) {
-        var node = path.node;
-
-        if (isTopLevelRequireAlias(path)) {
-          var varName = path.parent.id.name;
-          var moduleName = node.arguments[0].value;
-          var inlineRequiredDependencyMap = state.inlineRequiredDependencyMap;
-          var identifierToPathsMap = state.identifierToPathsMap;
-
-          inlineRequiredDependencyMap.set(varName, moduleName);
-
-          // If we removed require() statements for variables we've already seen,
-          // We need to do a second pass on this program to replace them with require().
-          var maybePaths = identifierToPathsMap.get(varName);
-          if (maybePaths) {
-            maybePaths.forEach(path =>
-              inlineRequire(path, inlineRequiredDependencyMap, identifierToPathsMap));
-            maybePaths.delete(varName);
+        if (state.opts != null) {
+          if (state.opts.ignoredRequires != null) {
+            for (const name of state.opts.ignoredRequires) {
+              ignoredRequires.add(name);
+            }
           }
-
-          // Remove the declaration.
-          path.parentPath.parentPath.remove();
-          // And the associated binding in the scope.
-          path.scope.removeBinding(varName);
-        }
-      },
-
-      /**
-       * Inline require(...) aliases.
-       */
-      Identifier: function(path, state) {
-        var node = path.node;
-        var parent = path.parent;
-        var scope = path.scope;
-        var identifierToPathsMap = state.identifierToPathsMap;
-
-        if (!shouldInlineRequire(node, scope, state.inlineRequiredDependencyMap)) {
-          // Monitor this name in case we later remove its require().
-          // This won't happen often but if it does we need to come back and update here.
-          var paths = identifierToPathsMap.get(node.name);
-          if (paths) {
-            paths.add(path);
-          } else {
-            identifierToPathsMap.set(node.name, new Set([path]));
+          if (state.opts.inlineableCalls != null) {
+            for (const name of state.opts.inlineableCalls) {
+              inlineableCalls.add(name);
+            }
           }
-
-          return;
         }
 
-        if (
-          parent.type === 'AssignmentExpression' &&
-          path.isBindingIdentifier() &&
-          !scope.bindingIdentifierEquals(node.name, node)
-        ) {
-          throw new Error(
-            'Cannot assign to a require(...) alias, ' + node.name +
-            '. Line: ' + node.loc.start.line + '.'
-          );
-        }
+        path.scope.crawl();
+        path.traverse(
+          {
+            CallExpression(path, state) {
+              const parseResult =
+                parseInlineableAlias(path, state) ||
+                parseInlineableMemberAlias(path, state);
 
-        inlineRequire(path, state.inlineRequiredDependencyMap, identifierToPathsMap);
+              if (parseResult == null) {
+                return;
+              }
+              const {declarationPath, moduleName} = parseResult;
+
+              const init = declarationPath.node.init;
+              const name = declarationPath.node.id
+                ? declarationPath.node.id.name
+                : null;
+
+              const binding = declarationPath.scope.getBinding(name);
+              if (binding.constantViolations.length > 0) {
+                return;
+              }
+
+              deleteLocation(init);
+              babel.traverse(init, {
+                noScope: true,
+                enter: path => deleteLocation(path.node),
+              });
+
+              let thrown = false;
+              for (const referencePath of binding.referencePaths) {
+                excludeMemberAssignment(moduleName, referencePath, state);
+                try {
+                  referencePath.replaceWith(init);
+                } catch (error) {
+                  thrown = true;
+                }
+              }
+
+              // If a replacement failed (e.g. replacing a type annotation),
+              // avoid removing the initial require just to be safe.
+              if (!thrown) {
+                declarationPath.remove();
+              }
+            },
+          },
+          {
+            ignoredRequires,
+            inlineableCalls,
+            membersAssigned: new Map(),
+          },
+        );
       },
     },
-  };
-};
+  },
+});
 
-function isTopLevelRequireAlias(path) {
-  return (
-    isRequireCall(path.node) &&
+function excludeMemberAssignment(moduleName, referencePath, state) {
+  const assignment = referencePath.parentPath.parent;
+
+  const isValid =
+    assignment.type === 'AssignmentExpression' &&
+    assignment.left.type === 'MemberExpression' &&
+    assignment.left.object === referencePath.node;
+  if (!isValid) {
+    return;
+  }
+
+  const memberPropertyName = getMemberPropertyName(assignment.left);
+  if (memberPropertyName == null) {
+    return;
+  }
+
+  let membersAssigned = state.membersAssigned.get(moduleName);
+  if (membersAssigned == null) {
+    membersAssigned = new Set();
+    state.membersAssigned.set(moduleName, membersAssigned);
+  }
+  membersAssigned.add(memberPropertyName);
+}
+
+function isExcludedMemberAssignment(moduleName, memberPropertyName, state) {
+  const excludedAliases = state.membersAssigned.get(moduleName);
+  return excludedAliases != null && excludedAliases.has(memberPropertyName);
+}
+
+function getMemberPropertyName(node) {
+  if (node.type !== 'MemberExpression') {
+    return null;
+  }
+  if (node.property.type === 'Identifier') {
+    return node.property.name;
+  }
+  if (node.property.type === 'StringLiteral') {
+    return node.property.value;
+  }
+  return null;
+}
+
+function deleteLocation(node) {
+  delete node.start;
+  delete node.end;
+  delete node.loc;
+}
+
+function parseInlineableAlias(path, state) {
+  const moduleName = getInlineableModule(path.node, state);
+
+  const isValid =
+    moduleName != null &&
     path.parent.type === 'VariableDeclarator' &&
     path.parent.id.type === 'Identifier' &&
     path.parentPath.parent.type === 'VariableDeclaration' &&
-    path.parentPath.parent.declarations.length === 1 &&
-    path.parentPath.parentPath.parent.type === 'Program'
-  );
+    path.parentPath.parentPath.parent.type === 'Program';
+
+  return !isValid || path.parentPath.node == null
+    ? null
+    : {
+        declarationPath: path.parentPath,
+        moduleName,
+      };
 }
 
-function shouldInlineRequire(node, scope, inlineRequiredDependencyMap) {
-  return (
-    inlineRequiredDependencyMap.has(node.name) &&
-    !scope.hasBinding(node.name, true /* noGlobals */)
-  );
+function parseInlineableMemberAlias(path, state) {
+  const moduleName = getInlineableModule(path.node, state);
+
+  const isValid =
+    moduleName != null &&
+    path.parent.type === 'MemberExpression' &&
+    path.parentPath.parent.type === 'VariableDeclarator' &&
+    path.parentPath.parent.id.type === 'Identifier' &&
+    path.parentPath.parentPath.parent.type === 'VariableDeclaration' &&
+    path.parentPath.parentPath.parentPath.parent.type === 'Program';
+
+  const memberPropertyName = getMemberPropertyName(path.parent);
+
+  return !isValid ||
+    path.parentPath.parentPath.node == null ||
+    isExcludedMemberAssignment(moduleName, memberPropertyName, state)
+    ? null
+    : {
+        declarationPath: path.parentPath.parentPath,
+        moduleName,
+      };
 }
 
-function isRequireCall(node) {
-  return (
-    !node.new &&
+function getInlineableModule(node, state) {
+  const isInlineable =
     node.type === 'CallExpression' &&
     node.callee.type === 'Identifier' &&
-    node.callee.name === 'require' &&
-    node['arguments'].length === 1 &&
+    state.inlineableCalls.has(node.callee.name) &&
+    node['arguments'].length >= 1;
+
+  if (!isInlineable) {
+    return null;
+  }
+
+  // require('foo');
+  let moduleName =
     node['arguments'][0].type === 'StringLiteral'
-  );
+      ? node['arguments'][0].value
+      : null;
+
+  // require(require.resolve('foo'));
+  if (moduleName == null) {
+    moduleName =
+      node['arguments'][0].type === 'CallExpression' &&
+      node['arguments'][0].callee.type === 'MemberExpression' &&
+      node['arguments'][0].callee.object.type === 'Identifier' &&
+      state.inlineableCalls.has(node['arguments'][0].callee.object.name) &&
+      node['arguments'][0].callee.property.type === 'Identifier' &&
+      node['arguments'][0].callee.property.name === 'resolve' &&
+      node['arguments'][0]['arguments'].length >= 1 &&
+      node['arguments'][0]['arguments'][0].type === 'StringLiteral'
+        ? node['arguments'][0]['arguments'][0].value
+        : null;
+  }
+
+  return moduleName == null || state.ignoredRequires.has(moduleName)
+    ? null
+    : moduleName;
 }

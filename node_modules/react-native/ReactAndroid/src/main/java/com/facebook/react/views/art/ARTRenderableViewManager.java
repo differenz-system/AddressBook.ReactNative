@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,7 +8,6 @@
 package com.facebook.react.views.art;
 
 import android.view.View;
-
 import com.facebook.react.uimanager.ReactShadowNode;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewManager;
@@ -20,9 +19,9 @@ import com.facebook.react.uimanager.ViewManager;
  */
 public class ARTRenderableViewManager extends ViewManager<View, ReactShadowNode> {
 
-  /* package */ static final String CLASS_GROUP = "ARTGroup";
-  /* package */ static final String CLASS_SHAPE = "ARTShape";
-  /* package */ static final String CLASS_TEXT = "ARTText";
+  public static final String CLASS_GROUP = "ARTGroup";
+  public static final String CLASS_SHAPE = "ARTShape";
+  public static final String CLASS_TEXT = "ARTText";
 
   private final String mClassName;
 

@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -21,7 +21,6 @@ import com.facebook.react.testing.AssertModule;
 import com.facebook.react.testing.FakeWebSocketModule;
 import com.facebook.react.testing.ReactIntegrationTestCase;
 import com.facebook.react.testing.ReactTestHelper;
-import com.facebook.react.uimanager.UIImplementationProvider;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.views.view.ReactViewManager;
@@ -29,9 +28,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.Ignore;
 
-/**
- * Test marshalling arguments from Java to JS to appropriate native classes.
- */
+/** Test marshalling arguments from Java to JS to appropriate native classes. */
 @Ignore("Fix prop types and view managers.")
 public class CatalystNativeJavaToJSArgumentsTestCase extends ReactIntegrationTestCase {
 
@@ -39,16 +36,21 @@ public class CatalystNativeJavaToJSArgumentsTestCase extends ReactIntegrationTes
     void receiveBasicTypes(String s, double d, boolean b, String nullString);
 
     void receiveArrayWithBasicTypes(WritableArray array);
+
     void receiveNestedArray(WritableArray nestedArray);
+
     void receiveArrayWithMaps(WritableArray arrayWithMaps);
 
     void receiveMapWithBasicTypes(WritableMap map);
+
     void receiveNestedMap(WritableMap nestedMap);
+
     void receiveMapWithArrays(WritableMap mapWithArrays);
-    void receiveMapAndArrayWithNullValues(
-        WritableMap map,
-        WritableArray array);
+
+    void receiveMapAndArrayWithNullValues(WritableMap map, WritableArray array);
+
     void receiveMapWithMultibyteUTF8CharacterString(WritableMap map);
+
     void receiveArrayWithMultibyteUTF8CharacterString(WritableArray array);
   }
 
@@ -59,10 +61,8 @@ public class CatalystNativeJavaToJSArgumentsTestCase extends ReactIntegrationTes
   protected void setUp() throws Exception {
     super.setUp();
 
-    List<ViewManager> viewManagers = Arrays.<ViewManager>asList(
-        new ReactViewManager());
-    final UIManagerModule mUIManager =
-        new UIManagerModule(getContext(), viewManagers, new UIImplementationProvider(), 0);
+    List<ViewManager> viewManagers = Arrays.<ViewManager>asList(new ReactViewManager());
+    final UIManagerModule mUIManager = new UIManagerModule(getContext(), viewManagers, 0);
     UiThreadUtil.runOnUiThread(
         new Runnable() {
           @Override
@@ -74,17 +74,19 @@ public class CatalystNativeJavaToJSArgumentsTestCase extends ReactIntegrationTes
 
     mAssertModule = new AssertModule();
 
-    mInstance = ReactTestHelper.catalystInstanceBuilder(this)
-        .addNativeModule(mAssertModule)
-        .addNativeModule(new DeviceInfoModule(getContext()))
-        .addNativeModule(new AppStateModule(getContext()))
-        .addNativeModule(new FakeWebSocketModule())
-        .addNativeModule(mUIManager)
-        .build();
+    mInstance =
+        ReactTestHelper.catalystInstanceBuilder(this)
+            .addNativeModule(mAssertModule)
+            .addNativeModule(new DeviceInfoModule(getContext()))
+            .addNativeModule(new AppStateModule(getContext()))
+            .addNativeModule(new FakeWebSocketModule())
+            .addNativeModule(mUIManager)
+            .build();
   }
 
   public void testBasicTypes() {
-    mInstance.getJSModule(TestJavaToJSArgumentsModule.class)
+    mInstance
+        .getJSModule(TestJavaToJSArgumentsModule.class)
         .receiveBasicTypes("foo", 3.14, true, null);
     waitForBridgeAndUIIdle();
     mAssertModule.verifyAssertsAndReset();
@@ -183,7 +185,8 @@ public class CatalystNativeJavaToJSArgumentsTestCase extends ReactIntegrationTes
     array.pushArray(null);
     array.pushMap(null);
 
-    mInstance.getJSModule(TestJavaToJSArgumentsModule.class)
+    mInstance
+        .getJSModule(TestJavaToJSArgumentsModule.class)
         .receiveMapAndArrayWithNullValues(map, array);
     waitForBridgeAndUIIdle();
     mAssertModule.verifyAssertsAndReset();

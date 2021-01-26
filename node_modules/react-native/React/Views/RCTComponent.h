@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -24,6 +24,7 @@ typedef void (^RCTBubblingEventBlock)(NSDictionary *body);
 @protocol RCTComponent <NSObject>
 
 @property (nonatomic, copy) NSNumber *reactTag;
+@property (nonatomic, copy) NSNumber *rootTag;
 
 - (void)insertReactSubview:(id<RCTComponent>)subview atIndex:(NSInteger)atIndex;
 - (void)removeReactSubview:(id<RCTComponent>)subview;

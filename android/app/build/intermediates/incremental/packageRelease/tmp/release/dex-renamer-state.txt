@@ -1,4 +1,0 @@
-#Tue Jun 05 20:02:13 IST 2018
-base.0=/Users/mac/Documents/DifferenzAddressBook/AddressBook/android/app/build/intermediates/transforms/dexMerger/release/0
-path.0=classes.dex
-renamed.0=classes.dex

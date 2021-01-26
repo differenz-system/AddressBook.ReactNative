@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,15 +7,11 @@
 
 package com.facebook.react.testing;
 
-import java.util.List;
-
-import android.view.View;
-
+import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.uimanager.ViewManager;
-import com.facebook.react.ReactPackage;
+import java.util.List;
 
 /**
  * This class wraps {@class ReactInstanceSpecForTest} in {@class ReactPackage} interface.

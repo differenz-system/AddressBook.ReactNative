@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2016-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -51,7 +51,10 @@ class IInspector : public IDestructible {
   virtual ~IInspector() = 0;
 
   /// addPage is called by the VM to add a page to the list of debuggable pages.
-  virtual int addPage(const std::string& title, const std::string& vm, ConnectFunc connectFunc) = 0;
+  virtual int addPage(
+      const std::string &title,
+      const std::string &vm,
+      ConnectFunc connectFunc) = 0;
 
   /// removePage is called by the VM to remove a page from the list of
   /// debuggable pages.
@@ -69,7 +72,7 @@ class IInspector : public IDestructible {
 
 /// getInspectorInstance retrieves the singleton inspector that tracks all
 /// debuggable pages in this process.
-extern IInspector& getInspectorInstance();
+extern IInspector &getInspectorInstance();
 
 /// makeTestInspectorInstance creates an independent inspector instance that
 /// should only be used in tests.

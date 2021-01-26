@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -17,22 +17,21 @@ namespace facebook {
 // initialization.
 template <typename T>
 class StaticInitialized {
-public:
-  constexpr StaticInitialized() :
-    m_instance(nullptr)
-  {}
+ public:
+  constexpr StaticInitialized() : m_instance(nullptr) {}
 
-  template <typename ...Args>
-  void initialize(Args&&... arguments) {
+  template <typename... Args>
+  void initialize(Args &&... arguments) {
     FBASSERT(!m_instance);
     m_instance = new T(std::forward<Args>(arguments)...);
   }
 
-  T* operator->() const {
+  T *operator->() const {
     return m_instance;
   }
-private:
-  T* m_instance;
+
+ private:
+  T *m_instance;
 };
 
-}
+} // namespace facebook

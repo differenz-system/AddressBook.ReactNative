@@ -1,15 +1,19 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 package com.facebook.react.bridge;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 import com.facebook.common.logging.FLog;
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
 import com.facebook.react.common.ReactConstants;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @DoNotStrip
 public class Inspector {
@@ -67,10 +71,7 @@ public class Inspector {
 
     @Override
     public String toString() {
-      return "Page{" +
-          "mId=" + mId +
-          ", mTitle='" + mTitle + '\'' +
-          '}';
+      return "Page{" + "mId=" + mId + ", mTitle='" + mTitle + '\'' + '}';
     }
 
     @DoNotStrip
@@ -83,7 +84,10 @@ public class Inspector {
 
   @DoNotStrip
   public interface RemoteConnection {
+    @DoNotStrip
     void onMessage(String message);
+
+    @DoNotStrip
     void onDisconnect();
   }
 
@@ -92,6 +96,7 @@ public class Inspector {
     private final HybridData mHybridData;
 
     public native void sendMessage(String message);
+
     public native void disconnect();
 
     private LocalConnection(HybridData hybridData) {

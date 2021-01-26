@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -22,7 +22,6 @@ import com.facebook.react.testing.FakeWebSocketModule;
 import com.facebook.react.testing.ReactIntegrationTestCase;
 import com.facebook.react.testing.ReactTestHelper;
 import com.facebook.react.uimanager.PixelUtil;
-import com.facebook.react.uimanager.UIImplementationProvider;
 import com.facebook.react.uimanager.UIManagerModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.views.text.ReactRawTextManager;
@@ -31,17 +30,21 @@ import com.facebook.react.views.view.ReactViewManager;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Test case for basic {@link UIManagerModule} functionality.
- */
+/** Test case for basic {@link UIManagerModule} functionality. */
 public class CatalystUIManagerTestCase extends ReactIntegrationTestCase {
   private interface UIManagerTestModule extends JavaScriptModule {
     void renderFlexTestApplication(int rootTag);
+
     void renderFlexWithTextApplication(int rootTag);
+
     void renderAbsolutePositionTestApplication(int rootTag);
+
     void renderAbsolutePositionBottomRightTestApplication(int rootTag);
+
     void renderCenteredTextViewTestApplication(int rootTag, String text);
+
     void renderUpdatePositionInListTestApplication(int rootTag);
+
     void flushUpdatePositionInList();
   }
 
@@ -72,28 +75,28 @@ public class CatalystUIManagerTestCase extends ReactIntegrationTestCase {
   protected void setUp() throws Exception {
     super.setUp();
 
-    List<ViewManager> viewManagers = Arrays.<ViewManager>asList(
-        new ReactViewManager(),
-        new ReactTextViewManager(),
-        new ReactRawTextManager());
-    uiManager =
-        new UIManagerModule(getContext(), viewManagers, new UIImplementationProvider(), 0);
-    UiThreadUtil.runOnUiThread(new Runnable() {
-      @Override
-      public void run() {
-        uiManager.onHostResume();
-      }
-    });
+    List<ViewManager> viewManagers =
+        Arrays.<ViewManager>asList(
+            new ReactViewManager(), new ReactTextViewManager(), new ReactRawTextManager());
+    uiManager = new UIManagerModule(getContext(), viewManagers, 0);
+    UiThreadUtil.runOnUiThread(
+        new Runnable() {
+          @Override
+          public void run() {
+            uiManager.onHostResume();
+          }
+        });
     waitForIdleSync();
 
-    jsModule = ReactTestHelper.catalystInstanceBuilder(this)
-        .addNativeModule(uiManager)
-        .addNativeModule(new AndroidInfoModule(getContext()))
-        .addNativeModule(new DeviceInfoModule(getContext()))
-        .addNativeModule(new AppStateModule(getContext()))
-        .addNativeModule(new FakeWebSocketModule())
-        .build()
-        .getJSModule(UIManagerTestModule.class);
+    jsModule =
+        ReactTestHelper.catalystInstanceBuilder(this)
+            .addNativeModule(uiManager)
+            .addNativeModule(new AndroidInfoModule(getContext()))
+            .addNativeModule(new DeviceInfoModule(getContext()))
+            .addNativeModule(new AppStateModule(getContext()))
+            .addNativeModule(new FakeWebSocketModule())
+            .build()
+            .getJSModule(UIManagerTestModule.class);
   }
 
   public void testFlexUIRendered() {
@@ -135,7 +138,8 @@ public class CatalystUIManagerTestCase extends ReactIntegrationTestCase {
   //   assertEquals(inPixelRounded(300), row.getHeight());
   //   assertEquals(2, row.getChildCount());
   //
-  //   // Text measurement adds padding that isn't completely dependent on density so we can't easily
+  //   // Text measurement adds padding that isn't completely dependent on density so we can't
+  // easily
   //   // get an exact value here
   //   float approximateExpectedTextHeight = inPixelRounded(19);
   //   View leftText = row.getChildAt(0);
@@ -241,10 +245,10 @@ public class CatalystUIManagerTestCase extends ReactIntegrationTestCase {
   }
 
   public void testCenteredTextCases() {
-    String[] cases = new String[] {
-      "test",
-      "with whitespace",
-    };
+    String[] cases =
+        new String[] {
+          "test", "with whitespace",
+        };
     for (String text : cases) {
       _testCenteredText(text);
     }

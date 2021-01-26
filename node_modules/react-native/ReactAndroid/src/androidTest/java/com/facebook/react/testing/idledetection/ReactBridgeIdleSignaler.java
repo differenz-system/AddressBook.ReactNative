@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,10 +7,9 @@
 
 package com.facebook.react.testing.idledetection;
 
+import com.facebook.react.bridge.NotThreadSafeBridgeIdleDebugListener;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-
-import com.facebook.react.bridge.NotThreadSafeBridgeIdleDebugListener;
 
 /**
  * Utility class that uses {@link NotThreadSafeBridgeIdleDebugListener} interface to allow callers
@@ -28,6 +27,11 @@ public class ReactBridgeIdleSignaler implements NotThreadSafeBridgeIdleDebugList
   public void onTransitionToBridgeIdle() {
     mIsBridgeIdle = true;
     mBridgeIdleSemaphore.release();
+  }
+
+  @Override
+  public void onBridgeDestroyed() {
+    // Do nothing
   }
 
   @Override

@@ -1,4 +1,9 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 #pragma once
 
@@ -6,14 +11,14 @@
 #include <string>
 
 #include <cxxreact/CxxModule.h>
-#include <fb/fbjni.h>
+#include <fbjni/fbjni.h>
 
 namespace facebook {
 namespace react {
 
 struct JNativeModule : jni::JavaClass<JNativeModule> {
   constexpr static const char *const kJavaDescriptor =
-    "Lcom/facebook/react/bridge/NativeModule;";
+      "Lcom/facebook/react/bridge/NativeModule;";
 };
 
 /**
@@ -21,15 +26,14 @@ struct JNativeModule : jni::JavaClass<JNativeModule> {
  * must extend this base class.
  */
 class CxxModuleWrapperBase
-  : public jni::HybridClass<CxxModuleWrapperBase, JNativeModule> {
-public:
+    : public jni::HybridClass<CxxModuleWrapperBase, JNativeModule> {
+ public:
   constexpr static const char *const kJavaDescriptor =
-    "Lcom/facebook/react/bridge/CxxModuleWrapperBase;";
+      "Lcom/facebook/react/bridge/CxxModuleWrapperBase;";
 
   static void registerNatives() {
-    registerHybrid({
-      makeNativeMethod("getName", CxxModuleWrapperBase::getName)
-    });
+    registerHybrid(
+        {makeNativeMethod("getName", CxxModuleWrapperBase::getName)});
   }
 
   // JNI method
@@ -39,5 +43,5 @@ public:
   virtual std::unique_ptr<xplat::module::CxxModule> getModule() = 0;
 };
 
-}
-}
+} // namespace react
+} // namespace facebook

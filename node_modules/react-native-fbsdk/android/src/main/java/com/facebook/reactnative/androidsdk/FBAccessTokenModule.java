@@ -22,6 +22,7 @@
 package com.facebook.reactnative.androidsdk;
 
 import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
 import com.facebook.FacebookException;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.NativeModule;
@@ -30,18 +31,54 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.module.annotations.ReactModule;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 /**
  * This is a {@link NativeModule} that allows JS to use AcessToken in Facebook Android SDK.
  */
-public class FBAccessTokenModule extends ReactContextBaseJavaModule{
+@ReactModule(name = FBAccessTokenModule.NAME)
+public class FBAccessTokenModule extends ReactContextBaseJavaModule {
+
+    public static final String NAME = "FBAccessToken";
+    public static final String CHANGE_EVENT_NAME = "fbsdk.accessTokenDidChange";
+
+    private final ReactApplicationContext mReactContext;
+    private AccessTokenTracker accessTokenTracker;
 
     public FBAccessTokenModule(ReactApplicationContext reactContext) {
         super(reactContext);
+        mReactContext = reactContext;
     }
 
     public String getName() {
-        return "FBAccessToken";
+        return NAME;
+    }
+
+    @Override
+    public void initialize() {
+        super.initialize();
+        accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken currentAccessToken) {
+                try {
+                    mReactContext
+                            .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+                            .emit(CHANGE_EVENT_NAME, currentAccessToken == null ? null : Utility.accessTokenToReactMap(currentAccessToken));
+                } catch (RuntimeException ex) {
+                    // It is possible that the react context might not have initialized when this
+                    // event is broadcasted from AccessTokenTracker, so rather than crashing with
+                    // an error message, ignoring the change
+                }
+            }
+        };
+
+    }
+
+    @Override
+    public void onCatalystInstanceDestroy() {
+        super.onCatalystInstanceDestroy();
+        accessTokenTracker.stopTracking();
     }
 
     /**

@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -13,10 +13,7 @@ import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.events.TouchEventType;
 import java.util.Map;
 
-
-/**
- * Constants exposed to JS from {@link UIManagerModule}.
- */
+/** Constants exposed to JS from {@link UIManagerModule}. */
 /* package */ class UIManagerModuleConstants {
 
   public static final String ACTION_DISMISSED = "dismissed";
@@ -35,41 +32,25 @@ import java.util.Map;
                 "phasedRegistrationNames",
                 MapBuilder.of("bubbled", "onSelect", "captured", "onSelectCapture")))
         .put(
-            TouchEventType.START.getJSEventName(),
+            TouchEventType.getJSEventName(TouchEventType.START),
             MapBuilder.of(
                 "phasedRegistrationNames",
-                MapBuilder.of(
-                    "bubbled",
-                    "onTouchStart",
-                    "captured",
-                    "onTouchStartCapture")))
+                MapBuilder.of("bubbled", "onTouchStart", "captured", "onTouchStartCapture")))
         .put(
-            TouchEventType.MOVE.getJSEventName(),
+            TouchEventType.getJSEventName(TouchEventType.MOVE),
             MapBuilder.of(
                 "phasedRegistrationNames",
-                MapBuilder.of(
-                    "bubbled",
-                    "onTouchMove",
-                    "captured",
-                    "onTouchMoveCapture")))
+                MapBuilder.of("bubbled", "onTouchMove", "captured", "onTouchMoveCapture")))
         .put(
-            TouchEventType.END.getJSEventName(),
+            TouchEventType.getJSEventName(TouchEventType.END),
             MapBuilder.of(
                 "phasedRegistrationNames",
-                MapBuilder.of(
-                    "bubbled",
-                    "onTouchEnd",
-                    "captured",
-                    "onTouchEndCapture")))
+                MapBuilder.of("bubbled", "onTouchEnd", "captured", "onTouchEndCapture")))
         .put(
-            TouchEventType.CANCEL.getJSEventName(),
+            TouchEventType.getJSEventName(TouchEventType.CANCEL),
             MapBuilder.of(
                 "phasedRegistrationNames",
-                MapBuilder.of(
-                    "bubbled",
-                    "onTouchCancel",
-                    "captured",
-                    "onTouchCancelCapture")))
+                MapBuilder.of("bubbled", "onTouchCancel", "captured", "onTouchCancelCapture")))
         .build();
   }
 
@@ -83,6 +64,7 @@ import java.util.Map;
         .put("topLoadingStart", MapBuilder.of(rn, "onLoadingStart"))
         .put("topSelectionChange", MapBuilder.of(rn, "onSelectionChange"))
         .put("topMessage", MapBuilder.of(rn, "onMessage"))
+        .put("topClick", MapBuilder.of(rn, "onClick"))
         // Scroll events are added as per task T22348735.
         // Subject for further improvement.
         .put("topScrollBeginDrag", MapBuilder.of(rn, "onScrollBeginDrag"))
@@ -124,18 +106,17 @@ import java.util.Map;
     constants.put(
         "PopupMenu",
         MapBuilder.of(
-            ACTION_DISMISSED,
-            ACTION_DISMISSED,
-            ACTION_ITEM_SELECTED,
-            ACTION_ITEM_SELECTED));
+            ACTION_DISMISSED, ACTION_DISMISSED, ACTION_ITEM_SELECTED, ACTION_ITEM_SELECTED));
 
     constants.put(
-      "AccessibilityEventTypes",
-      MapBuilder.of(
-          "typeWindowStateChanged",
-          AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED,
-          "typeViewClicked",
-          AccessibilityEvent.TYPE_VIEW_CLICKED));
+        "AccessibilityEventTypes",
+        MapBuilder.of(
+            "typeWindowStateChanged",
+            AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED,
+            "typeViewFocused",
+            AccessibilityEvent.TYPE_VIEW_FOCUSED,
+            "typeViewClicked",
+            AccessibilityEvent.TYPE_VIEW_CLICKED));
 
     return constants;
   }

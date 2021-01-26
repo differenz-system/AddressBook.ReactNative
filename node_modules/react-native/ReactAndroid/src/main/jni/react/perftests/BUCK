@@ -1,4 +1,4 @@
-load("//ReactNative:DEFS.bzl", "rn_xplat_cxx_library", "react_native_xplat_target", "ANDROID")
+load("//tools/build_defs/oss:rn_defs.bzl", "ANDROID", "react_native_xplat_target", "rn_xplat_cxx_library")
 
 rn_xplat_cxx_library(
     name = "perftests",
@@ -10,12 +10,12 @@ rn_xplat_cxx_library(
     platforms = ANDROID,
     soname = "libnativereactperftests.$(ext)",
     visibility = [
-        "fbandroid//instrumentation_tests/com/facebook/react/...",
+        "//fbandroid/instrumentation_tests/com/facebook/react/...",
     ],
     deps = [
-        "fbandroid//native:base",
-        "fbandroid//native/fb:fb",
-        "xplat//folly:molly",
+        "//fbandroid/native:base",
+        "//fbandroid/native/fb:fb",
+        "//xplat/folly:molly",
         react_native_xplat_target("cxxreact:module"),
     ],
 )

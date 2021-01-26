@@ -1,4 +1,9 @@
-// Copyright 2004-present Facebook. All Rights Reserved.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 package com.facebook.react.uimanager.layoutanimation;
 
@@ -7,8 +12,8 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
 /**
- * Animation responsible for updating opacity of a view. It should ideally use hardware texture
- * to optimize rendering performances.
+ * Animation responsible for updating opacity of a view. It should ideally use hardware texture to
+ * optimize rendering performances.
  */
 /* package */ class OpacityAnimation extends Animation {
 
@@ -23,8 +28,7 @@ import android.view.animation.Transformation;
 
     @Override
     public void onAnimationStart(Animation animation) {
-      if (mView.hasOverlappingRendering() &&
-          mView.getLayerType() == View.LAYER_TYPE_NONE) {
+      if (mView.hasOverlappingRendering() && mView.getLayerType() == View.LAYER_TYPE_NONE) {
         mLayerTypeChanged = true;
         mView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
       }

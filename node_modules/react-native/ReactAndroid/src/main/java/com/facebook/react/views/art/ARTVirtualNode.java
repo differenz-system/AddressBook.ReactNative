@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -10,12 +10,12 @@ package com.facebook.react.views.art;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
+import androidx.annotation.Nullable;
 import com.facebook.react.bridge.JSApplicationIllegalArgumentException;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.DisplayMetricsHolder;
 import com.facebook.react.uimanager.ReactShadowNodeImpl;
 import com.facebook.react.uimanager.annotations.ReactProp;
-import javax.annotation.Nullable;
 
 /**
  * Base class for ARTView virtual nodes: {@link ARTGroupShadowNode}, {@link ARTShapeShadowNode} and
@@ -37,13 +37,6 @@ public abstract class ARTVirtualNode extends ReactShadowNodeImpl {
     mScale = DisplayMetricsHolder.getWindowDisplayMetrics().density;
   }
 
-  protected ARTVirtualNode(ARTVirtualNode artVirtualNode) {
-    super(artVirtualNode);
-    mScale = artVirtualNode.mScale;
-    mOpacity = artVirtualNode.mOpacity;
-    mMatrix = new Matrix(artVirtualNode.mMatrix);
-  }
-
   @Override
   public boolean isVirtual() {
     return true;
@@ -54,7 +47,7 @@ public abstract class ARTVirtualNode extends ReactShadowNodeImpl {
   /**
    * Sets up the transform matrix on the canvas before an element is drawn.
    *
-   * NB: for perf reasons this does not apply opacity, as that would mean creating a new canvas
+   * <p>NB: for perf reasons this does not apply opacity, as that would mean creating a new canvas
    * layer (which allocates an offscreen bitmap) and having it composited afterwards. Instead, the
    * drawing code should apply opacity recursively.
    *
@@ -68,8 +61,8 @@ public abstract class ARTVirtualNode extends ReactShadowNodeImpl {
   }
 
   /**
-   * Restore the canvas after an element was drawn. This is always called in mirror with
-   * {@link #saveAndSetupCanvas}.
+   * Restore the canvas after an element was drawn. This is always called in mirror with {@link
+   * #saveAndSetupCanvas}.
    *
    * @param canvas the canvas to restore
    */

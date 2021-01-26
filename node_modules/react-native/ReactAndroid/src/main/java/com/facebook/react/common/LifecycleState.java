@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -12,11 +12,7 @@ package com.facebook.react.common;
  * basically the same so this enum is in terms of the forward lifecycle progression (onResume, etc).
  * Eventually, if necessary, it could contain something like:
  *
- * BEFORE_CREATE,
- * CREATED,
- * VIEW_CREATED,
- * STARTED,
- * RESUMED
+ * <p>BEFORE_CREATE, CREATED, VIEW_CREATED, STARTED, RESUMED
  */
 public enum LifecycleState {
   BEFORE_CREATE,

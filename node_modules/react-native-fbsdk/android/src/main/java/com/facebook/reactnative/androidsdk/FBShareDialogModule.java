@@ -20,19 +20,20 @@
 
 package com.facebook.reactnative.androidsdk;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookException;
 import com.facebook.react.bridge.Arguments;
-import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.share.Sharer;
 import com.facebook.share.widget.ShareDialog;
 
-public class FBShareDialogModule extends FBSDKDialogBaseJavaModule {
+@ReactModule(name = FBShareDialogModule.NAME)
+public class FBShareDialogModule extends FBSDKCallbackManagerBaseJavaModule {
+
+    public static final String NAME = "FBShareDialog";
 
     private class ShareDialogCallback extends ReactNativeFacebookSDKCallback<Sharer.Result> {
 
@@ -54,13 +55,13 @@ public class FBShareDialogModule extends FBSDKDialogBaseJavaModule {
     private ShareDialog.Mode mShareDialogMode;
     private boolean mShouldFailOnError;
 
-    public FBShareDialogModule(ReactApplicationContext reactContext, CallbackManager callbackManager) {
-        super(reactContext, callbackManager);
+    public FBShareDialogModule(ReactApplicationContext reactContext, FBActivityEventListener activityEventListener) {
+        super(reactContext, activityEventListener);
     }
 
     @Override
     public String getName() {
-        return "FBShareDialog";
+        return NAME;
     }
 
     @ReactMethod

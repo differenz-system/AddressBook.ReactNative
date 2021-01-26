@@ -1,17 +1,18 @@
 /**
- * Copyright (c) 2015-present, Facebook, Inc.
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  *
- * @flow
+ * @flow strict
  * @format
  */
+
 const FileReaderModule = {
-  async readAsText() {
+  async readAsText(): Promise<string> {
     return '';
   },
-  async readAsDataURL() {
+  async readAsDataURL(): Promise<string> {
     return 'data:text/plain;base64,NDI=';
   },
 };

@@ -1,11 +1,11 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTTextShadowView.h"
+#import <React/RCTTextShadowView.h>
 
 #import <React/RCTBridge.h>
 #import <React/RCTShadowView+Layout.h>
@@ -13,7 +13,7 @@
 #import <yoga/Yoga.h>
 
 #import "NSTextStorage+FontScaling.h"
-#import "RCTTextView.h"
+#import <React/RCTTextView.h>
 
 @implementation RCTTextShadowView
 {
@@ -33,6 +33,20 @@
   }
 
   return self;
+}
+
+- (void)didSetProps:(NSArray<NSString *> *)changedProps
+{
+  [super didSetProps:changedProps];
+
+  // When applying a semi-transparent background color to Text component
+  // we must set the root text nodes text attribute background color to nil
+  // because the background color is drawn on the RCTTextView itself, as well
+  // as on the glphy background draw step. By setting this to nil, we allow
+  // the RCTTextView backgroundColor to be used, without affecting nested Text
+  // components.
+  self.textAttributes.backgroundColor = nil;
+  self.textAttributes.opacity = NAN;
 }
 
 - (BOOL)isYogaLeafNode
@@ -102,7 +116,7 @@
       [descendantViews addObject:descendantView];
     }];
 
-    // Removing all references to Shadow Views to avoid unnececery retainning.
+    // Removing all references to Shadow Views to avoid unnecessary retaining.
     [textStorage removeAttribute:RCTBaseTextShadowViewEmbeddedShadowViewAttributeName range:NSMakeRange(0, textStorage.length)];
 
     [textView setTextStorage:textStorage
@@ -133,7 +147,7 @@
     return;
   }
 
-  [attributedText beginEditing];
+  __block CGFloat maximumFontLineHeight = 0;
 
   [attributedText enumerateAttribute:NSFontAttributeName
                              inRange:NSMakeRange(0, attributedText.length)
@@ -144,23 +158,31 @@
         return;
       }
 
-      if (maximumLineHeight <= font.lineHeight) {
-        return;
+      if (maximumFontLineHeight <= font.lineHeight) {
+        maximumFontLineHeight = font.lineHeight;
       }
+    }
+  ];
 
-      CGFloat baseLineOffset = maximumLineHeight / 2.0 - font.lineHeight / 2.0;
+  if (maximumLineHeight < maximumFontLineHeight) {
+    return;
+  }
 
-      [attributedText addAttribute:NSBaselineOffsetAttributeName
-                             value:@(baseLineOffset)
-                             range:range];
-     }
-   ];
+  CGFloat baseLineOffset = maximumLineHeight / 2.0 - maximumFontLineHeight / 2.0;
 
-   [attributedText endEditing];
+  [attributedText addAttribute:NSBaselineOffsetAttributeName
+                         value:@(baseLineOffset)
+                         range:NSMakeRange(0, attributedText.length)];
 }
 
 - (NSAttributedString *)attributedTextWithMeasuredAttachmentsThatFitSize:(CGSize)size
 {
+  static UIImage *placeholderImage;
+  static dispatch_once_t onceToken;
+   dispatch_once(&onceToken, ^{
+     placeholderImage = [UIImage new];
+   });
+  
   NSMutableAttributedString *attributedText =
     [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedTextWithBaseTextAttributes:nil]];
 
@@ -179,6 +201,7 @@
                                                    maximumSize:size];
       NSTextAttachment *attachment = [NSTextAttachment new];
       attachment.bounds = (CGRect){CGPointZero, fittingSize};
+      attachment.image = placeholderImage;
       [attributedText addAttribute:NSAttachmentAttributeName value:attachment range:range];
     }
   ];
@@ -210,6 +233,7 @@
   textContainer.maximumNumberOfLines = _maximumNumberOfLines;
 
   NSLayoutManager *layoutManager = [NSLayoutManager new];
+  layoutManager.usesFontLeading = NO;
   [layoutManager addTextContainer:textContainer];
 
   NSTextStorage *textStorage =
@@ -288,6 +312,9 @@
         RCTRoundPixelValue(attachmentSize.width),
         RCTRoundPixelValue(attachmentSize.height)
       }};
+      
+      NSRange truncatedGlyphRange = [layoutManager truncatedGlyphRangeInLineFragmentForGlyphAtIndex:range.location];
+      BOOL viewIsTruncated = NSIntersectionRange(range, truncatedGlyphRange).length != 0;
 
       RCTLayoutContext localLayoutContext = layoutContext;
       localLayoutContext.absolutePosition.x += frame.origin.x;
@@ -298,12 +325,43 @@
                         layoutDirection:self.layoutMetrics.layoutDirection
                           layoutContext:localLayoutContext];
 
-      // Reinforcing a proper frame origin for the Shadow View.
       RCTLayoutMetrics localLayoutMetrics = shadowView.layoutMetrics;
-      localLayoutMetrics.frame.origin = frame.origin;
+      localLayoutMetrics.frame.origin = frame.origin; // Reinforcing a proper frame origin for the Shadow View.
+      if (viewIsTruncated) {
+        localLayoutMetrics.displayType = RCTDisplayTypeNone;
+      }
       [shadowView layoutWithMetrics:localLayoutMetrics layoutContext:localLayoutContext];
     }
   ];
+
+
+  if (_onTextLayout) {
+    NSMutableArray *lineData = [NSMutableArray new];
+    [layoutManager
+     enumerateLineFragmentsForGlyphRange:glyphRange
+     usingBlock:^(CGRect overallRect, CGRect usedRect, NSTextContainer * _Nonnull usedTextContainer, NSRange lineGlyphRange, BOOL * _Nonnull stop) {
+       NSRange range = [layoutManager characterRangeForGlyphRange:lineGlyphRange actualGlyphRange:nil];
+       NSString *renderedString = [textStorage.string substringWithRange:range];
+       UIFont *font = [[textStorage attributedSubstringFromRange:range] attribute:NSFontAttributeName atIndex:0 effectiveRange:nil];
+       [lineData addObject:
+        @{
+          @"text": renderedString,
+          @"x": @(usedRect.origin.x),
+          @"y": @(usedRect.origin.y),
+          @"width": @(usedRect.size.width),
+          @"height": @(usedRect.size.height),
+          @"descender": @(-font.descender),
+          @"capHeight": @(font.capHeight),
+          @"ascender": @(font.ascender),
+          @"xHeight": @(font.xHeight),
+          }];
+     }];
+    NSDictionary *payload =
+    @{
+      @"lines": lineData,
+      };
+    _onTextLayout(payload);
+  }
 }
 
 - (CGFloat)lastBaselineForSize:(CGSize)size

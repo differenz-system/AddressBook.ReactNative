@@ -1,4 +1,4 @@
-load("//ReactNative:DEFS.bzl", "rn_android_library", "react_native_dep", "react_native_target")
+load("//tools/build_defs/oss:rn_defs.bzl", "react_native_dep", "react_native_target", "rn_android_library")
 
 rn_android_library(
     name = "vibration",
@@ -15,4 +15,5 @@ rn_android_library(
         react_native_target("java/com/facebook/react/module/annotations:annotations"),
         react_native_target("java/com/facebook/react/modules/core:core"),
     ],
+    exported_deps = [react_native_target("java/com/facebook/fbreact/specs:FBReactNativeSpec")],
 )

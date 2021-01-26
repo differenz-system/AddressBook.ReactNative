@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,18 +8,17 @@
 package com.facebook.react.tests;
 
 import android.widget.ScrollView;
-
-import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.testing.ReactAppInstrumentationTestCase;
 import com.facebook.react.testing.SingleTouchGestureGenerator;
+import com.facebook.react.uimanager.PixelUtil;
 
 /**
  * Test case to verify that JSResponder flow work correctly.
  *
- * In a single test case scenario we have a view with pan gesture recognizer containing a scrollview
- * We verify that by vertical drags affects a scrollview while horizontal drags are suppose to
- * be recognized by pan responder and setJSResponder should be triggered resulting in scrollview
- * events being intercepted.
+ * <p>In a single test case scenario we have a view with pan gesture recognizer containing a
+ * scrollview We verify that by vertical drags affects a scrollview while horizontal drags are
+ * suppose to be recognized by pan responder and setJSResponder should be triggered resulting in
+ * scrollview events being intercepted.
  */
 public class JSResponderTestCase extends ReactAppInstrumentationTestCase {
 
@@ -55,13 +54,9 @@ public class JSResponderTestCase extends ReactAppInstrumentationTestCase {
 
     waitForBridgeAndUIIdle();
 
-    gestureGenerator
-        .dragTo(30 + inpx40dp, 30, 10, 1200)
-        .endGesture();
+    gestureGenerator.dragTo(30 + inpx40dp, 30, 10, 1200).endGesture();
 
     waitForBridgeAndUIIdle();
     assertEquals("Expected not to scroll", scrollView.getScrollY(), previousScroll);
-
   }
-
 }

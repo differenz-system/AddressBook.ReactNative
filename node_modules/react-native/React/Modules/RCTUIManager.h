@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -134,6 +134,14 @@ RCT_EXTERN NSString *const RCTUIManagerWillUpdateViewsDueToContentSizeMultiplier
  * @param rootTag the react tag of root view hierarchy from which to find the view.
  */
 - (UIView *)viewForNativeID:(NSString *)nativeID withRootTag:(NSNumber *)rootTag;
+
+/**
+ * Register a view that is tagged with nativeID as its nativeID prop
+ *
+ * @param nativeID the id reference to native component relative to root view.
+ * @param view the view that is tagged with nativeID as its nativeID prop.
+ */
+- (void)setNativeID:(NSString *)nativeID forView:(UIView *)view;
 
 /**
  * The view that is currently first responder, according to the JS context.

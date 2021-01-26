@@ -1,0 +1,197 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.addressbook"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:5-77
+11-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:6:5-78
+13-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:5-76
+14-->[com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1c7787ec82631e0394972c76bdabe608/flipper-0.54.0/AndroidManifest.xml:16:22-73
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/61e3e279020c351517b511e7d56d43f0/play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+15-->[com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/61e3e279020c351517b511e7d56d43f0/play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+16-->[com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/744c11701aa7144a8d6a8e89bcdad6bd/installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+16-->[com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/744c11701aa7144a8d6a8e89bcdad6bd/installreferrer-1.1.2/AndroidManifest.xml:9:22-107
+17
+18    <application
+18-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:7:5-31:19
+19        android:name="com.addressbook.MainApplication"
+19-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:8:7-38
+20        android:allowBackup="false"
+20-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:15:9-36
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/639e914bfc1efa21e36199d3ff2c5eef/core-1.1.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:hardwareAccelerated="true"
+23-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:13:9-43
+24        android:icon="@mipmap/ic_launcher_foreground"
+24-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:10:7-52
+25        android:label="@string/app_name"
+25-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:9:7-39
+26        android:largeHeap="true"
+26-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:14:9-33
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:11:7-52
+28        android:supportsRtl="true"
+28-->[com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ecef14570fdd75a4ba35693355741d1b/facebook-android-sdk-7.1.0/AndroidManifest.xml:28:18-44
+29        android:testOnly="true"
+30        android:theme="@style/AppTheme"
+30-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:16:7-38
+31        android:usesCleartextTraffic="true" >
+31-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:12:9-44
+32        <activity
+32-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:17:7-28:18
+33            android:name="com.addressbook.MainActivity"
+33-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:18:9-37
+34            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+34-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:20:11-88
+35            android:label="@string/app_name"
+35-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:19:9-41
+36            android:launchMode="singleTask"
+36-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:21:11-42
+37            android:screenOrientation="portrait"
+37-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:22:11-47
+38            android:windowSoftInputMode="adjustPan" >
+38-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:23:11-50
+39            <intent-filter>
+39-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:24:9-27:25
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:25:13-65
+40-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:25:21-62
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:26:13-73
+42-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:26:23-70
+43            </intent-filter>
+44        </activity>
+45        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+45-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:29:7-84
+45-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:29:17-81
+46
+47        <meta-data
+47-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:9-107
+48            android:name="com.facebook.sdk.ApplicationId"
+48-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:20-65
+49            android:value="@string/facebook_app_id" />
+49-->/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:66-105
+50
+51        <receiver
+51-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-22:20
+52            android:name="com.learnium.RNDeviceInfo.RNDeviceReceiver"
+52-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-70
+53            android:enabled="true"
+53-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-35
+54            android:exported="true"
+54-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
+55            android:permission="android.permission.INSTALL_PACKAGES" >
+55-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-69
+56            <intent-filter>
+56-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+57                <action android:name="com.android.vending.INSTALL_REFERRER" />
+57-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
+57-->[:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+58            </intent-filter>
+59        </receiver>
+60
+61        <activity
+61-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:30:9-33:66
+62            android:name="com.facebook.FacebookActivity"
+62-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:31:13-57
+63            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+63-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:32:13-96
+64            android:theme="@style/com_facebook_activity_theme" />
+64-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:33:13-63
+65        <activity android:name="com.facebook.CustomTabMainActivity" />
+65-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:34:9-71
+65-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:34:19-68
+66        <activity
+66-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:35:9-49:20
+67            android:name="com.facebook.CustomTabActivity"
+67-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:36:13-58
+68            android:exported="true" >
+68-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:37:13-36
+69            <intent-filter>
+69-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+70                <action android:name="android.intent.action.VIEW" />
+70-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:40:17-69
+70-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:40:25-66
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:42:17-76
+72-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:42:27-73
+73                <category android:name="android.intent.category.BROWSABLE" />
+73-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:43:17-78
+73-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:43:27-75
+74
+75                <data
+75-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:45:17-47:50
+76                    android:host="cct.com.addressbook"
+76-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:46:21-56
+77                    android:scheme="fbconnect" />
+77-->[com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c235f9ea59e25ca4c17bf33edf63d8ab/facebook-common-7.1.0/AndroidManifest.xml:47:21-47
+78            </intent-filter>
+79        </activity>
+80        <!--
+81         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+82         with the application context. This config is merged in with the host app's manifest,
+83         but there can only be one provider with the same authority activated at any given
+84         point; so if the end user has two or more different apps that use Facebook SDK, only the
+85         first one will be able to use the provider. To work around this problem, we use the
+86         following placeholder in the authority to identify each host application as if it was
+87         a completely different provider.
+88        -->
+89        <provider
+89-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:39:9-42:40
+90            android:name="com.facebook.internal.FacebookInitProvider"
+90-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:40:13-70
+91            android:authorities="com.addressbook.FacebookInitProvider"
+91-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:41:13-72
+92            android:exported="false" />
+92-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:42:13-37
+93
+94        <receiver
+94-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:44:9-50:20
+95            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+95-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:45:13-86
+96            android:exported="false" >
+96-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:46:13-37
+97            <intent-filter>
+97-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:47:13-49:29
+98                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+98-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:17-95
+98-->[com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a280e65275a6032d85dab21e8a2027eb/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:25-92
+99            </intent-filter>
+100        </receiver>
+101
+102        <activity
+102-->[com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fc8046cb9a5df9499609a5f7f8270b1b/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+103-->[com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fc8046cb9a5df9499609a5f7f8270b1b/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fc8046cb9a5df9499609a5f7f8270b1b/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fc8046cb9a5df9499609a5f7f8270b1b/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+106
+107        <meta-data
+107-->[com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2c08d9b2764228d53ec874ea62a5ff28/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+108            android:name="com.google.android.gms.version"
+108-->[com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2c08d9b2764228d53ec874ea62a5ff28/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+109            android:value="@integer/google_play_services_version" />
+109-->[com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2c08d9b2764228d53ec874ea62a5ff28/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+110    </application>
+111
+112</manifest>

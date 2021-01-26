@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -7,13 +7,12 @@
 
 package com.facebook.react.bridge;
 
-import javax.inject.Provider;
+import com.facebook.soloader.SoLoader;
 import java.util.List;
-
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.runner.RunWith;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PowerMockIgnore;
@@ -21,18 +20,13 @@ import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.rule.PowerMockRule;
 import org.robolectric.RobolectricTestRunner;
 
-import com.facebook.soloader.SoLoader;
-
-/**
- * Tests for {@link BaseJavaModule} and {@link JavaModuleWrapper}
- */
+/** Tests for {@link BaseJavaModule} and {@link JavaModuleWrapper} */
 @PrepareForTest({ReadableNativeArray.class, SoLoader.class})
-@PowerMockIgnore({"org.mockito.*", "org.robolectric.*", "android.*"})
+@PowerMockIgnore({"org.mockito.*", "org.robolectric.*", "androidx.*", "android.*"})
 @RunWith(RobolectricTestRunner.class)
 public class BaseJavaModuleTest {
 
-  @Rule
-  public PowerMockRule rule = new PowerMockRule();
+  @Rule public PowerMockRule rule = new PowerMockRule();
 
   private List<JavaModuleWrapper.MethodDescriptor> mMethods;
   private JavaModuleWrapper mWrapper;
@@ -41,7 +35,7 @@ public class BaseJavaModuleTest {
   @Before
   public void setup() {
     ModuleHolder moduleHolder = new ModuleHolder(new MethodsModule());
-    mWrapper = new JavaModuleWrapper(null, MethodsModule.class, moduleHolder);
+    mWrapper = new JavaModuleWrapper(null, moduleHolder);
     mMethods = mWrapper.getMethodDescriptors();
     PowerMockito.mockStatic(SoLoader.class);
     mArguments = PowerMockito.mock(ReadableNativeArray.class);
@@ -49,7 +43,7 @@ public class BaseJavaModuleTest {
 
   private int findMethod(String mname, List<JavaModuleWrapper.MethodDescriptor> methods) {
     int posn = -1;
-    for (int i = 0; i< methods.size(); i++) {
+    for (int i = 0; i < methods.size(); i++) {
       JavaModuleWrapper.MethodDescriptor md = methods.get(i);
       if (md.name == mname) {
         posn = i;
@@ -61,7 +55,7 @@ public class BaseJavaModuleTest {
 
   @Test(expected = NativeArgumentsParseException.class)
   public void testCallMethodWithoutEnoughArgs() throws Exception {
-    int methodId = findMethod("regularMethod",mMethods);
+    int methodId = findMethod("regularMethod", mMethods);
     Mockito.stub(mArguments.size()).toReturn(1);
     mWrapper.invoke(methodId, mArguments);
   }

@@ -1,5 +1,5 @@
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
+/*
+ * Copyright (c) Facebook, Inc. and its affiliates.
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -8,10 +8,10 @@
 package com.facebook.react.views.text;
 
 /**
- * Instances of this class are used to place reactTag information of nested text react nodes
- * into spannable text rendered by single {@link TextView}
+ * Instances of this class are used to place reactTag information of nested text react nodes into
+ * spannable text rendered by single {@link TextView}
  */
-public class ReactTagSpan {
+public class ReactTagSpan implements ReactSpan {
 
   private final int mReactTag;
 
