@@ -1,4 +1,4 @@
-export const colors={
+export const Appcolors={
     BLACK_FONT:'#444950',
     BLACK:'#000000',
     WHITE:'#FFFFFF',

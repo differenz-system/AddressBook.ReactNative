@@ -1,19 +1,17 @@
 import React from 'react';
 import { StyleSheet, Dimensions} from 'react-native';
 const { height, width } = Dimensions.get('window');
-import  {colors,font}  from "../Constant";
+import  {Appcolors,font}  from "../Constant";
 import {CommonFunction} from '../Config/Helper';
 
-const CommonStyle = StyleSheet.create({
+export default CommonStyle = StyleSheet.create({
     
     Splashcontainer:{
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor:colors.WHITE
     },
     Logincontainer:{
-        backgroundColor:colors.WHITE,
         padding:30,
     },
     FBView:{
@@ -27,7 +25,7 @@ const CommonStyle = StyleSheet.create({
         elevation: 8,
         marginTop:CommonFunction.Measurement(10,15,15),
         borderRadius:25,
-        backgroundColor:colors.BLUE,
+        backgroundColor:Appcolors.BLUE,
         flexDirection:'row',
         alignContent:'center',
         justifyContent:'center'
@@ -39,17 +37,15 @@ const CommonStyle = StyleSheet.create({
     },
     FBfont:{ 
           fontSize:font.FONT_18, 
-          color:colors.WHITE,
+          color:Appcolors.WHITE,
           fontWeight:font.FONT_WEIGHT_600
     },
     AddCScrollView:{ 
         flex: 1, 
         justifyContent: 'center', 
-        backgroundColor: colors.WHITE 
     },
     Addcontainer: {
         flex: 1,
-        backgroundColor:colors.WHITE,
         padding:CommonFunction.Measurement(20,30,25),
     },
     AddMainView:{ 
@@ -58,29 +54,25 @@ const CommonStyle = StyleSheet.create({
     },
     DSubMainView:{
         flex:1,
-        backgroundColor:colors.WHITE,
         padding:15
     },
     DSubsubView:{
-        shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 4,
         },
         shadowOpacity: 0.50,
         shadowRadius: 4.65,
-        
         elevation: 8,
         flexDirection:'row',
         borderRadius:15,
-        backgroundColor:colors.WHITE
     },
     DSubView1:{
         height:CommonFunction.Measurement(105,105,109),
         width:8,
     },
     DGradView:{ 
-        height:'100%',
+        height:font.ISIOS?'100%':'103%',
         justifyContent: 'center',
         borderTopLeftRadius:15,
         borderBottomLeftRadius:15,
@@ -88,17 +80,16 @@ const CommonStyle = StyleSheet.create({
     },
     DPressItem:{
         flex: 1,
-        backgroundColor: colors.WHITE,
         padding:10,
+        borderBottomRightRadius:10,
+        borderTopRightRadius:10,
     },
     DsubText:{ 
         paddingVertical:4, 
-        color: colors.BLACK,
         fontSize:font.FONT_14 
     },
     DMainView:{ 
         paddingVertical:4, 
-        color: colors.BLACK, 
         fontWeight: 'bold',
         fontSize:font.FONT_22 
     },
@@ -112,7 +103,6 @@ const CommonStyle = StyleSheet.create({
         fontWeight:font.FONT_WEIGHT_400
     },
     DMainRenderView:{ 
-        backgroundColor:colors.WHITE, 
         flex: 1, 
         justifyContent: 'center' 
     },
@@ -141,7 +131,7 @@ const CommonStyle = StyleSheet.create({
         marginBottom:5
     },
     DChar:{
-        color:colors.BLUE_CONTACT,
+        color:Appcolors.BLUE_CONTACT,
         fontWeight:'bold'
     },
     DlistScroll:{ 
@@ -152,7 +142,6 @@ const CommonStyle = StyleSheet.create({
         marginTop:CommonFunction.Measurement(40,60,50),
         textAlign:'center',
         marginBottom:CommonFunction.Measurement(20,30,20),
-        color:colors.BLACK,
         fontWeight:font.FONT_WEIGHT_600 
     },
     loginLoader:{
@@ -176,4 +165,3 @@ const CommonStyle = StyleSheet.create({
         alignSelf:'center'
     }
 })
-export default  CommonStyle 

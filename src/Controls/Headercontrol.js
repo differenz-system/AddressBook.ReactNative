@@ -1,7 +1,7 @@
 import React from 'react';
 import {TouchableOpacity,Image,View,Text,StyleSheet,Dimensions} from 'react-native'
 import { TextInput } from 'react-native-gesture-handler';
-import {font,colors,string,icon} from '../Constant';
+import {font,Appcolors,string,icon} from '../Constant';
 import {CommonFunction} from '../Config/Helper';
 const { height, width } = Dimensions.get("window")
 
@@ -24,7 +24,7 @@ function HeaderView (props) {
                       ref={props.innerRef}
                       underlineColorAndroid="transparent"
                       placeholder={string.SEARCH}
-                      placeholderTextColor={colors.DARK_GRAY}
+                      placeholderTextColor={Appcolors.DARK_GRAY}
                       keyboardType={props.keyboardType}
                       onChangeText={props.onChangeText}
                       returnKeyType={props.returnKeyType}
@@ -53,7 +53,7 @@ export default HeaderView;
 const styles=StyleSheet.create({
    
     Container:{
-        backgroundColor:'white',
+        // backgroundColor:'white',
     },
     BGImg:{
         width:'100%',
@@ -68,14 +68,14 @@ const styles=StyleSheet.create({
         width:30,
         height:30,
         marginTop:CommonFunction.Measurement(30,50,30),
-        tintColor:colors.WHITE
+        tintColor:Appcolors.WHITE
     },
     LImg:{
         position:'absolute',
         left:0,
         width:CommonFunction.Measurement(25,30,30),
         height:CommonFunction.Measurement(25,30,30),
-        tintColor:colors.WHITE
+        tintColor:Appcolors.WHITE
     },
     RImgTouch:{
         position:'absolute',
@@ -84,14 +84,14 @@ const styles=StyleSheet.create({
         width:30,
         height:30,
         marginTop:CommonFunction.Measurement(30,50,30),
-        tintColor:colors.WHITE
+        tintColor:Appcolors.WHITE
     },
     RImg:{
         position:'absolute',
         right:0,
         width:CommonFunction.Measurement(25,30,30),
         height:CommonFunction.Measurement(25,30,30),
-        tintColor:colors.WHITE
+        tintColor:Appcolors.WHITE
     },
     HeaderTxt:{
         position:'absolute',
@@ -100,7 +100,7 @@ const styles=StyleSheet.create({
         marginTop:CommonFunction.Measurement(80,110,90),
         fontWeight:font.FONT_WEIGHT_600,
         fontSize:font.FONT_25,
-        color:colors.WHITE,
+        color:Appcolors.WHITE,
     },
     SerchView:{
         shadowColor: "#000",
@@ -115,14 +115,14 @@ const styles=StyleSheet.create({
         bottom:-20,
         height:50,
         width:'80%',
-       backgroundColor:colors.WHITE,
+       backgroundColor:Appcolors.WHITE,
        borderRadius:30,
        alignSelf:'center'
     },
     TextInputTxt:{
         flex:1,
         fontSize:font.FONT_18,
-        color:colors.BLACK_FONT,
+        color:Appcolors.BLACK_FONT,
         paddingTop :0,
         paddingVertical:0,
         paddingHorizontal:5,

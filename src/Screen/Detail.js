@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import {View, Text, ScrollView, TouchableOpacity, FlatList,Dimensions,RefreshControl,BackHandler
-} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity, FlatList,Dimensions,RefreshControl,BackHandler} from 'react-native';
 const { height, width } = Dimensions.get("window")
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import { colors,string,icon } from '../Constant';
+import { Appcolors,string,icon, font } from '../Constant';
 import Header from '../Controls/Headercontrol';
 import LinearGradient from 'react-native-linear-gradient';
 import {LoginManager} from 'react-native-fbsdk';
 import CommonStyle from './Style';
+import { DefaultTheme, DarkTheme} from '@react-navigation/native';
+import AuthContext from '../AuthContext';
+
 var globalThis
 export default class Detail extends Component {
-    
+    static contextType=AuthContext;
       constructor(props) {
         super(props);
         this.state = {
@@ -37,7 +39,6 @@ export default class Detail extends Component {
     componentDidMount() {
         globalThis = this
         this.get()
-       
         this.props.navigation.setOptions({
             headerShown:true,
             header: () => (
@@ -215,21 +216,25 @@ export default class Detail extends Component {
           })
     }
     subrenderItem= ({ item, index }) => {
+        const {isScheme,setScheme}=this.context;
         return(
-            <View style={CommonStyle.DSubMainView}>
-                 <View style={CommonStyle.DSubsubView}>
+            <View style={[CommonStyle.DSubMainView,{backgroundColor: isScheme=='dark'?DarkTheme.colors.background:DefaultTheme.colors.background}]}>
+                 <View style={[CommonStyle.DSubsubView,{shadowColor:isScheme=='dark'? Appcolors.WHITE:Appcolors.BLACK,backgroundColor: isScheme=='dark'?DarkTheme.colors.background:DefaultTheme.colors.background}]}>
                     <View style={CommonStyle.DSubView1}>
                         <LinearGradient
                             useAngle={true}
                             angle={150}
-                            colors={[colors.LIGHT_GREEN,colors.DARK_GREEN,colors.DDARK_GREEN]} 
+                            colors={[Appcolors.LIGHT_GREEN,Appcolors.DARK_GREEN,Appcolors.DDARK_GREEN]} 
                             style={CommonStyle.DGradView}/>
                     </View>
                  <View style={{borderTopLeftRadius:15,flex:1}}>
-                    <TouchableOpacity activeOpacity={0.8} style={CommonStyle.DPressItem} onPress={() => { this.props.navigation.navigate('AddContact', { item: item, index: index, get: this.get }) }}>
-                        <Text style={CommonStyle.DMainView}>{item.Name}</Text>
-                        <Text style={CommonStyle.DsubText}>{item.Email}</Text>
-                        <Text style={CommonStyle.DsubText}>{item.ContactNumber}</Text>
+                    <TouchableOpacity 
+                    activeOpacity={0.8} 
+                    style={[CommonStyle.DPressItem,{borderColor:isScheme=='dark'? font.ISIOS ?null:Appcolors.WHITE:null,borderRightWidth:isScheme=='dark'? font.ISIOS ?null:0.5:null,borderTopWidth:isScheme=='dark'? font.ISIOS ?null:0.5:null,borderBottomWidth:isScheme=='dark'? font.ISIOS ?null:0.5:null,backgroundColor: isScheme=='dark'?DarkTheme.colors.background:DefaultTheme.colors.background}]} 
+                    onPress={() => { this.props.navigation.navigate('AddContact', { item: item, index: index, get: this.get }) }}>
+                        <Text style={[CommonStyle.DMainView,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>{item.Name}</Text>
+                        <Text style={[CommonStyle.DsubText,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>{item.Email}</Text>
+                        <Text style={[CommonStyle.DsubText,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>{item.ContactNumber}</Text>
                     </TouchableOpacity>
                  </View>
             </View>
@@ -243,7 +248,7 @@ export default class Detail extends Component {
                <LinearGradient 
                    useAngle={true}
                    angle={90}
-                   colors={[colors.LIGHT_GREEN,colors.DARK_GREEN,colors.DDARK_GREEN]} 
+                   colors={[Appcolors.LIGHT_GREEN,Appcolors.DARK_GREEN,Appcolors.DDARK_GREEN]} 
                    style={CommonStyle.DGradHorizontalView}>
                        <Text style={CommonStyle.DContactChar}>{item.title.toUpperCase()}</Text>
                </LinearGradient> 
@@ -258,12 +263,13 @@ export default class Detail extends Component {
     }
 
     render() {
-       
+        const {isScheme,setScheme}=this.context;
+        
         return (
-            <View style={CommonStyle.DMainRenderView}>
+            <View style={[CommonStyle.DMainRenderView,{backgroundColor:isScheme=='dark'?DarkTheme.colors.background:DefaultTheme.colors.background}]}>
                 { this.state.savedData.length==0 ?
                     <View style={CommonStyle.DStatusView}>
-                        <Text style={CommonStyle.DStatusTxt}>{this.state.status}</Text>
+                        <Text style={[CommonStyle.DStatusTxt,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>{this.state.status}</Text>
                     </View>
                     :
                     <View style={{flex:1}}>
@@ -286,7 +292,7 @@ export default class Detail extends Component {
                             style={CommonStyle.DlistScroll} 
                             showsVerticalScrollIndicator={false}
                             refreshControl={<RefreshControl refreshing={this.state.refreshing} onRefresh={()=>this.refreshControl()} />}>
-                            <View style={{flex:1,backgroundColor:colors.WHITE}}>
+                            <View style={{flex:1}}>
                                 <FlatList
                                     showsVerticalScrollIndicator={false}
                                     data={this.state.savedData}

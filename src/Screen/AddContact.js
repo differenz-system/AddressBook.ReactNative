@@ -4,19 +4,21 @@ import { View,Alert,ActivityIndicator ,Dimensions,BackHandler} from 'react-nativ
 import ButtonControl from '../Controls/ButtonControl'
 import TextInputControl from '../Controls/TextInputControl'
 import SwitchControl from '../Controls/SwitchControl'
-import { colors,string,font,icon } from '../Constant';
+import { Appcolors,string,font,icon } from '../Constant';
 import {LoginManager} from 'react-native-fbsdk'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Header from '../Controls/Headercontrol';
-import CommonStyle from './Style'
+import CommonStyle from './Style';
+import AuthContext from '../AuthContext';
+import { DefaultTheme, DarkTheme} from '@react-navigation/native';
 const {width,height} = Dimensions.get('window')
 let retrivedArray=[]
 let Name = React.createRef();
 let Email=React.createRef();
 let PhoneNo=React.createRef();
 export default class AddContact extends Component {
-
+    static contextType=AuthContext;
     constructor(props) {
         super(props);
         this.state = {
@@ -225,20 +227,21 @@ export default class AddContact extends Component {
         this.props.navigation.goBack()
     }
     render() {
+        const {isScheme,setScheme}=this.context;
         return (
 
             <KeyboardAwareScrollView
                 bounces={false}
                 enableOnAndroid={true}
-                style={{flex:1,backgroundColor:colors.WHITE}}
+                style={{flex:1}}
                 contentContainerStyle={{justifyContent:'center'}}
                 extraScrollHeight={this.state.extraScrollHeight}
                 keyboardShouldPersistTaps={'handled'}
                 showsVerticalScrollIndicator={false}>
                    
                 {this.state.isLoader ?
-                    <View style={{height:height/1.3,justifyContent:'center',backgroundColor:colors.WHITE}}>
-                         <ActivityIndicator size="small" color="#000000" style={{alignSelf:'center',}} />
+                    <View style={{height:height/1.3,justifyContent:'center'}}>
+                         <ActivityIndicator size="small" color={isScheme=='dark'?Appcolors.WHITE:Appcolors.DARK_GREEN} style={{alignSelf:'center',}} />
                     </View>
                     :
                     <View style={CommonStyle.Addcontainer}>

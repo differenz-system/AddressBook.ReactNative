@@ -1,0 +1,14 @@
+com/addressbook/MainActivity.java
+ com.addressbook.MainActivity
+com/addressbook/MainApplication.java
+ com.addressbook.MainApplication
+ com.addressbook.MainApplication$1
+com/addressbook/BuildConfig.java
+ com.addressbook.BuildConfig
+com/addressbook/ReactNativeFlipper.java
+ com.addressbook.ReactNativeFlipper
+ com.addressbook.ReactNativeFlipper$1
+ com.addressbook.ReactNativeFlipper$2
+ com.addressbook.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

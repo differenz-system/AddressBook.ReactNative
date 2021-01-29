@@ -1,6 +1,6 @@
 import React from 'react';
 import {ActivityIndicator,View} from 'react-native';
-import {colors, string} from '../Constant'
+import {Appcolors, string} from '../Constant'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import CommonStyle from './Style'
 export default class AuthLoadingScreen extends React.Component {
@@ -20,7 +20,7 @@ export default class AuthLoadingScreen extends React.Component {
   render() {
     return (
       <View style={CommonStyle.Splashcontainer}>
-        <ActivityIndicator size='large' color={colors.DARK_GREEN} />
+        <ActivityIndicator size='large' color={Appcolors.DARK_GREEN} />
       </View>
     );
   }

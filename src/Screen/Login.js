@@ -4,15 +4,18 @@ import { View, Text,BackHandler, Keyboard, Image, TouchableOpacity, Alert, Activ
 import ButtonControl from '../Controls/ButtonControl'
 import TextInputControl from '../Controls/TextInputControl'
 import {LoginManager,AccessToken,} from 'react-native-fbsdk';
-import {font,colors,icon,string} from '../Constant';
+import {font,icon,string} from '../Constant';
 import Header from '../Controls/Headercontrol';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import { DefaultTheme, DarkTheme} from '@react-navigation/native';
+import AuthContext from '../AuthContext';
 import CommonStyle from './Style'
 let Name=React.createRef();
 let Pwd=React.createRef();
-export default class Login extends Component {
 
+export default class Login extends Component {
+    static contextType=AuthContext;
     constructor(props) {
         super(props);
         this.state = {
@@ -57,7 +60,6 @@ export default class Login extends Component {
             if (result.isCancelled) {
                 console.log('loginCanceled')
             } else {
-                console.log('loginSuceessful')
                 AccessToken.getCurrentAccessToken().then((data) => {
                     AsyncStorage.setItem(string.ASYNC_USERTOKEN, data.accessToken.toString()).then(() => {
                     this.props.navigation.navigate('Detail');
@@ -93,10 +95,6 @@ export default class Login extends Component {
             }
             let username=await AsyncStorage.getItem(string.ASYNC_USERNAME)
             let pwd=await AsyncStorage.getItem(string.ASYNC_PWD)
-            console.log(username);
-            console.log(this.state.username);
-            console.log(pwd);
-            console.log(this.state.password);
             if(username!=this.state.username || pwd!=this.state.password)
             {
                 await AsyncStorage.removeItem(string.ASYNC_DATA)
@@ -130,8 +128,9 @@ export default class Login extends Component {
     };
   
     render() {
+        const {isScheme,setScheme}=this.context;
         return (
-            <View style={{ flex: 1,backgroundColor:colors.WHITE}}>
+            <View style={{ flex: 1}}>
                 <KeyboardAwareScrollView
                     bounces={false}
                     enableOnAndroid={true}
@@ -169,7 +168,7 @@ export default class Login extends Component {
                                     ButtonTitle='Log In'
                                     ButtonPress={() => this._onPressSignIN()}
                                 />
-                                <Text style={CommonStyle.OrTxt}>Or</Text>
+                                <Text style={[CommonStyle.OrTxt,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>Or</Text>
                                 
                                 
                             <View style={CommonStyle.FBView}>

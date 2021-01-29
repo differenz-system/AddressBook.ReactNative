@@ -1,9 +1,10 @@
 import React from 'react'
 import {View,Text,StyleSheet,TouchableOpacity,Dimensions}from 'react-native'
-import  {colors,font}  from "../Constant";
+import  {Appcolors,font}  from "../Constant";
 import {CommonFunction} from '../Config/Helper';
 const {width,height} = Dimensions.get('window')
 import LinearGradient from 'react-native-linear-gradient';
+
 export default class ButtonControl extends React.Component {
     
     render = () => {
@@ -12,7 +13,7 @@ export default class ButtonControl extends React.Component {
             <LinearGradient 
             useAngle={true}
             angle={90}
-            colors={[colors.LIGHT_GREEN,colors.DARK_GREEN,colors.DDARK_GREEN]} 
+            colors={[Appcolors.LIGHT_GREEN,Appcolors.DARK_GREEN,Appcolors.DDARK_GREEN]} 
             style={styles.ButtonControl}>
                 <TouchableOpacity onPress={this.props.ButtonPress}>
                 <Text style={styles.font}>{this.props.ButtonTitle}</Text>
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     },
     font:{ 
         fontSize:font.FONT_18, 
-        color:colors.WHITE,
+        color:Appcolors.WHITE,
         fontWeight:font.FONT_WEIGHT_600
     },
 })
