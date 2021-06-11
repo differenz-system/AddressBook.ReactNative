@@ -726,6 +726,7 @@
 		44A14336777D7AD0AB866E73F0490ADE /* RCTRawTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B89D67C43F83921A0E5464E2BFBC5 /* RCTRawTextViewManager.m */; };
 		44B9C658633DA3DD93484ECD84EA3758 /* FBSDKBridgeAPIRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C193D0BDE8380BD90397381665F20DD2 /* FBSDKBridgeAPIRequest+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		44E25255125032B0DF015BFA542640CD /* RCTFBSDKLoginButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 057B226289AE4F69B76AECF0F279E573 /* RCTFBSDKLoginButtonManager.m */; };
+		45027211520A83A43ECD43DDF3FB690C /* RNCAsyncStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF5B3CF90CD7B778F5823AE38894BCF /* RNCAsyncStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4503DE231745006F6B8066FB1C0342A2 /* RCTNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 64BDCF43854B5A35938F125CA15A5D43 /* RCTNullability.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		451D7E79E6237E2E995C1FF3F8F8E3BE /* FBSDKShareDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 082CEFD3D0CBDA209B17F84205D5F224 /* FBSDKShareDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4546AD61A952D69C36C073FB53835E13 /* RCTSafeAreaViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A0CE8ACCA3B118A81EA6B2EDE16E6D /* RCTSafeAreaViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-documentation"; }; };
@@ -838,6 +839,7 @@
 		51CBAE40C2BA971FE873D1D7E416B543 /* RWSpinLock.h in Headers */ = {isa = PBXBuildFile; fileRef = F2745E364F56BFEE37453D8E95D2F141 /* RWSpinLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		51DA60E6E3E30187DCC9116BC07B908F /* Flowables.h in Headers */ = {isa = PBXBuildFile; fileRef = B34D3A2170F83B4AF6BB5424AD055817 /* Flowables.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		51E3FD73DA382BDCC8833AFAF0585AEB /* RCTVibrationPlugins.h in Headers */ = {isa = PBXBuildFile; fileRef = DA41433D5158AA4622AD51AFB4688014 /* RCTVibrationPlugins.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		52247987D1E7B79399E678A6682FFBF7 /* RNCAsyncStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBE358782EE23BBBED54A261C067DC /* RNCAsyncStorage-dummy.m */; };
 		526B633B2BA3F49DF12A78998C4A2CA0 /* FireAndForgetResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2841034D236804A69F5724B78990C231 /* FireAndForgetResponder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		52731A6985DBB83C1D78AF2FC7737058 /* ThreadCachedArena.h in Headers */ = {isa = PBXBuildFile; fileRef = DE65CAD31343C036AF3ED5D2C7FFC04F /* ThreadCachedArena.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		527D2CB1C980C175A7475C0DEF285C7F /* LockTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7653BC99C8224610AAB6B68E5C6DF5 /* LockTraits.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -950,6 +952,7 @@
 		5E8710F0AD4E8BA382F5BD7243CD2BEB /* FBSDKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D4BAA8C2D2D7BBE63DCE70A109F4113 /* FBSDKColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5E92BDFB66629E125741CDB08278982B /* ScopedEventBaseThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8872FB44F14858075C2B5D97A32DEB1 /* ScopedEventBaseThread.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_HAVE_PTHREAD=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0\n    -frtti\n    -fexceptions\n    -std=c++14\n    -Wno-error\n    -Wno-unused-local-typedefs\n    -Wno-unused-variable\n    -Wno-sign-compare\n    -Wno-comment\n    -Wno-return-type\n    -Wno-global-constructors"; }; };
 		5F056D969B7E92B35B1CCB9454BC971A /* RCTAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1F2F6274E3A66F1BE70C70419FED2F /* RCTAppearance.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F26D9FED3E7EDE39A69830E54ED4291 /* RNCAsyncStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C28ECEF10442C2BD0887FBDF8109C5 /* RNCAsyncStorage.m */; };
 		5F2F96CC409D081854AFDA0FE1231C89 /* Flowable_FromObservable.h in Headers */ = {isa = PBXBuildFile; fileRef = 64FCAAEF70B805BC9C76B3385E79900D /* Flowable_FromObservable.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5F373F51117A77AB5567AC2DCC8DAB97 /* DrivableExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9BA22C48D3A88B0F57499B4912B285 /* DrivableExecutor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5F437A8E124CAA2EB3CE9D51E6B987BA /* MPMCPipeline.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E0FD74B85FCDF95389A827D7DF1108 /* MPMCPipeline.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1061,7 +1064,6 @@
 		6A2700574509240028BCA9877B4E8301 /* FBSDKCoreKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E576AFCC15F6FA1DFB32BF1DC7422A81 /* FBSDKCoreKit+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6A3CF390E0E032CF249BA5F7E13188C6 /* RSocketStateMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = EBDB98CEECF10299FB4F0CD59F6F52F7 /* RSocketStateMachine.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6A4DEEF0A366E081504E517C62985BCF /* ExceptionString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DF881F5B8A9E58A3E8AF6BEAAD82D2C /* ExceptionString.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6A5977B6D712F1ACFA75658B56664AAA /* RNCAsyncStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF5B3CF90CD7B778F5823AE38894BCF /* RNCAsyncStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6A882B96531041500970A2D7A3EDB62C /* AsyncTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 8946283221A7DC7E47448BB9B1429BF0 /* AsyncTrace.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6A9BD5FBA00C46BD66900783DB1B570E /* RCTInputAccessoryViewContent.m in Sources */ = {isa = PBXBuildFile; fileRef = B915C4B36D9810751A783C0428815712 /* RCTInputAccessoryViewContent.m */; };
 		6ADCAA2128700400890F6ECE20BBAF2F /* String-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 41506E64265357D51CC02F544D36834A /* String-inl.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1325,6 +1327,7 @@
 		8712A013B77EFFFE014DA5E077E5AD8F /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D1EFB59914D91B3861A2BA17998259 /* PTProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8714E10F36AD8754FC7EE2AE9B3005FF /* RCTTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B23463CA21B7E01EC42F546EF86A614 /* RCTTextAttributes.m */; };
 		873D13442AAB87A7B3598B6280165F1D /* Promise-inl.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FFEF2273B5A00B4192B48C880A59E4 /* Promise-inl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87469251DF01A53605D1D124DECD9442 /* RNCAsyncStorageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1AF31DFA9281CD5747EB59C8701F2A /* RNCAsyncStorageDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8753CCEFD21B23E3A939E85E2CE84AA8 /* FBSDKButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEDFE9655EBC22568AF9F8367D62F3F /* FBSDKButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8756D87DDF6A0719F529923CE8DCC5EE /* RCTImageShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF95011FCF080787049CCA72D56824E /* RCTImageShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		87A9149D62F46D9F516046CC62835ABD /* REAValueNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E4314DA7C3A0FF4A8D30BAF03944C5C4 /* REAValueNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1517,7 +1520,6 @@
 		9ACD5F11ADF6AD0AAA632D2CDEA7BDF7 /* RCTTrackingAnimatedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1FD461AB6AD6EE3E684C25B12EE0C6 /* RCTTrackingAnimatedNode.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32 -Wno-nullability-completeness"; }; };
 		9AD63B91F8CA887EBEEC87C715E78F2A /* REAFunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A884F55BC1A299D6E8B7174A280D8 /* REAFunctionNode.m */; };
 		9AF6D2A00C5B54A92BBF6DBB43D7DC7B /* FBSDKSKAdNetworkEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C1E0C73B629F8E114F1045D3B2E017 /* FBSDKSKAdNetworkEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9AFD69C93548E0C428A2DA8F042D328D /* RNCAsyncStorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBE358782EE23BBBED54A261C067DC /* RNCAsyncStorage-dummy.m */; };
 		9B17BAEC052EA7DEA7BCCE3B220451CC /* EventBaseBackendBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9444358700CDE02EDAF09B3A856A16B5 /* EventBaseBackendBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9B2C4E1CA97F2ABA1ABF9AA4F45DF100 /* FBSDKAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = C64AF5168C8277E6A230368C0AEE07E1 /* FBSDKAppLinkReturnToRefererController.m */; };
 		9B383395161E0F68E0B7BAC0FF53B63B /* Init.h in Headers */ = {isa = PBXBuildFile; fileRef = 8252DF321AE598CF53B86DC18AD4F526 /* Init.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1815,7 +1817,6 @@
 		BC672C360D12D1699372133D836C5327 /* StringKeyedUnorderedSet.h in Headers */ = {isa = PBXBuildFile; fileRef = B6573D456A2E15B2F381444A7CC569CF /* StringKeyedUnorderedSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BC77BCC05379941758060BB3DD8D075A /* Sockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 0578B9F87A7E8A88816305A497F13F4D /* Sockets.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BC9CD5FEE092C6572F52930FA0087B7D /* SpinLock.h in Headers */ = {isa = PBXBuildFile; fileRef = AA686397C5F2107A1515B4A6B7DA64A3 /* SpinLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BCB6AB6E9F134247AFE99BB796408BF6 /* RNCAsyncStorageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CB1AF31DFA9281CD5747EB59C8701F2A /* RNCAsyncStorageDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BCBF8726372CE7BC1ECAD963B2BE153A /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F41EBDE320E5EE219C557915FD81C28 /* Utils.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		BD239FEA1AEB418BFE0601C380AD01C5 /* Event.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C05A41CBD0A34702B49AC637CA73EE4 /* Event.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD5DDA97AA9E4938F96BC384018A764B /* RNPanHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6F572CA9DCA50AF69EDC4FCDD3778F /* RNPanHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1979,7 +1980,6 @@
 		D009210F07863FAF7690226CAA8B5B3A /* RCTMultilineTextInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C3F7BE27F7D223F98EF3D8A636ED49 /* RCTMultilineTextInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D02F06ABD8B59008D3AB8B0AE759B6D0 /* FlatCombiningPriorityQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7F1C8375E6CE03A02EDBD37EB92960 /* FlatCombiningPriorityQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D05968B92AC18C1A9BA37F4C96B5649A /* SKRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF06DE8291BD94E8B2B2A6E2A4C84F /* SKRequestInfo.m */; settings = {COMPILER_FLAGS = "-DDEBUG=1 -DFLIPPER_OSS=1 -DFB_SONARKIT_ENABLED=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0"; }; };
-		D064C6B77B43DAED3CF71B49AE8C24E1 /* RNCAsyncStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C28ECEF10442C2BD0887FBDF8109C5 /* RNCAsyncStorage.m */; };
 		D083115A0712ECB26965BB40D6C7F8BD /* Framer.h in Headers */ = {isa = PBXBuildFile; fileRef = 01BAF3FF793438E9AF7E648EC0A64C27 /* Framer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D0B7DBDF5BB729BAE3B96BDC666923BC /* TimerFD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9484127B6F2FE2CADF02A7AC41B81B60 /* TimerFD.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D0BC39BC446C6F7D2D52740C02545F00 /* AsyncPipe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62B652C155D2952E3E1ABB917A1F7374 /* AsyncPipe.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_HAVE_PTHREAD=1 -DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_HAVE_LIBGFLAGS=0 -DFOLLY_HAVE_LIBJEMALLOC=0 -DFOLLY_HAVE_PREADV=0 -DFOLLY_HAVE_PWRITEV=0 -DFOLLY_HAVE_TFO=0 -DFOLLY_USE_SYMBOLIZER=0\n    -frtti\n    -fexceptions\n    -std=c++14\n    -Wno-error\n    -Wno-unused-local-typedefs\n    -Wno-unused-variable\n    -Wno-sign-compare\n    -Wno-comment\n    -Wno-return-type\n    -Wno-global-constructors"; }; };
@@ -2782,13 +2782,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E7E7CE52C8C68B17224FF8C262D80ABF;
 			remoteInfo = RCTRequired;
-		};
-		420833A81847E42708F4F8F322C7B729 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1BEE828C124E6416179B904A9F66D794;
-			remoteInfo = React;
 		};
 		4231FC74424B81CC872D449B9643B783 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3965,6 +3958,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2B25F90D819B9ADF2AF2D8733A890333;
 			remoteInfo = Yoga;
+		};
+		F4A4858B97FCBD230C0F0436D6E35E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
+			remoteInfo = "React-Core";
 		};
 		F657794981A1340DF13B6C2FC2CFF57A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -6989,7 +6989,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FCD24A9C1705ADA6B93D919289BE8704 /* Frameworks */ = {
+		ED0B1D946D62FDBBC4994CCAA74F8F3D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -11526,6 +11526,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		036680653A3165A017658DC466F456CB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45027211520A83A43ECD43DDF3FB690C /* RNCAsyncStorage.h in Headers */,
+				87469251DF01A53605D1D124DECD9442 /* RNCAsyncStorageDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08534BFD1E24CEF48A09BD43E5FB2954 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -11615,15 +11624,6 @@
 				2A493B365180564C43897233FB469DDA /* RNCSafeAreaViewLocalData.h in Headers */,
 				8CC0F0CD004FF65F42A36EA181353ACA /* RNCSafeAreaViewManager.h in Headers */,
 				73180619049657209DC7D86AC88197A4 /* RNCSafeAreaViewMode.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29394FD944E7E532A4A9758598FDA488 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A5977B6D712F1ACFA75658B56664AAA /* RNCAsyncStorage.h in Headers */,
-				BCB6AB6E9F134247AFE99BB796408BF6 /* RNCAsyncStorageDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13765,16 +13765,16 @@
 		};
 		89F573A6B1292B3B2296B2206BFDC3D7 /* RNCAsyncStorage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C59786F965CDB9AD0B6E10366D86AAE /* Build configuration list for PBXNativeTarget "RNCAsyncStorage" */;
+			buildConfigurationList = 3BDDD5C61FF3CF2251F6BA1F0F661D13 /* Build configuration list for PBXNativeTarget "RNCAsyncStorage" */;
 			buildPhases = (
-				29394FD944E7E532A4A9758598FDA488 /* Headers */,
-				D6B6ECE1C4A354805B60163B7348015C /* Sources */,
-				FCD24A9C1705ADA6B93D919289BE8704 /* Frameworks */,
+				036680653A3165A017658DC466F456CB /* Headers */,
+				60F798FBEDA7A46762C6E9BB7203BBA0 /* Sources */,
+				ED0B1D946D62FDBBC4994CCAA74F8F3D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				22971CFE04EA169252C2E018C6B04089 /* PBXTargetDependency */,
+				54031131057FED09BC3F9BDFCCF62651 /* PBXTargetDependency */,
 			);
 			name = RNCAsyncStorage;
 			productName = RNCAsyncStorage;
@@ -14278,7 +14278,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -15001,6 +15001,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		60F798FBEDA7A46762C6E9BB7203BBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52247987D1E7B79399E678A6682FFBF7 /* RNCAsyncStorage-dummy.m in Sources */,
+				5F26D9FED3E7EDE39A69830E54ED4291 /* RNCAsyncStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		664E25A32130E7ADA646BACA35918F29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -15571,15 +15580,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D6B6ECE1C4A354805B60163B7348015C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AFD69C93548E0C428A2DA8F042D328D /* RNCAsyncStorage-dummy.m in Sources */,
-				D064C6B77B43DAED3CF71B49AE8C24E1 /* RNCAsyncStorage.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D6F8F9BB0196A1F50F7B3EF11477294C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -15951,12 +15951,6 @@
 			target = 32BC99325327C49B2C25B041B4B4F9AB /* react-native-fbsdk */;
 			targetProxy = 656EBF9D2970C236F79BE8FCA2AD22E8 /* PBXContainerItemProxy */;
 		};
-		22971CFE04EA169252C2E018C6B04089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = React;
-			target = 1BEE828C124E6416179B904A9F66D794 /* React */;
-			targetProxy = 420833A81847E42708F4F8F322C7B729 /* PBXContainerItemProxy */;
-		};
 		22FAB355CD313743EDCEA688D4CFBBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Flipper-DoubleConversion";
@@ -16226,6 +16220,12 @@
 			name = FBReactNativeSpec;
 			target = C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */;
 			targetProxy = 0EED546E661861F062DB9D20135EE595 /* PBXContainerItemProxy */;
+		};
+		54031131057FED09BC3F9BDFCCF62651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "React-Core";
+			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
+			targetProxy = F4A4858B97FCBD230C0F0436D6E35E45 /* PBXContainerItemProxy */;
 		};
 		540C61CCD3A40E8CF3EDB2D9A8905C75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -18085,29 +18085,6 @@
 			};
 			name = Debug;
 		};
-		574831E7B0F5D1B1E9573E65AB7DA826 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2FB3B9F3D613E6CB9C05DDC5AA77468 /* RNCAsyncStorage.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RNCAsyncStorage/RNCAsyncStorage-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RNCAsyncStorage;
-				PRODUCT_NAME = RNCAsyncStorage;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		57DE3ED1B533F22370C4DFCBEA1D2502 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 403DF1764C0177B3B0B8B3CA03D38385 /* react-native-safe-area-context.debug.xcconfig */;
@@ -18266,6 +18243,29 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = DoubleConversion;
 				PRODUCT_NAME = DoubleConversion;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620F89A8122D2AFEB39FD1416040A6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FB3B9F3D613E6CB9C05DDC5AA77468 /* RNCAsyncStorage.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RNCAsyncStorage/RNCAsyncStorage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RNCAsyncStorage;
+				PRODUCT_NAME = RNCAsyncStorage;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -19438,7 +19438,22 @@
 			};
 			name = Release;
 		};
-		DEAE86A0E4FC2A0616A7B705C3905DEF /* Release */ = {
+		E32CBFB25EDB0F367975B9FEA703A520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F520D52299028849C55B23F1468521BC /* RCTRequired.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3B5D0CFF6290FDE104CB24C912AFBA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9216FA95FE3147868FB0E87772015DF8 /* RNCAsyncStorage.release.xcconfig */;
 			buildSettings = {
@@ -19457,21 +19472,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E32CBFB25EDB0F367975B9FEA703A520 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F520D52299028849C55B23F1468521BC /* RCTRequired.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -19843,11 +19843,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3C59786F965CDB9AD0B6E10366D86AAE /* Build configuration list for PBXNativeTarget "RNCAsyncStorage" */ = {
+		3BDDD5C61FF3CF2251F6BA1F0F661D13 /* Build configuration list for PBXNativeTarget "RNCAsyncStorage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				574831E7B0F5D1B1E9573E65AB7DA826 /* Debug */,
-				DEAE86A0E4FC2A0616A7B705C3905DEF /* Release */,
+				620F89A8122D2AFEB39FD1416040A6C5 /* Debug */,
+				E3B5D0CFF6290FDE104CB24C912AFBA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
