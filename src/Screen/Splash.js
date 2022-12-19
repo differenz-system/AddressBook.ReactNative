@@ -1,6 +1,6 @@
 import React from 'react';
-import {ActivityIndicator,View} from 'react-native';
-import {AppColors, string} from '../Constant'
+import { ActivityIndicator, View } from 'react-native';
+import { AppColors, string } from '../Constant'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import CommonStyle from './Style'
 export default class AuthLoadingScreen extends React.Component {

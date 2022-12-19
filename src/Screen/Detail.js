@@ -261,6 +261,7 @@ export default class Detail extends Component {
 
     render() {
         const { isScheme } = this.context;
+        
         return (
             <View style={[CommonStyle.DMainRenderView, { backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background }]}>
                 <View style={{}}>
@@ -318,7 +319,6 @@ export default class Detail extends Component {
                                 })
                                 : undefined}
                         </View>
-
                         <ScrollView
                             style={CommonStyle.DlistScroll}
                             showsVerticalScrollIndicator={false}
