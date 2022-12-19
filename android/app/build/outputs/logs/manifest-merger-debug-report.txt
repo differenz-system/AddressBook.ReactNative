@@ -1,532 +1,587 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:8:1-18:12
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1ccf5404a19dd8dfc71a79ded5fc2f71/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bb8b170fbcc3d1138ac6fff54d397530/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:8:1-15:12
-MERGED from [:react-native-async-storage_async-storage] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_masked-view] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-appearance] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-appearance/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-25:12
-MERGED from [:react-native-fbsdk] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:1-28:12
-MERGED from [:react-native-gesture-handler] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bc2791545bc707736fe2e088163b257d/jetified-react-native-0.63.4/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32fb42e57cb2a20701e93c25c04ee1ed/jetified-facebook-login-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-gamingservices:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9607365cc0855a5609c567e2b8d67299/jetified-facebook-gamingservices-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c6e46608926fd4e2e82ec5deaab5594a/jetified-facebook-share-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:21:1-52:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.browser:browser:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/97ca2b8a9ee6aba3ae3383d3b83f66b6/browser-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7472a5a1615993d2901d4adab05f4bc7/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [org.webkit:android-jsc:r245459] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9951464a06fadc836563228356080f60/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-linear-gradient] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:facebook-places:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b64de3755109f397507642e2821c36c6/jetified-facebook-places-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634153ddc4ccb461462571dae702710b/jetified-facebook-applinks-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/efb8977d62447127dc6f733f67ef15f4/jetified-facebook-messenger-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:21:1-53:12
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6607c448aeb3d7f627286a997952b829/jetified-flipper-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/60e97d8e798c5516631343dd6e435a13/jetified-stetho-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/01d23e91d0fd21ea199f31b1a01b9f37/jetified-fresco-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8a4634f528e32852f4a93c24d218fc59/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6675e3ed29e7fe045baff3b88f9bbbcb/jetified-drawee-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3143d553ddf74a660ded7fecf3072691/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/54028cb460ffc1293fe46e6aa24ca049/jetified-memory-type-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1344810bda7d7c539f28e56d5317fb5b/jetified-memory-type-java-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/435c2665f7fef398fdd1dfa0905ba752/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/74df59e3bc794b3faa2348b14597f9aa/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e37484f561e4eec0c45b9e72e18fef50/jetified-imagepipeline-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/476ffd5129a6c2b627c4d14d4057006e/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fa9e1d7bf4efda7b9a523606086e004b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8542f3aef649ab59a4de84804108419f/jetified-soloader-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/27cba7a2a9f830755c19701dfabadd68/jetified-soloader-0.9.0/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.material:material:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9f7e7a548ad00e2e3c3268a409525997/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/02369264b2fe640d54b28fa5b5894f95/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/56c35fad8363653450da79ffbf55b60f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/dc317e2e041a6265d3ed77886b03b3df/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f3965b4f5235273164a4cb8d86e6a3b/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3c88f19f14aa8f15dd275dbaec09f63d/jetified-activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2a378d3baacb6241cc32bc4e8264339a/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e61f3b3a2699d2c73b6d814c8ed40d8c/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f050f7f6c6c3cfd1b005dbb5aa8afc3/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/644567d122746ae95b6522d27232d273/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d5bf5d996d4f8c184f67d9a87d8531c0/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/361d79e445f8d414ae365abbd0c9b06c/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b6a95c6bed642cc8f8bfddd0a9f3f784/jetified-ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/1867dd4882f8ebbf96d9fa2fbbf7b63f/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/b01797964b82687783e50f3593d1248a/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-async-storage_async-storage] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_masked-view] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-device-info] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fbsdk-next] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:1-28:12
+MERGED from [:react-native-gesture-handler] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-linear-gradient] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-safe-area-context] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.react:react-native:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/91103f0bba98bd51f0b7e330ecd3a7e1/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c2e7b9f50a581fdd4f373afa461de4c7/transformed/jetified-facebook-login-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/5894b669ecb70e49b5f2605635149f2c/transformed/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/fd0972492a42568477d2641510a03e29/transformed/jetified-facebook-share-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:21:1-52:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/071068d7c67c3d23030b7d23ce8099e8/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/f8cba6c8f1dd348b02043eb5bec9d725/transformed/browser-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6c59a5f7d22f618eb3478061da3355f2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6dc61f21ba8531a2fc31d6d9e0cf2869/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.react:hermes-engine:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/7562acd049cca13cd5303c0979a9d7a1/transformed/jetified-hermes-engine-0.70.6-debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-reanimated] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-reanimated/android/build/.transforms/e36994ae6470da109d5c607eb9376941/transformed/jetified-react-native-reanimated-70-hermes/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:flipper:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7b1e8c9b33de7369d8526a9b65199b5f/transformed/jetified-flipper-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6c314e02a3a214df8e233758e53fbc66/transformed/jetified-stetho-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/495fbe0ee270fa860059894fdc8ce550/transformed/jetified-fresco-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8ed9b8df7a3e59259c019fce61aad253/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/differenz39/.gradle/caches/transforms-3/132de7278e4b1a544dc4974c09a344f4/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/0d3e2678dbb8bde5f4529e007f9910ab/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/614775f1f6fe4562780056455bca3909/transformed/jetified-nativeimagefilters-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/4cb4543e27188511f5172eff2c1ecf99/transformed/jetified-memory-type-native-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/ed2aae8a3eb7cbabda0212c75944349c/transformed/jetified-memory-type-java-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/b1a50084328f1efdd4b856e5b5528e8c/transformed/jetified-imagepipeline-native-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/differenz39/.gradle/caches/transforms-3/aeccb681ff290d1b27d0fb53e801242c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/923588582689f0fcd0d4babc42d73ebb/transformed/jetified-memory-type-ashmem-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8c7d1303a65dee0394d41717daeeb5dc/transformed/jetified-imagepipeline-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/9a477c77fb3a41ecb1b301902d904c42/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6b10dabfc89a9286db6c99b6aa5fa950/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/2a1812328db2ff3c134b645e8487ba06/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/229d7e6f1debd2d725755ff606c33cff/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/929a21d8c8f267875387294bff08c631/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/c4c745710f527008f0939fd36e34b2fc/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7fa27664906ace280c898cdee8c203c4/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/e555c68eff65ac2863eb5c9f033d1e59/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/38d2314e43ae829e7ca23b47ab00af39/transformed/jetified-facebook-applinks-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/f14e9e40a481b4b8b16d228880dd25d4/transformed/jetified-facebook-messenger-12.3.0/AndroidManifest.xml:21:1-31:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1c187d72912e5bb2a3d86d1f238647d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/e78a121762d5f9e8298ed52d079c0cb1/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1ea0fb78412e6cd0df58a37c9b479de2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:21:1-60:12
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/differenz39/.gradle/caches/transforms-3/b4f1eef092b36974e443fb80bde9cc29/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/f10dff62bf85258def9e29a0afec056e/transformed/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/f87ddf90b7b475678608423945901567/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/c0b517ae8bd7dfbc8e0656e9586e87b5/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/fe3392f9eed12477110f917b65f52ecb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/differenz39/.gradle/caches/transforms-3/b7d301b145c3d3adf68a7975d1cd9fd0/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/differenz39/.gradle/caches/transforms-3/c2f135304be4199722b4bae942bf025f/transformed/jetified-activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/333e4c1a30e9833aa1594ed7af9c1621/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/21467f691453c0d5522c23b4384ac2ba/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/37d0a864abd59efde402db66b2016e9a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/635e149ad67a7f8e1317633c59995401/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/b5bf4607aac3b7b72fe4f821290ba8cc/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/02678c964c2a46a35465057f29c709f9/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6e9f28b127bbbb6fef9a2b557c2a7866/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/differenz39/.gradle/caches/transforms-3/eb850bb6d6c1d0b425cbba5b378e7b79/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/cd5c481f3fcbbc6bca60d024a6e49fb4/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b3ef5c1a72ec26a3009e7db736333fb8/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/a28d6a283955121916a8e3fd70f128ff/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/13261d6327758e74e9ce50f6bf5d0a14/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1895d9e3ab85c5d5076d661d0499f81b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/7ee94282b868b67086c1a393f8c2253c/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e6ee3022989f357a1a55db5ac03488cd/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/5f2f6be5a894be398b419a67d20bc74a/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/469ec191bf6ffbea5ee22ac770454d1d/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/differenz39/.gradle/caches/transforms-3/2d08d0a66ee9f8cdaea85151b2fc2974/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/716593ce551058e507de4d61629b4948/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz39/.gradle/caches/transforms-3/8d77987e025276b4a7499e3710ec577b/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/35cb59d4dd06d0018bb73a4531e21d08/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/5387e584059067d2c66e23977ec90960/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/ee91aa97651677b85f23c379d9891e25/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1c3fd26fa27841ded8127b0eab4b72f8/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c12fa175f0710c0f0e21271b0189fdf8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b1e71d9d0bac46f51a01f532a73a5235/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/02448e5fcddd5ec5dc482ab88b96e09d/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6adfeef0c9a043e885a81d49df9b72ac/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:2:3-28
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:2:3-28
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:2:3-28
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
-MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:15:5-67
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:5-77
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:6:5-78
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:6:5-78
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:7:5-31:19
-MERGED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:7:5-31:19
-MERGED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:7:5-31:19
-MERGED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-23:19
-MERGED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-23:19
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bc2791545bc707736fe2e088163b257d/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bc2791545bc707736fe2e088163b257d/jetified-react-native-0.63.4/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32fb42e57cb2a20701e93c25c04ee1ed/jetified-facebook-login-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32fb42e57cb2a20701e93c25c04ee1ed/jetified-facebook-login-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9607365cc0855a5609c567e2b8d67299/jetified-facebook-gamingservices-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9607365cc0855a5609c567e2b8d67299/jetified-facebook-gamingservices-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c6e46608926fd4e2e82ec5deaab5594a/jetified-facebook-share-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c6e46608926fd4e2e82ec5deaab5594a/jetified-facebook-share-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.facebook.android:facebook-places:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b64de3755109f397507642e2821c36c6/jetified-facebook-places-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b64de3755109f397507642e2821c36c6/jetified-facebook-places-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634153ddc4ccb461462571dae702710b/jetified-facebook-applinks-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634153ddc4ccb461462571dae702710b/jetified-facebook-applinks-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/efb8977d62447127dc6f733f67ef15f4/jetified-facebook-messenger-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/efb8977d62447127dc6f733f67ef15f4/jetified-facebook-messenger-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/27cba7a2a9f830755c19701dfabadd68/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/27cba7a2a9f830755c19701dfabadd68/jetified-soloader-0.9.0/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/02369264b2fe640d54b28fa5b5894f95/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/02369264b2fe640d54b28fa5b5894f95/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/56c35fad8363653450da79ffbf55b60f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/56c35fad8363653450da79ffbf55b60f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
-MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:7:5-32:19
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:7:5-32:19
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:7:5-32:19
+MERGED from [com.facebook.react:react-native:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/91103f0bba98bd51f0b7e330ecd3a7e1/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.react:react-native:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/91103f0bba98bd51f0b7e330ecd3a7e1/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c2e7b9f50a581fdd4f373afa461de4c7/transformed/jetified-facebook-login-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c2e7b9f50a581fdd4f373afa461de4c7/transformed/jetified-facebook-login-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/5894b669ecb70e49b5f2605635149f2c/transformed/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/5894b669ecb70e49b5f2605635149f2c/transformed/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/fd0972492a42568477d2641510a03e29/transformed/jetified-facebook-share-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/fd0972492a42568477d2641510a03e29/transformed/jetified-facebook-share-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/differenz39/.gradle/caches/transforms-3/aeccb681ff290d1b27d0fb53e801242c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/differenz39/.gradle/caches/transforms-3/aeccb681ff290d1b27d0fb53e801242c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/38d2314e43ae829e7ca23b47ab00af39/transformed/jetified-facebook-applinks-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/38d2314e43ae829e7ca23b47ab00af39/transformed/jetified-facebook-applinks-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/f14e9e40a481b4b8b16d228880dd25d4/transformed/jetified-facebook-messenger-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/f14e9e40a481b4b8b16d228880dd25d4/transformed/jetified-facebook-messenger-12.3.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:28:5-58:19
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:28:5-58:19
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/f87ddf90b7b475678608423945901567/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/f87ddf90b7b475678608423945901567/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/c0b517ae8bd7dfbc8e0656e9586e87b5/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/c0b517ae8bd7dfbc8e0656e9586e87b5/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/differenz39/.gradle/caches/transforms-3/2d08d0a66ee9f8cdaea85151b2fc2974/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/differenz39/.gradle/caches/transforms-3/2d08d0a66ee9f8cdaea85151b2fc2974/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:28:18-44
 	android:label
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:9:7-39
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:9:7-39
 	android:hardwareAccelerated
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:13:9-43
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:13:9-43
 	tools:ignore
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:7:75-114
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:10:9-48
 	android:roundIcon
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:11:7-52
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:11:7-52
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:11:7-52
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:11:7-52
 	tools:targetApi
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml:7:54-74
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:9:9-29
 	android:largeHeap
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:14:9-33
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:14:9-33
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:14:9-33
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:14:9-33
 	android:icon
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:10:7-52
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:10:7-52
 	android:allowBackup
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:15:9-36
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:15:9-36
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:15:9-36
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:15:9-36
 	android:theme
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:16:7-38
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:16:7-38
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:16:7-38
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:16:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:12:9-44
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:12:9-44
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:8:7-38
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:8:7-38
 activity#com.addressbook.MainActivity
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:17:7-28:18
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:17:7-29:18
 	android:screenOrientation
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:22:11-47
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:22:9-45
 	android:label
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:19:9-41
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:19:9-41
 	android:launchMode
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:21:11-42
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:21:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:23:11-50
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:23:9-48
+	android:exported
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:24:9-32
 	android:configChanges
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:20:11-88
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:20:9-118
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:18:9-37
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:18:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:24:9-27:25
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:25:9-28:25
 action#android.intent.action.MAIN
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:25:13-65
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:26:13-65
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:25:21-62
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:26:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:26:13-73
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:27:13-73
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:26:23-70
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:27:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:29:7-84
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:30:7-83
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:30:7-83
+MERGED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:30:7-83
+	android:exported
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml:11:84-108
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:29:17-81
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:30:17-81
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:9-107
+ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:31:9-107
 	android:value
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:66-105
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:31:66-105
 	android:name
-		ADDED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml:30:20-65
+		ADDED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml:31:20-65
 uses-sdk
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1ccf5404a19dd8dfc71a79ded5fc2f71/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-network-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1ccf5404a19dd8dfc71a79ded5fc2f71/jetified-flipper-network-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bb8b170fbcc3d1138ac6fff54d397530/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bb8b170fbcc3d1138ac6fff54d397530/jetified-flipper-fresco-plugin-0.54.0/AndroidManifest.xml:11:5-13:41
-MERGED from [:react-native-async-storage_async-storage] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-async-storage_async-storage] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-appearance] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-appearance/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-appearance] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-appearance/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
-MERGED from [:react-native-fbsdk] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-fbsdk] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-gesture-handler] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bc2791545bc707736fe2e088163b257d/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.63.4] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bc2791545bc707736fe2e088163b257d/jetified-react-native-0.63.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/08412e088621b6ad0174e105863d0745/jetified-facebook-android-sdk-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32fb42e57cb2a20701e93c25c04ee1ed/jetified-facebook-login-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32fb42e57cb2a20701e93c25c04ee1ed/jetified-facebook-login-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9607365cc0855a5609c567e2b8d67299/jetified-facebook-gamingservices-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9607365cc0855a5609c567e2b8d67299/jetified-facebook-gamingservices-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c6e46608926fd4e2e82ec5deaab5594a/jetified-facebook-share-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/c6e46608926fd4e2e82ec5deaab5594a/jetified-facebook-share-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:25:5-27:41
-MERGED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:25:5-27:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d9c8547f43bfc98a7c33c7a922993a2d/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/97ca2b8a9ee6aba3ae3383d3b83f66b6/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/97ca2b8a9ee6aba3ae3383d3b83f66b6/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e74634e20d1ec32457b9cc4f401ffea1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7472a5a1615993d2901d4adab05f4bc7/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7472a5a1615993d2901d4adab05f4bc7/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9951464a06fadc836563228356080f60/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9951464a06fadc836563228356080f60/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-places:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b64de3755109f397507642e2821c36c6/jetified-facebook-places-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b64de3755109f397507642e2821c36c6/jetified-facebook-places-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634153ddc4ccb461462571dae702710b/jetified-facebook-applinks-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634153ddc4ccb461462571dae702710b/jetified-facebook-applinks-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/efb8977d62447127dc6f733f67ef15f4/jetified-facebook-messenger-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/efb8977d62447127dc6f733f67ef15f4/jetified-facebook-messenger-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6607c448aeb3d7f627286a997952b829/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6607c448aeb3d7f627286a997952b829/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/60e97d8e798c5516631343dd6e435a13/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/60e97d8e798c5516631343dd6e435a13/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/01d23e91d0fd21ea199f31b1a01b9f37/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/01d23e91d0fd21ea199f31b1a01b9f37/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8a4634f528e32852f4a93c24d218fc59/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8a4634f528e32852f4a93c24d218fc59/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6675e3ed29e7fe045baff3b88f9bbbcb/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6675e3ed29e7fe045baff3b88f9bbbcb/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3143d553ddf74a660ded7fecf3072691/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3143d553ddf74a660ded7fecf3072691/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/54028cb460ffc1293fe46e6aa24ca049/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/54028cb460ffc1293fe46e6aa24ca049/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1344810bda7d7c539f28e56d5317fb5b/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1344810bda7d7c539f28e56d5317fb5b/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/435c2665f7fef398fdd1dfa0905ba752/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/435c2665f7fef398fdd1dfa0905ba752/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/74df59e3bc794b3faa2348b14597f9aa/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/74df59e3bc794b3faa2348b14597f9aa/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e37484f561e4eec0c45b9e72e18fef50/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e37484f561e4eec0c45b9e72e18fef50/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/476ffd5129a6c2b627c4d14d4057006e/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/476ffd5129a6c2b627c4d14d4057006e/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fa9e1d7bf4efda7b9a523606086e004b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/fa9e1d7bf4efda7b9a523606086e004b/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8542f3aef649ab59a4de84804108419f/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8542f3aef649ab59a4de84804108419f/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/27cba7a2a9f830755c19701dfabadd68/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.9.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/27cba7a2a9f830755c19701dfabadd68/jetified-soloader-0.9.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.material:material:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9f7e7a548ad00e2e3c3268a409525997/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9f7e7a548ad00e2e3c3268a409525997/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/02369264b2fe640d54b28fa5b5894f95/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/02369264b2fe640d54b28fa5b5894f95/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/56c35fad8363653450da79ffbf55b60f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/56c35fad8363653450da79ffbf55b60f/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3b91b187821fc6e4f6300506297b769e/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/dc317e2e041a6265d3ed77886b03b3df/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/dc317e2e041a6265d3ed77886b03b3df/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5fcf58f467c61301f7dd22175ddca6ba/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f3965b4f5235273164a4cb8d86e6a3b/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f3965b4f5235273164a4cb8d86e6a3b/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/90ad92d9d7e544d3d7a553e07e526cde/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/921fb1c1970f14455564b73ac43ed75b/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9b319768499df63b1d0933a3c55ff3e7/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19ba019dbf22e650e8e95d7507462ba8/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3c88f19f14aa8f15dd275dbaec09f63d/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/3c88f19f14aa8f15dd275dbaec09f63d/jetified-activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/76a75c6502d93031e6f1d463ce4e8940/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9726f16beb884e69c8392eb74d42aa95/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/4d3225ea5d57f620bf5356e2a6f066d6/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b154dbc73687587a7ce14e229cc71d1e/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/9d3d448a3878af78f8d5e2175d6f4332/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/a5f1739a336003917307af1b7a40c6ec/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f64c1045ae362310688a10253c2a109/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b754b2dac55e2d093f3d16fae3e2b72a/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ae31cc97a3f9383e0242537d69427d3a/core-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/054d779a91766207571d826869795163/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/082141e7a08ecc0568dc277abb6b2eb2/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/1b49f6b12087442447a2c9046372b97f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2a378d3baacb6241cc32bc4e8264339a/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/2a378d3baacb6241cc32bc4e8264339a/jetified-lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e61f3b3a2699d2c73b6d814c8ed40d8c/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/e61f3b3a2699d2c73b6d814c8ed40d8c/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/6a8e87f523c55e5b29d9c4a3f69e8c47/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f050f7f6c6c3cfd1b005dbb5aa8afc3/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/7f050f7f6c6c3cfd1b005dbb5aa8afc3/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/ac846bd1991b3727d0d9b0a2719ca5c8/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/5e93b9f41c3983a761aa6e19533f24ec/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/644567d122746ae95b6522d27232d273/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/644567d122746ae95b6522d27232d273/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d5bf5d996d4f8c184f67d9a87d8531c0/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/d5bf5d996d4f8c184f67d9a87d8531c0/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/07966c8c4706ffeaf638d555f4c86fb0/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/41c41c2fbc05e9a19fa443c48f799c3d/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/634f2f03e50a0eb4514a8d791ceb2f13/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/361d79e445f8d414ae365abbd0c9b06c/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/361d79e445f8d414ae365abbd0c9b06c/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b6a95c6bed642cc8f8bfddd0a9f3f784/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b6a95c6bed642cc8f8bfddd0a9f3f784/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/1867dd4882f8ebbf96d9fa2fbbf7b63f/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/1867dd4882f8ebbf96d9fa2fbbf7b63f/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/b01797964b82687783e50f3593d1248a/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/b01797964b82687783e50f3593d1248a/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-async-storage_async-storage] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/@react-native-community/masked-view/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-device-info/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fbsdk-next] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk-next] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-gesture-handler] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-gesture-handler/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-linear-gradient] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-linear-gradient] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/91103f0bba98bd51f0b7e330ecd3a7e1/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/91103f0bba98bd51f0b7e330ecd3a7e1/transformed/jetified-react-native-0.70.6-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c99d8814612e4ed11e58d385361e8c98/transformed/jetified-facebook-android-sdk-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c2e7b9f50a581fdd4f373afa461de4c7/transformed/jetified-facebook-login-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c2e7b9f50a581fdd4f373afa461de4c7/transformed/jetified-facebook-login-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/5894b669ecb70e49b5f2605635149f2c/transformed/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/5894b669ecb70e49b5f2605635149f2c/transformed/jetified-facebook-gamingservices-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/fd0972492a42568477d2641510a03e29/transformed/jetified-facebook-share-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/fd0972492a42568477d2641510a03e29/transformed/jetified-facebook-share-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:25:5-27:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/071068d7c67c3d23030b7d23ce8099e8/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/071068d7c67c3d23030b7d23ce8099e8/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/f8cba6c8f1dd348b02043eb5bec9d725/transformed/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/f8cba6c8f1dd348b02043eb5bec9d725/transformed/browser-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6c59a5f7d22f618eb3478061da3355f2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6c59a5f7d22f618eb3478061da3355f2/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6dc61f21ba8531a2fc31d6d9e0cf2869/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6dc61f21ba8531a2fc31d6d9e0cf2869/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.react:hermes-engine:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/7562acd049cca13cd5303c0979a9d7a1/transformed/jetified-hermes-engine-0.70.6-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:hermes-engine:0.70.6] /Users/differenz39/.gradle/caches/transforms-3/7562acd049cca13cd5303c0979a9d7a1/transformed/jetified-hermes-engine-0.70.6-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-reanimated/android/build/.transforms/e36994ae6470da109d5c607eb9376941/transformed/jetified-react-native-reanimated-70-hermes/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/node_modules/react-native-reanimated/android/build/.transforms/e36994ae6470da109d5c607eb9376941/transformed/jetified-react-native-reanimated-70-hermes/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7b1e8c9b33de7369d8526a9b65199b5f/transformed/jetified-flipper-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7b1e8c9b33de7369d8526a9b65199b5f/transformed/jetified-flipper-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6c314e02a3a214df8e233758e53fbc66/transformed/jetified-stetho-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6c314e02a3a214df8e233758e53fbc66/transformed/jetified-stetho-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/495fbe0ee270fa860059894fdc8ce550/transformed/jetified-fresco-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/495fbe0ee270fa860059894fdc8ce550/transformed/jetified-fresco-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8ed9b8df7a3e59259c019fce61aad253/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8ed9b8df7a3e59259c019fce61aad253/transformed/jetified-soloader-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/differenz39/.gradle/caches/transforms-3/132de7278e4b1a544dc4974c09a344f4/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/differenz39/.gradle/caches/transforms-3/132de7278e4b1a544dc4974c09a344f4/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/0d3e2678dbb8bde5f4529e007f9910ab/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/0d3e2678dbb8bde5f4529e007f9910ab/transformed/jetified-drawee-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/614775f1f6fe4562780056455bca3909/transformed/jetified-nativeimagefilters-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/614775f1f6fe4562780056455bca3909/transformed/jetified-nativeimagefilters-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/4cb4543e27188511f5172eff2c1ecf99/transformed/jetified-memory-type-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/4cb4543e27188511f5172eff2c1ecf99/transformed/jetified-memory-type-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/ed2aae8a3eb7cbabda0212c75944349c/transformed/jetified-memory-type-java-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/ed2aae8a3eb7cbabda0212c75944349c/transformed/jetified-memory-type-java-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/b1a50084328f1efdd4b856e5b5528e8c/transformed/jetified-imagepipeline-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/b1a50084328f1efdd4b856e5b5528e8c/transformed/jetified-imagepipeline-native-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/differenz39/.gradle/caches/transforms-3/aeccb681ff290d1b27d0fb53e801242c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.4] /Users/differenz39/.gradle/caches/transforms-3/aeccb681ff290d1b27d0fb53e801242c/transformed/jetified-soloader-0.10.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/923588582689f0fcd0d4babc42d73ebb/transformed/jetified-memory-type-ashmem-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/923588582689f0fcd0d4babc42d73ebb/transformed/jetified-memory-type-ashmem-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8c7d1303a65dee0394d41717daeeb5dc/transformed/jetified-imagepipeline-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/8c7d1303a65dee0394d41717daeeb5dc/transformed/jetified-imagepipeline-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/9a477c77fb3a41ecb1b301902d904c42/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/9a477c77fb3a41ecb1b301902d904c42/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6b10dabfc89a9286db6c99b6aa5fa950/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/6b10dabfc89a9286db6c99b6aa5fa950/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/2a1812328db2ff3c134b645e8487ba06/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/2a1812328db2ff3c134b645e8487ba06/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/229d7e6f1debd2d725755ff606c33cff/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/229d7e6f1debd2d725755ff606c33cff/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/929a21d8c8f267875387294bff08c631/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/differenz39/.gradle/caches/transforms-3/929a21d8c8f267875387294bff08c631/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/c4c745710f527008f0939fd36e34b2fc/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/c4c745710f527008f0939fd36e34b2fc/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7fa27664906ace280c898cdee8c203c4/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/7fa27664906ace280c898cdee8c203c4/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/e555c68eff65ac2863eb5c9f033d1e59/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/e555c68eff65ac2863eb5c9f033d1e59/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/38d2314e43ae829e7ca23b47ab00af39/transformed/jetified-facebook-applinks-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/38d2314e43ae829e7ca23b47ab00af39/transformed/jetified-facebook-applinks-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/f14e9e40a481b4b8b16d228880dd25d4/transformed/jetified-facebook-messenger-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/f14e9e40a481b4b8b16d228880dd25d4/transformed/jetified-facebook-messenger-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1c187d72912e5bb2a3d86d1f238647d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1c187d72912e5bb2a3d86d1f238647d6/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/e78a121762d5f9e8298ed52d079c0cb1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/e78a121762d5f9e8298ed52d079c0cb1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1ea0fb78412e6cd0df58a37c9b479de2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/1ea0fb78412e6cd0df58a37c9b479de2/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/differenz39/.gradle/caches/transforms-3/b4f1eef092b36974e443fb80bde9cc29/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0] /Users/differenz39/.gradle/caches/transforms-3/b4f1eef092b36974e443fb80bde9cc29/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/f10dff62bf85258def9e29a0afec056e/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/f10dff62bf85258def9e29a0afec056e/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/f87ddf90b7b475678608423945901567/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/f87ddf90b7b475678608423945901567/transformed/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/c0b517ae8bd7dfbc8e0656e9586e87b5/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/c0b517ae8bd7dfbc8e0656e9586e87b5/transformed/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/fe3392f9eed12477110f917b65f52ecb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/fe3392f9eed12477110f917b65f52ecb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/differenz39/.gradle/caches/transforms-3/b7d301b145c3d3adf68a7975d1cd9fd0/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/differenz39/.gradle/caches/transforms-3/b7d301b145c3d3adf68a7975d1cd9fd0/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/differenz39/.gradle/caches/transforms-3/c2f135304be4199722b4bae942bf025f/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/differenz39/.gradle/caches/transforms-3/c2f135304be4199722b4bae942bf025f/transformed/jetified-activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/333e4c1a30e9833aa1594ed7af9c1621/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/333e4c1a30e9833aa1594ed7af9c1621/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/21467f691453c0d5522c23b4384ac2ba/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/21467f691453c0d5522c23b4384ac2ba/transformed/jetified-emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/37d0a864abd59efde402db66b2016e9a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/37d0a864abd59efde402db66b2016e9a/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/635e149ad67a7f8e1317633c59995401/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/635e149ad67a7f8e1317633c59995401/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/b5bf4607aac3b7b72fe4f821290ba8cc/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/b5bf4607aac3b7b72fe4f821290ba8cc/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/02678c964c2a46a35465057f29c709f9/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/02678c964c2a46a35465057f29c709f9/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6e9f28b127bbbb6fef9a2b557c2a7866/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/6e9f28b127bbbb6fef9a2b557c2a7866/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/differenz39/.gradle/caches/transforms-3/eb850bb6d6c1d0b425cbba5b378e7b79/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/differenz39/.gradle/caches/transforms-3/eb850bb6d6c1d0b425cbba5b378e7b79/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/cd5c481f3fcbbc6bca60d024a6e49fb4/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/cd5c481f3fcbbc6bca60d024a6e49fb4/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b3ef5c1a72ec26a3009e7db736333fb8/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b3ef5c1a72ec26a3009e7db736333fb8/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/a28d6a283955121916a8e3fd70f128ff/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/a28d6a283955121916a8e3fd70f128ff/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/13261d6327758e74e9ce50f6bf5d0a14/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/13261d6327758e74e9ce50f6bf5d0a14/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /Users/differenz39/.gradle/caches/transforms-3/2ef65538b03c146403e665302506b938/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1895d9e3ab85c5d5076d661d0499f81b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1895d9e3ab85c5d5076d661d0499f81b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/7ee94282b868b67086c1a393f8c2253c/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/7ee94282b868b67086c1a393f8c2253c/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e6ee3022989f357a1a55db5ac03488cd/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/e6ee3022989f357a1a55db5ac03488cd/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/5f2f6be5a894be398b419a67d20bc74a/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/5f2f6be5a894be398b419a67d20bc74a/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/469ec191bf6ffbea5ee22ac770454d1d/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/469ec191bf6ffbea5ee22ac770454d1d/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/differenz39/.gradle/caches/transforms-3/2d08d0a66ee9f8cdaea85151b2fc2974/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/differenz39/.gradle/caches/transforms-3/2d08d0a66ee9f8cdaea85151b2fc2974/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/716593ce551058e507de4d61629b4948/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/716593ce551058e507de4d61629b4948/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz39/.gradle/caches/transforms-3/8d77987e025276b4a7499e3710ec577b/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/differenz39/.gradle/caches/transforms-3/8d77987e025276b4a7499e3710ec577b/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/35cb59d4dd06d0018bb73a4531e21d08/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/differenz39/.gradle/caches/transforms-3/35cb59d4dd06d0018bb73a4531e21d08/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/5387e584059067d2c66e23977ec90960/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/5387e584059067d2c66e23977ec90960/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/ee91aa97651677b85f23c379d9891e25/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/differenz39/.gradle/caches/transforms-3/ee91aa97651677b85f23c379d9891e25/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1c3fd26fa27841ded8127b0eab4b72f8/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/1c3fd26fa27841ded8127b0eab4b72f8/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c12fa175f0710c0f0e21271b0189fdf8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c12fa175f0710c0f0e21271b0189fdf8/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b1e71d9d0bac46f51a01f532a73a5235/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/b1e71d9d0bac46f51a01f532a73a5235/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/02448e5fcddd5ec5dc482ab88b96e09d/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/differenz39/.gradle/caches/transforms-3/02448e5fcddd5ec5dc482ab88b96e09d/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6adfeef0c9a043e885a81d49df9b72ac/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/differenz39/.gradle/caches/transforms-3/6adfeef0c9a043e885a81d49df9b72ac/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/differenz39/Documents/Pooja/AddressBook.ReactNative/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+ADDED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [com.facebook.flipper:flipper:0.54.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/65964e9f7bfb72b91eccda64c210a357/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
-receiver#com.learnium.RNDeviceInfo.RNDeviceReceiver
-ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-22:20
-	android:enabled
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-35
-	android:exported
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-36
-	tools:ignore
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-44
-	android:permission
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-69
-	android:name
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-70
-intent-filter#action:name:com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
-action#com.android.vending.INSTALL_REFERRER
-ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
-	android:name
-		ADDED from [:react-native-device-info] /Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/node_modules/react-native-device-info/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+		ADDED from [com.facebook.flipper:flipper:0.125.0] /Users/differenz39/.gradle/caches/transforms-3/525c39c8c44a41643a4de7d637c7d369/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:30:9-33:66
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:30:9-33:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:32:13-96
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:32:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:33:13-63
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:31:13-57
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:31:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:34:9-71
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:34:19-68
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:34:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:35:9-49:20
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:35:9-49:20
 	tools:node
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:38:13-31
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:38:13-31
 	android:exported
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:37:13-36
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:36:13-58
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:36:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:39:13-48:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.addressbook+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:39:13-48:29
 action#android.intent.action.VIEW
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:40:17-69
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:40:25-66
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:40:25-66
 category#android.intent.category.DEFAULT
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:42:17-76
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:42:17-76
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:42:27-73
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:42:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:43:17-78
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:43:17-78
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:43:27-75
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:43:27-75
 data
-ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:45:17-47:50
+ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:45:17-47:50
 	android:host
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:46:21-56
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:46:21-56
 	android:scheme
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/19f4eeaa56b5f7aa3d0c9ce093a946c3/jetified-facebook-common-7.1.0/AndroidManifest.xml:47:21-47
+		ADDED from [com.facebook.android:facebook-common:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/8af6670462af436bf009792f8aa0d80d/transformed/jetified-facebook-common-12.3.0/AndroidManifest.xml:47:21-47
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/780439273050a0f599ec6eb8d888c7fd/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:25-92
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/32f5c172e23ed371185dba53ca6122bd/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:48:25-92
+receiver#com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:51:9-57:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:53:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:52:13-118
+intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:54:13-56:29
+action#com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:17-103
+	android:name
+		ADDED from [com.facebook.android:facebook-core:12.3.0] /Users/differenz39/.gradle/caches/transforms-3/c8f8eda162d2fd7290f4f55015ded93e/transformed/jetified-facebook-core-12.3.0/AndroidManifest.xml:55:25-100
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-iid:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/5aafe95c4c3bcd5818a227c2ccf400eb/transformed/jetified-play-services-iid-17.0.0/AndroidManifest.xml:23:22-79
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/bfa69299c70613d916dc093c901431a2/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/93e15e9e1af8f2655d4f6f4f27d68323/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/b5a3f39bf4ddacacabf43b64773b9e83/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/differenz39/.gradle/caches/transforms-3/fa93c838f4d881d2f52c958fdc063aed/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/c3d4624204d9cd1c3700b29b959be082/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /Users/differenz39/.gradle/caches/transforms-3/155df8e85e45405e750db5a12cd3b762/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /Users/differenz39/.gradle/caches/transforms-3/78fbb766d166c82a0315fa59bdc91ea4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:5-110
+ADDED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:5-110
 	android:name
-		ADDED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz114/.gradle/caches/transforms-2/files-2.1/811ef283928655791111dfa6050a5658/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107
+		ADDED from [com.android.installreferrer:installreferrer:1.1.2] /Users/differenz39/.gradle/caches/transforms-3/32d333e09b4c3dd8f54df754cbdcd855/transformed/jetified-installreferrer-1.1.2/AndroidManifest.xml:9:22-107

@@ -4,19 +4,20 @@ import { View,Alert,ActivityIndicator ,Dimensions,BackHandler} from 'react-nativ
 import ButtonControl from '../Controls/ButtonControl'
 import TextInputControl from '../Controls/TextInputControl'
 import SwitchControl from '../Controls/SwitchControl'
-import { Appcolors,string,font,icon } from '../Constant';
-import {LoginManager} from 'react-native-fbsdk'
+import { AppColors,string,font,icon } from '../Constant';
+import { LoginManager } from 'react-native-fbsdk-next';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Header from '../Controls/Headercontrol';
 import CommonStyle from './Style';
 import AuthContext from '../AuthContext';
-import { DefaultTheme, DarkTheme} from '@react-navigation/native';
+import { heightPercentageToDP as hp} from '../Utils/LayoutMeasurement';
 const {width,height} = Dimensions.get('window')
 let retrivedArray=[]
 let Name = React.createRef();
 let Email=React.createRef();
 let PhoneNo=React.createRef();
+
 export default class AddContact extends Component {
     static contextType=AuthContext;
     constructor(props) {
@@ -50,7 +51,7 @@ export default class AddContact extends Component {
                     Headertxt={string.DETAIL}
                     LeftImage={icon.BOOK}
                     RightImage={icon.LOGOUT}
-                    SerchView={false}
+                    SearchView={false}
                     LeftImgPress={()=>this.props.navigation.navigate('Detail')}
                     RightImgPress={async() => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
                         LoginManager.logOut()
@@ -227,7 +228,7 @@ export default class AddContact extends Component {
         this.props.navigation.goBack()
     }
     render() {
-        const {isScheme,setScheme}=this.context;
+        const {isScheme}=this.context;
         return (
 
             <KeyboardAwareScrollView
@@ -240,8 +241,8 @@ export default class AddContact extends Component {
                 showsVerticalScrollIndicator={false}>
                    
                 {this.state.isLoader ?
-                    <View style={{height:height/1.3,justifyContent:'center'}}>
-                         <ActivityIndicator size="small" color={isScheme=='dark'?Appcolors.WHITE:Appcolors.DARK_GREEN} style={{alignSelf:'center',}} />
+                    <View style={{height:hp('60'),justifyContent:'center'}}>
+                         <ActivityIndicator size="large" color={isScheme=='dark'?AppColors.WHITE:AppColors.DARK_GREEN} style={{alignSelf:'center',}} />
                     </View>
                     :
                     <View style={CommonStyle.Addcontainer}>
@@ -280,7 +281,7 @@ export default class AddContact extends Component {
                                     onChangeText={(text) => this.setState({ ContactNumber: text })}
                                     placeholder={string.CONTACT_PLACEHOLDER}
                                     HeaderTxt={string.CONTACT_NO}
-                                    onFocus={(event) => {this.setState({extraScrollHeight:font.ISIOS? 190:190}) }}
+                                    onFocus={(event) => {this.setState({extraScrollHeight:font.IS_IOS? 190:190}) }}
                                 />
                                 
                                

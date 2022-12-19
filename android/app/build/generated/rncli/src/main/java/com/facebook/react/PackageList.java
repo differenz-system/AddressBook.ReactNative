@@ -15,11 +15,9 @@ import java.util.ArrayList;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
-// react-native-appearance
-import io.expo.appearance.RNCAppearancePackage;
 // react-native-device-info
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
-// react-native-fbsdk
+// react-native-fbsdk-next
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
@@ -78,7 +76,6 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
       new RNCMaskedViewPackage(),
-      new RNCAppearancePackage(),
       new RNDeviceInfo(),
       new FBSDKPackage(),
       new RNGestureHandlerPackage(),

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/differenz114/Desktop/Pooja/AddressBook.ReactNative-master/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.addressbook.app-mergeDebugResources-36:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/differenz114/.gradle/caches/transforms-2/files-2.1/8ad8269c0a879b235a19dc8e7219d938/material-1.1.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "/Users/differenz39/.gradle/caches/transforms-3/e3a7c342322b8b8b2bc0cf25b8e93afa/transformed/material-1.1.0/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -1,41 +1,42 @@
 
 import React, { Component } from 'react'
-import { View, Text,BackHandler, Keyboard, Image, TouchableOpacity, Alert, ActivityIndicator } from 'react-native'
+import { View, Text, BackHandler, Keyboard, Image, TouchableOpacity, Alert, ActivityIndicator } from 'react-native'
 import ButtonControl from '../Controls/ButtonControl'
 import TextInputControl from '../Controls/TextInputControl'
-import {LoginManager,AccessToken,} from 'react-native-fbsdk';
-import {font,icon,string} from '../Constant';
+import { LoginManager, AccessToken, } from 'react-native-fbsdk-next';
+import { font, icon, string } from '../Constant';
 import Header from '../Controls/Headercontrol';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { DefaultTheme, DarkTheme} from '@react-navigation/native';
+import { DefaultTheme, DarkTheme } from '@react-navigation/native';
 import AuthContext from '../AuthContext';
 import CommonStyle from './Style'
-let Name=React.createRef();
-let Pwd=React.createRef();
+import { heightPercentageToDP as hp } from '../Utils/LayoutMeasurement';
+let Name = React.createRef();
+let Pwd = React.createRef();
 
 export default class Login extends Component {
-    static contextType=AuthContext;
+    static contextType = AuthContext;
     constructor(props) {
         super(props);
         this.state = {
             username: '',
             password: '',
             isLoader: false,
-            user:''
+            user: ''
         }
     }
-   
-    componentDidMount(){
+
+    componentDidMount() {
         this.props.navigation.setOptions({
-            headerShown:true,
+            headerShown: true,
             header: () => (
-                <Header Headertxt={string.LOGIN} SerchView={false} />
+                <Header Headertxt={string.LOGIN} SearchView={false} />
             ),
         })
 
         BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
- 
+
     }
 
     UNSAFE_componentWillMount() {
@@ -56,15 +57,15 @@ export default class Login extends Component {
 
     _onPressFBLogin = function () {
         Keyboard.dismiss()
-        LoginManager.logInWithPermissions(['email','public_profile']).then(result => {
+        LoginManager.logInWithPermissions(['email', 'public_profile']).then(result => {
             if (result.isCancelled) {
                 console.log('loginCanceled')
             } else {
                 AccessToken.getCurrentAccessToken().then((data) => {
                     AsyncStorage.setItem(string.ASYNC_USERTOKEN, data.accessToken.toString()).then(() => {
-                    this.props.navigation.navigate('Detail');
-                    return;
-                }).catch(err => console.log(err))
+                        this.props.navigation.navigate('Detail');
+                        return;
+                    }).catch(err => console.log(err))
                 });
             }
         }).catch(err => console.log(err))
@@ -86,20 +87,19 @@ export default class Login extends Component {
             return;
         }
         this.setState({ isLoader: true })
-        setTimeout(async() => {
+        setTimeout(async () => {
             this.setState({ isLoader: false })
             var LoginData = {
                 'type': 0,
                 "Email": this.state.username,
                 "Name": this.state.password,
             }
-            let username=await AsyncStorage.getItem(string.ASYNC_USERNAME)
-            let pwd=await AsyncStorage.getItem(string.ASYNC_PWD)
-            if(username!=this.state.username || pwd!=this.state.password)
-            {
+            let username = await AsyncStorage.getItem(string.ASYNC_USERNAME)
+            let pwd = await AsyncStorage.getItem(string.ASYNC_PWD)
+            if (username != this.state.username || pwd != this.state.password) {
                 await AsyncStorage.removeItem(string.ASYNC_DATA)
-                await AsyncStorage.setItem(string.ASYNC_USERNAME,this.state.username)
-                await AsyncStorage.setItem(string.ASYNC_PWD,this.state.password)
+                await AsyncStorage.setItem(string.ASYNC_USERNAME, this.state.username)
+                await AsyncStorage.setItem(string.ASYNC_PWD, this.state.password)
                 await AsyncStorage.setItem(string.ASYNC_USERTOKEN, JSON.stringify(LoginData)).then(() => {
                     this.props.navigation.navigate('Detail');
                     this.setState({
@@ -109,9 +109,9 @@ export default class Login extends Component {
                     return;
                 }).catch(err => console.log(err))
             }
-            else{
-                await AsyncStorage.setItem(string.ASYNC_USERNAME,this.state.username)
-                await AsyncStorage.setItem(string.ASYNC_PWD,this.state.password)
+            else {
+                await AsyncStorage.setItem(string.ASYNC_USERNAME, this.state.username)
+                await AsyncStorage.setItem(string.ASYNC_PWD, this.state.password)
                 await AsyncStorage.setItem(string.ASYNC_USERTOKEN, JSON.stringify(LoginData)).then(() => {
                     this.props.navigation.navigate('Detail');
                     this.setState({
@@ -121,16 +121,16 @@ export default class Login extends Component {
                     return;
                 }).catch(err => console.log(err))
             }
-            
-           
+
+
         }, 1000)
 
     };
-  
+
     render() {
-        const {isScheme,setScheme}=this.context;
+        const { isScheme } = this.context;
         return (
-            <View style={{ flex: 1}}>
+            <View style={{ flex: 1 }}>
                 <KeyboardAwareScrollView
                     bounces={false}
                     enableOnAndroid={true}
@@ -138,52 +138,53 @@ export default class Login extends Component {
                     keyboardShouldPersistTaps={'handled'}
                     showsVerticalScrollIndicator={false}>
                     <View style={CommonStyle.Logincontainer}>
-                            <View style={{ flex: 1, flexDirection: 'column',  borderColor: 'blue', borderWidth: 0 }}>
-                                <TextInputControl
-                                    ref={Name}
-                                    value={this.state.username}
-                                    onChangeText={(text) => this.setState({ username: text })}
-                                    placeholder={string.EMAIL_PLACEHOLDER}
-                                    keyboardType={'email-address'}
-                                    underlineColorAndroid='transparent'
-                                    HeaderTxt={string.EMAIL}
-                                    returnKeyLabel="next"
-                                    returnKeyType="next"
-                                    onSubmitEditing={()=> Pwd.current.focus()}
-                                    blurOnSubmit={false}
-                                />
-                                <TextInputControl
-                                    value={this.state.password}
-                                    ref={Pwd}
-                                    returnKeyLabel="done"
-                                    returnKeyType="done"
-                                    onChangeText={(text) => this.setState({ password: text })}
-                                    placeholder={string.PASSSWORD_PLACEHOLDER}
-                                    secureTextEntry={true}
-                                    underlineColorAndroid='transparent'
-                                    HeaderTxt={string.PASSSWORD}
-                                    onFocus={(event) => {this.setState({extraScrollHeight:font.ISIOS? 150:150}) }}
-                                />
-                                <ButtonControl
-                                    ButtonTitle='Log In'
-                                    ButtonPress={() => this._onPressSignIN()}
-                                />
-                                <Text style={[CommonStyle.OrTxt,{color:isScheme=='dark'?DarkTheme.colors.text:DefaultTheme.colors.text}]}>Or</Text>
-                                
-                                
+                        <View style={{ flex: 1, flexDirection: 'column', borderColor: 'blue', borderWidth: 0 }}>
+                            <TextInputControl
+                                ref={Name}
+                                value={this.state.username}
+                                onChangeText={(text) => this.setState({ username: text })}
+                                placeholder={string.EMAIL_PLACEHOLDER}
+                                keyboardType={'email-address'}
+                                underlineColorAndroid='transparent'
+                                HeaderTxt={string.EMAIL}
+                                returnKeyLabel="next"
+                                returnKeyType="next"
+                                onSubmitEditing={() => Pwd.current.focus()}
+                                blurOnSubmit={false}
+                            />
+                            <TextInputControl
+                                value={this.state.password}
+                                ref={Pwd}
+                                returnKeyLabel="done"
+                                returnKeyType="done"
+                                onChangeText={(text) => this.setState({ password: text })}
+                                placeholder={string.PASSSWORD_PLACEHOLDER}
+                                secureTextEntry={true}
+                                underlineColorAndroid='transparent'
+                                HeaderTxt={string.PASSSWORD}
+                                onFocus={(event) => { this.setState({ extraScrollHeight: hp('20') }) }}
+                            />
+                            <ButtonControl
+                                ButtonTitle='Log In'
+                                ButtonPress={() => this._onPressSignIN()}
+                            />
+
+                            <Text style={[CommonStyle.OrTxt, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>Or</Text>
+
                             <View style={CommonStyle.FBView}>
-                                <Image source={icon.FACEBOOK} style={CommonStyle.FbImg}/>
+                                <Image source={icon.FACEBOOK} style={CommonStyle.FbImg} />
                                 <TouchableOpacity style={CommonStyle.FBButtonControl} onPress={() => this._onPressFBLogin()}>
-                                <Text style={CommonStyle.FBfont}>{string.FB_LOGIN}</Text>
+                                    <Text style={CommonStyle.FBfont}>{string.FB_LOGIN}</Text>
                                 </TouchableOpacity>
                             </View>
 
-                           
-                            </View>
+
+                        </View>
                     </View>
                 </KeyboardAwareScrollView>
                 {
-                    this.state.isLoader &&
+                    this.state.isLoader
+                    &&
                     <View style={CommonStyle.loginLoader}>
                         <ActivityIndicator style={CommonStyle.LoginIndicator} color='white' size='large' />
                     </View>

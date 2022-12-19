@@ -1,6 +1,0 @@
-module Pods_AddressBook_AddressBookTests {
-  umbrella header "Pods-AddressBook-AddressBookTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
