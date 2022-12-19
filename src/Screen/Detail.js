@@ -41,31 +41,7 @@ export default class Detail extends Component {
     componentDidMount() {
         globalThis = this
         this.get()
-        console.log('mount call');
-        // this.props.navigation.setOptions({
-        //     headerShown: true,
-        //     header: () => (
-        //         <Header
-        //             Headertxt={string.ADDRESS_BOOK}
-        //             LeftImage={icon.LOGOUT}
-        //             LeftImgPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
-        //                 LoginManager.logOut()
-        //                 this.props.navigation.navigate('Login')
-        //             }).catch(err => console.log(err))}
-        //             RightImgPress={() => {
-        //                 searchString = ''
-        //                 this.get()
-        //                 this.props.navigation.navigate('AddContact', { get: globalThis.get })
-        //             }}
-        //             RightImage={icon.ADD}
-
-        //         />
-
-        //     ),
-        // })
-
         BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
-
     }
 
     UNSAFE_componentWillMount() {
@@ -191,9 +167,7 @@ export default class Detail extends Component {
         this.setState({ refreshing: true, })
         setTimeout(() => {
             this.get()
-            this.setState({
-                refreshing: false
-            })
+            this.setState({ refreshing: false })
         }, 1500)
     }
 
@@ -261,15 +235,16 @@ export default class Detail extends Component {
 
     render() {
         const { isScheme } = this.context;
-        
+
         return (
             <View style={[CommonStyle.DMainRenderView, { backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background }]}>
                 <View style={{}}>
                     <Image source={icon.BACKGROUND} style={CommonStyle.BGImg} />
-                    <TouchableOpacity onPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
-                        LoginManager.logOut()
-                        this.props.navigation.navigate('Login')
-                    }).catch(err => console.log(err))} style={CommonStyle.LImgTouch}>
+                    <TouchableOpacity
+                        onPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
+                            LoginManager.logOut()
+                            this.props.navigation.navigate('Login')
+                        }).catch(err => console.log(err))} style={CommonStyle.LImgTouch}>
                         <Image source={icon.LOGOUT} style={CommonStyle.LImg} resizeMode={'contain'} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => {
@@ -286,10 +261,7 @@ export default class Detail extends Component {
                             placeholder={string.SEARCH}
                             placeholderTextColor={AppColors.DARK_GRAY}
                             value={searchString}
-                            onChangeText={(val) => {
-                                searchString = val
-                                this.filterData(val)
-                            }}
+                            onChangeText={(val) => { searchString = val, this.filterData(val) }}
                             returnKeyLabel={'done'}
                             returnKeyType={'done'}
                             style={CommonStyle.TextInputTxt}
@@ -303,8 +275,6 @@ export default class Detail extends Component {
                     </View>
                     :
                     <View style={{ flex: 1 }}>
-
-
                         <View style={CommonStyle.DContactList}>
                             {this.state.DisplayContactList.length != 0
                                 ?
@@ -333,7 +303,6 @@ export default class Detail extends Component {
                                 />
                             </View>
                         </ScrollView>
-
                     </View>
                 }
             </View>

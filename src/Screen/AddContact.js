@@ -57,7 +57,6 @@ export default class AddContact extends Component {
                         LoginManager.logOut()
                         this.props.navigation.navigate('Login')
                     }).catch(err => console.log(err))}
-                   
                 />
             ),
         })
