@@ -5,7 +5,7 @@ This repository contains **Address Book** application for react-native that show
 
 The app does the following:
 1. **Login:** 
-    - User can login via facebook or email/password. 
+    - User can login via email/password. 
 2. **Home:** 
     - It will list all the saved contacts. 
     - It has the option to add a new contact on the top right.
@@ -16,9 +16,9 @@ The app does the following:
     - App supports Light & Dark mode, user can change mode by going into device dark mode settings.
 
 ## Pre-requisites
-- Android device or emulator running API 21 (5.0 - Lollipop) or above
-- [Android SDK 29](https://developer.android.com/about/versions/11/get)
-- [Android Studio 4.1.1+](https://developer.android.com/studio/index.html)
+- Android device or emulator running API 24 (Android 7.0 - Nougat) or above
+- [Android SDK 36](https://developer.android.com/about/versions/15/get)
+- [Android Studio Hedgehog (2023.1.1) or newer](https://developer.android.com/studio/index.html)
 - [Node js](https://nodejs.org/en/)
 - [XCode](https://developer.apple.com/xcode/)
 - [Visual Studio code](https://code.visualstudio.com/)
@@ -33,7 +33,6 @@ The app does the following:
 
 ## Key Tools & Technologies
 - **Database:** react-native Async storage
-- **Authentication:** Facebook login
 - **API/Service calls:** fetch API
 - **IDE:** Android studio, XCode, VSCode
 - **Framework:** React native
