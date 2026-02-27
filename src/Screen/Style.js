@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Dimensions } from 'react-native';
-const { height, width } = Dimensions.get('window');
 import { AppColors, font } from "../Constant";
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from '../Utils/LayoutMeasurement';
+
+const { height, width } = Dimensions.get('window');
 
 export default CommonStyle = StyleSheet.create({
 
@@ -98,7 +99,7 @@ export default CommonStyle = StyleSheet.create({
     },
     DGradHorizontalView: {
         justifyContent: 'center',
-        paddingVertical: hp('2')
+        height:hp(6)
     },
     DContactChar: {
         fontSize: font.FONT_18,
