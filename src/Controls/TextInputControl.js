@@ -10,7 +10,7 @@ DataViewComponent = (props, ref) => {
     const { colors } = useTheme();
     const colorScheme = Appearance.getColorScheme();
     return (
-        <View style={{ marginVertical: hp('2') }}>
+        <View style={styles.container}>
             <Text style={[styles.HeadrTxt, { color: colors.text }]}>{props.HeaderTxt}</Text>
             <View style={[styles.TextInputView, { shadowColor: colorScheme == 'dark' ? AppColors.WHITE : AppColors.BLACK, backgroundColor: colors.background }]}>
                 <TextInput
@@ -47,6 +47,9 @@ export default DataView = React.forwardRef((props, ref) => {
 });
 
 const styles = StyleSheet.create({
+    container:{
+         marginVertical: hp('2')
+    },  
     TextInputView: {
         flexDirection: 'row',
         borderColor: AppColors.DDARK_GREEN,

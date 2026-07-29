@@ -1,70 +1,61 @@
-
-import React, { Component } from 'react';
-import { View,Alert,ActivityIndicator ,Dimensions,BackHandler} from 'react-native'
+import React, { useContext, useEffect, useState } from 'react';
+import { View, Alert, ActivityIndicator, Dimensions, BackHandler,StyleSheet } from 'react-native'
 import ButtonControl from '../Controls/ButtonControl'
 import TextInputControl from '../Controls/TextInputControl'
 import SwitchControl from '../Controls/SwitchControl'
-import { AppColors,string,font,icon } from '../Constant';
-import { LoginManager } from 'react-native-fbsdk-next';
+import { AppColors, string, font, icon } from '../Constant';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Header from '../Controls/Headercontrol';
 import CommonStyle from './Style';
+import { heightPercentageToDP as hp } from '../Utils/LayoutMeasurement';
 import AuthContext from '../AuthContext';
-import { heightPercentageToDP as hp} from '../Utils/LayoutMeasurement';
-const {width,height} = Dimensions.get('window')
-let retrivedArray=[]
+import { useNavigation } from '@react-navigation/native';
+
+const { width, height } = Dimensions.get('window')
+let retrivedArray = []
 let Name = React.createRef();
-let Email=React.createRef();
-let PhoneNo=React.createRef();
+let Email = React.createRef();
+let PhoneNo = React.createRef();
 
-export default class AddContact extends Component {
-    static contextType=AuthContext;
-    constructor(props) {
-        super(props);
-        this.state = {
-            id: '',
-            Name: '',
-            Email: '',
-            ContactNumber: '',
-            IsActive: false,
-            switchValue: false,
-            savedData: '',
-            navigation: this.props.navigation,
-            index: 0,
-            isLoader: false
-        };
-        this.add.bind(this);
-        this.get.bind(this);
-        this.update.bind(this);
-        this.delete.bind(this);
-        this.goBack.bind(this);
-    }
+const AddContact = ({ route }) => {
+    const { isScheme } = useContext(AuthContext)
+    const navigation = useNavigation()
+    const [contact, setContact] = useState({
+        ContactNumber: '',
+        Email: '',
+        Name: '',
+        id: '',
+        index: 0,
+        IsActive: false
+    })
+    const [isLoader, setIsLoader] = useState(false)
+    const [savedData, setSaveData] = useState('')
+    const [extraScrollHeight, setExtraScrollHeight] = useState(0)
 
-    componentDidMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
- 
-        this.props.navigation.setOptions({
-            headerShown:true,
+    useEffect(() => {
+        const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+
+        navigation.setOptions({
+            headerShown: true,
             header: (props) => (
-                <Header 
+                <Header
                     Headertxt={string.DETAIL}
                     LeftImage={icon.BOOK}
                     RightImage={icon.LOGOUT}
                     SearchView={false}
-                    LeftImgPress={()=>this.props.navigation.navigate('Detail')}
-                    RightImgPress={async() => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
-                        LoginManager.logOut()
-                        this.props.navigation.navigate('Login')
+                    LeftImgPress={() => navigation.navigate('Detail')}
+                    RightImgPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
+                        navigation.navigate('Login')
                     }).catch(err => console.log(err))}
                 />
             ),
         })
-        let params= this.props.route.params.item
-        let index=this.props.route.params.index
-       
+        let params = route.params.item
+        let index = route.params.index
+
         if (params) {
-            this.setState({ 
+            setContact({
                 ContactNumber: params.ContactNumber,
                 Email: params.Email,
                 Name: params.Name,
@@ -72,35 +63,29 @@ export default class AddContact extends Component {
                 index: index,
                 IsActive: params.IsActive
             })
-            this.get()
+            get()
         }
+        get()
 
-        this.get()
-        
+        return () => backHandler.remove()
+    }, [])
 
-    }
-    UNSAFE_componentWillMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
-    }
-    componentWillUnmount() {
-        BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
-    }
-    handleBackButtonClick() {
-        this.props.navigation.goBack();
+    const handleBackButtonClick = () => {
+        navigation.goBack();
         return true;
     }
 
-    toggleswitch = (value) => {
-        this.setState({ IsActive: value })
+    const toggleswitch = (value) => {
+        setContact({ ...contact, IsActive: value })
     }
 
-    validateEmail = (email) => {
+    const validateEmail = (email) => {
         var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
     };
 
-    validationData = () => {
-        const { Name, Email, ContactNumber } = this.state;
+    const validationData = () => {
+        const { Name, Email, ContactNumber } = contact;
 
         if (Name == '') {
             Alert.alert('Please enter name');
@@ -110,7 +95,7 @@ export default class AddContact extends Component {
             Alert.alert('Please enter email');
             return 1;
         }
-        else if (!this.validateEmail(Email)) {
+        else if (!validateEmail(Email)) {
             Alert.alert('Please enter valid email');
             return 1;
         }
@@ -122,199 +107,209 @@ export default class AddContact extends Component {
         return 0;
     }
 
-
-
-    add = () => {
-        if (this.validationData()) {
+    const add = () => {
+        if (validationData()) {
             return;
         }
 
         AsyncStorage.getItem(string.ASYNC_DATA).then(data => {
-            
-            if (data == null || data == undefined || JSON.parse(data).length == 0 ) {
-                retrivedArray = [{ 'Id': 1, 'Name': this.state.Name, 'Email': this.state.Email, 'ContactNumber': this.state.ContactNumber, "IsActive": this.state.IsActive }]
+
+            if (data == null || data == undefined || JSON.parse(data).length == 0) {
+                retrivedArray = [{ 'Id': 1, 'Name': contact.Name, 'Email': contact.Email, 'ContactNumber': contact.ContactNumber, "IsActive": contact.IsActive }]
             } else {
                 retrivedArray = JSON.parse(data)
                 const arrLength = retrivedArray.length - 1
-                retrivedArray.push({ 'Id':retrivedArray[arrLength].Id + 1, 'Name': this.state.Name, 'Email': this.state.Email, 'ContactNumber': this.state.ContactNumber, "IsActive": this.state.IsActive })
+                retrivedArray.push({ 'Id': retrivedArray[arrLength].Id + 1, 'Name': contact.Name, 'Email': contact.Email, 'ContactNumber': contact.ContactNumber, "IsActive": contact.IsActive })
             }
 
-            AsyncStorage.setItem(string.ASYNC_DATA, JSON.stringify(retrivedArray)).then(() => {this.goBack()}).catch(err => console.log(err))
-            this.get()
+            AsyncStorage.setItem(string.ASYNC_DATA, JSON.stringify(retrivedArray)).then(() => { goBack() }).catch(err => console.log(err))
+            get()
         }).catch(err => console.log(err))
     }
 
-    update =async () => {
+    const update = async () => {
 
-        if (this.validationData()) {
+        if (validationData()) {
             return;
         }
-        this.setState({ isLoader: true })
-            let data=this.props.route.params.item
-            let payload={
-                Id:this.state.id,
-                Name:this.state.Name, 
-                Email:this.state.Email, 
-                ContactNumber:this.state.ContactNumber,
-                IsActive:this.state.IsActive
-            }
-            await AsyncStorage.getItem(string.ASYNC_DATA)
+        setIsLoader(true)
+        let data = route.params.item
+        let payload = {
+            Id: contact.id,
+            Name: contact.Name,
+            Email: contact.Email,
+            ContactNumber: contact.ContactNumber,
+            IsActive: contact.IsActive
+        }
+        await AsyncStorage.getItem(string.ASYNC_DATA)
             .then(req => JSON.parse(req))
             .then(async json => {
-                    let temp = json;
-                    temp.map((item,index)=>{
-                       
-                        if(item.Id==data.Id){
-                            var index = temp.indexOf(item)
-                            if (index !== -1) {
-                                temp.splice(index, 1);
-                            }
-                        }
-                    })
-                    temp.push(payload)
-                    setTimeout(() => {   
-                         this.setState({ isLoader: false })
-                         this.goBack()
-                     },1000)
-                    
-                    await AsyncStorage.removeItem(string.ASYNC_DATA)
-                    await AsyncStorage.setItem(string.ASYNC_DATA,JSON.stringify(temp))
-                 
-                })
-            .catch(error => console.log(error));    
-    }
+                let temp = json;
+                temp.map((item, index) => {
 
-    delete =async () => {
-        this.setState({ isLoader: true })
-            await AsyncStorage.getItem(string.ASYNC_DATA)
-            .then(req => JSON.parse(req))
-            .then(async json => {
-                    let temp = json;
-                    
-                    temp.map((item,index)=>{
-                        if(item.Id==this.state.id){
-                            var index = temp.indexOf(item)
-                            if (index !== -1) {
-                                temp.splice(index, 1);
-                            }
+                    if (item.Id == data.Id) {
+                        var index = temp.indexOf(item)
+                        if (index !== -1) {
+                            temp.splice(index, 1);
                         }
-                        else{
-                        }
-                    })
-                  
-                    setTimeout(() => {   
-                        this.setState({ isLoader: false })
-                        this.goBack()
-                    },1000)
-                     
-                    await AsyncStorage.removeItem(string.ASYNC_DATA)
-                    await AsyncStorage.setItem(string.ASYNC_DATA,JSON.stringify(temp))
+                    }
                 })
+                temp.push(payload)
+                setTimeout(() => {
+                    setIsLoader(false)
+                    goBack()
+                }, 1000)
+
+                await AsyncStorage.removeItem(string.ASYNC_DATA)
+                await AsyncStorage.setItem(string.ASYNC_DATA, JSON.stringify(temp))
+
+            })
             .catch(error => console.log(error));
     }
 
-    get =async () => {
+    const delet = async () => {
+        setIsLoader(true)
+        await AsyncStorage.getItem(string.ASYNC_DATA)
+            .then(req => JSON.parse(req))
+            .then(async json => {
+                let temp = json;
+
+                temp.map((item, index) => {
+                    if (item.Id == contact.id) {
+                        var index = temp.indexOf(item)
+                        if (index !== -1) {
+                            temp.splice(index, 1);
+                        }
+                    }
+                    else {
+                    }
+                })
+
+                setTimeout(() => {
+                    setIsLoader(false)
+                    goBack()
+                }, 1000)
+
+                await AsyncStorage.removeItem(string.ASYNC_DATA)
+                await AsyncStorage.setItem(string.ASYNC_DATA, JSON.stringify(temp))
+            })
+            .catch(error => console.log(error));
+    }
+
+    const get = async () => {
         await AsyncStorage.getItem(string.ASYNC_DATA)
             .then((data) => {
-                this.setState({ savedData: JSON.parse(data), isLoader: false })
+                setSaveData(JSON.parse(data))
+                setIsLoader(false)
             })
             .catch((err) => console.log(err))
     }
 
-
-    goBack = () => {
-        this.props.route.params.get()
-        this.props.navigation.goBack()
+    const goBack = () => {
+        route.params.get()
+        navigation.goBack()
     }
-    render() {
-        const {isScheme}=this.context;
-        return (
 
-            <KeyboardAwareScrollView
-                bounces={false}
-                enableOnAndroid={true}
-                style={{flex:1}}
-                contentContainerStyle={{justifyContent:'center'}}
-                extraScrollHeight={this.state.extraScrollHeight}
-                keyboardShouldPersistTaps={'handled'}
-                showsVerticalScrollIndicator={false}>
-                   
-                {this.state.isLoader ?
-                    <View style={{height:hp('60'),justifyContent:'center'}}>
-                         <ActivityIndicator size="large" color={isScheme=='dark'?AppColors.WHITE:AppColors.DARK_GREEN} style={{alignSelf:'center',}} />
-                    </View>
-                    :
-                    <View style={CommonStyle.Addcontainer}>
-                            <View style={CommonStyle.AddMainView}>
-                                
-                                <TextInputControl
-                                    ref={Name}
-                                    value={this.state.Name}
-                                    onChangeText={(text) => this.setState({ Name: text })}
-                                    placeholder={string.NAME_PLACEHOLDER}
-                                    HeaderTxt={string.NAME}
-                                    returnKeyLabel="next"
-                                    returnKeyType="next"
-                                    onSubmitEditing={()=> Email.current.focus()}
-                                    blurOnSubmit={false}
-                                />
-                                <TextInputControl
-                                    ref={Email}
-                                    value={this.state.Email}
-                                    onChangeText={(text) => this.setState({ Email: text })}
-                                    placeholder={string.EMAIL_PLACEHOLDER}
-                                    keyboardType={'email-address'}
-                                    HeaderTxt={string.EMAIL}
-                                    returnKeyLabel="next"
-                                    returnKeyType="next"
-                                    onSubmitEditing={()=> PhoneNo.current.focus()}
-                                    blurOnSubmit={false}
-                                />
-                                <TextInputControl
-                                    ref={PhoneNo}
-                                    value={this.state.ContactNumber}
-                                    keyboardType={'phone-pad'}
-                                    maxLength={10}
-                                    returnKeyLabel="done"
-                                    returnKeyType="done"
-                                    onChangeText={(text) => this.setState({ ContactNumber: text })}
-                                    placeholder={string.CONTACT_PLACEHOLDER}
-                                    HeaderTxt={string.CONTACT_NO}
-                                    onFocus={(event) => {this.setState({extraScrollHeight:font.IS_IOS? 190:190}) }}
-                                />
-                                
-                               
-                                <SwitchControl
-                                        HeaderTxt={string.ACTIVE}
-                                        toggleswitch={this.toggleswitch}
-                                        switchValue={this.state.IsActive} />
-                               
+    return (
 
-                                {this.props.route.params.item ?
-                                    <View>
-                                        <ButtonControl ButtonPress={this.update}
-                                            ButtonTitle={string.UPDATE}
-                                        />
-                                        <ButtonControl ButtonPress={this.delete}
-                                            ButtonTitle={string.DELETE}
-                                        />
-                                    </View>
-                                    :
-                                    <View>
-                                        <ButtonControl ButtonPress={this.add}
-                                            ButtonTitle={string.SAVE}
-                                        />
-                                        <ButtonControl ButtonPress={() => this.props.navigation.goBack()}
-                                            ButtonTitle={string.CANCEL}
-                                        />
-                                    </View>
-                                }
+        <KeyboardAwareScrollView
+            bounces={false}
+            enableOnAndroid={true}
+            style={styles.keybordavoiding}
+            contentContainerStyle={{ justifyContent: 'center' }}
+            extraScrollHeight={extraScrollHeight}
+            keyboardShouldPersistTaps={'handled'}
+            showsVerticalScrollIndicator={false}>
+
+            {isLoader ?
+                <View style={styles.conatiner}>
+                    <ActivityIndicator size="large" color={isScheme == 'dark' ? AppColors.WHITE : AppColors.DARK_GREEN} style={styles.activityIndicator} />
+                </View>
+                :
+                <View style={CommonStyle.Addcontainer}>
+                    <View style={CommonStyle.AddMainView}>
+
+                        <TextInputControl
+                            ref={Name}
+                            value={contact.Name}
+                            onChangeText={(text) => setContact({ ...contact, Name: text })}
+                            placeholder={string.NAME_PLACEHOLDER}
+                            HeaderTxt={string.NAME}
+                            returnKeyLabel="next"
+                            returnKeyType="next"
+                            onSubmitEditing={() => Email.current.focus()}
+                            blurOnSubmit={false}
+                        />
+                        <TextInputControl
+                            ref={Email}
+                            value={contact.Email}
+                            onChangeText={(text) => setContact({ ...contact, Email: text })}
+                            placeholder={string.EMAIL_PLACEHOLDER}
+                            keyboardType={'email-address'}
+                            HeaderTxt={string.EMAIL}
+                            returnKeyLabel="next"
+                            returnKeyType="next"
+                            onSubmitEditing={() => PhoneNo.current.focus()}
+                            blurOnSubmit={false}
+                        />
+                        <TextInputControl
+                            ref={PhoneNo}
+                            value={contact.ContactNumber}
+                            keyboardType={'phone-pad'}
+                            maxLength={10}
+                            returnKeyLabel="done"
+                            returnKeyType="done"
+                            onChangeText={(text) => setContact({ ...contact, ContactNumber: text })}
+                            placeholder={string.CONTACT_PLACEHOLDER}
+                            HeaderTxt={string.CONTACT_NO}
+                            onFocus={(event) => { setExtraScrollHeight(font.IS_IOS ? 190 : 190) }}
+                        />
+
+
+                        <SwitchControl
+                            HeaderTxt={string.ACTIVE}
+                            toggleswitch={toggleswitch}
+                            switchValue={contact.IsActive} />
+
+
+                        {route.params.item ?
+                            <View>
+                                <ButtonControl ButtonPress={update}
+                                    ButtonTitle={string.UPDATE}
+                                />
+                                <ButtonControl ButtonPress={delet}
+                                    ButtonTitle={string.DELETE}
+                                />
                             </View>
-                            
-                        
+                            :
+                            <View>
+                                <ButtonControl ButtonPress={add}
+                                    ButtonTitle={string.SAVE}
+                                />
+                                <ButtonControl ButtonPress={() => navigation.goBack()}
+                                    ButtonTitle={string.CANCEL}
+                                />
+                            </View>
+                        }
                     </View>
-                }
-             </KeyboardAwareScrollView>
-        );
-    }
+
+
+                </View>
+            }
+        </KeyboardAwareScrollView>
+    );
 }
+
+const styles=StyleSheet.create({
+    container:{
+        Height: hp('60'), 
+        justifyContent: 'center'
+    },
+    activityIndicator:{
+        alignSelf: 'center',
+    },
+    keybordavoiding:{
+        flex:1
+    }
+})
+export default AddContact

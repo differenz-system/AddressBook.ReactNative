@@ -5,23 +5,22 @@ import LinearGradient from 'react-native-linear-gradient';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from '../Utils/LayoutMeasurement'
 const { width, height } = Dimensions.get('window')
 
-export default class ButtonControl extends React.Component {
+function ButtonControl (props) {
+    
+    return (
+        <View style={styles.View}>
+            <LinearGradient
+                useAngle={true}
+                angle={90}
+                colors={[AppColors.LIGHT_GREEN, AppColors.DARK_GREEN, AppColors.DDARK_GREEN]}
+                style={styles.ButtonControl}>
+                <TouchableOpacity onPress={props.ButtonPress}>
+                    <Text style={styles.font}>{props.ButtonTitle}</Text>
+                </TouchableOpacity>
+            </LinearGradient>
+        </View>
+    )
 
-    render = () => {
-        return (
-            <View style={styles.View}>
-                <LinearGradient
-                    useAngle={true}
-                    angle={90}
-                    colors={[AppColors.LIGHT_GREEN, AppColors.DARK_GREEN, AppColors.DDARK_GREEN]}
-                    style={styles.ButtonControl}>
-                    <TouchableOpacity onPress={this.props.ButtonPress}>
-                        <Text style={styles.font}>{this.props.ButtonTitle}</Text>
-                    </TouchableOpacity>
-                </LinearGradient>
-            </View>
-        )
-    }
 }
 const styles = StyleSheet.create({
     View: {
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 25,
-        paddingVertical: hp('1.5'),
+        height:hp(6)
     },
     font: {
         fontSize: font.FONT_18,
@@ -48,3 +47,5 @@ const styles = StyleSheet.create({
         fontWeight: font.FONT_WEIGHT_600
     },
 })
+
+export default ButtonControl
