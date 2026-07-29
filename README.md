@@ -56,3 +56,7 @@ wait while node js loads all the bundles and then refresh in simulator.
 If you've found an error in this sample, please [report an issue](https://github.com/differenz-system/AddressBook.Android/issues/new). You can also send your feedback and suggestions at info@differenzsystem.com
 
 Happy coding!
+
+
+I remove react-native-fbsdk-next package. 
+<!-- "react-native-fbsdk-next": "^13.4.3", -->

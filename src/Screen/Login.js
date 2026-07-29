@@ -49,7 +49,6 @@ const Login = () => {
 
     const _onPressSignIN = function () {
         Keyboard.dismiss()
-        console.log("hello")
         const { username, password } = userData;
         if (username == '') {
             Alert.alert('Please enter email');
