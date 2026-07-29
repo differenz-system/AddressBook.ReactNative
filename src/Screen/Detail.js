@@ -1,68 +1,49 @@
-import React, { Component } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, FlatList, Dimensions, RefreshControl, BackHandler, TextInput, Image } from 'react-native';
-const { height, width } = Dimensions.get("window")
+import React, { useContext, useEffect, useState } from 'react';
+import { View, Text, ScrollView, TouchableOpacity, FlatList, Dimensions, RefreshControl, BackHandler, TextInput, Image, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import { AppColors, string, icon, font } from '../Constant';
-import Header from '../Controls/Headercontrol';
+import { AppColors, string, icon } from '../Constant';
 import LinearGradient from 'react-native-linear-gradient';
-import { LoginManager } from 'react-native-fbsdk-next';
 import CommonStyle from './Style';
-import { DefaultTheme, DarkTheme } from '@react-navigation/native';
+import { DefaultTheme, DarkTheme, useNavigation } from '@react-navigation/native';
 import AuthContext from '../AuthContext';
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from '../Utils/LayoutMeasurement';
 
-var globalThis
-var searchString = ''
-export default class Detail extends Component {
-    static contextType = AuthContext;
-    constructor(props) {
-        super(props);
-        this.state = {
-            Name: '',
-            Email: '',
-            ContactNumber: '',
-            IsActive: false,
-            switchValue: false,
-            selected: false,
-            status: 'Loading...',
-            savedData: [],
-            masterData: [],
-            FinalArray: [],
-            NameArray: [],
-            isLoader: true,
-            newData: [],
-            DisplayContactList: [],
-            refreshing: false,
-        };
-        this.get.bind(this);
+const { height, width } = Dimensions.get("window")
 
-    }
+const Detail = () => {
 
-    componentDidMount() {
-        globalThis = this
-        this.get()
-        BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
-    }
+    const { isScheme } = useContext(AuthContext);
+    const [searchString, setSearchString] = useState('');
+    const [masterData, setMasterData] = useState([]);
+    const [status, setStatus] = useState('Loading...');
+    const [savedData, setSaveData] = useState([]);
+    const [DisplayContactList, setDisplayContactList] = useState([])
+    const [isLoader, setIsLoader] = useState(true)
+    const [refreshing, setRefreshing] = useState(false)
+    const navigation = useNavigation()
 
-    UNSAFE_componentWillMount() {
-        BackHandler.addEventListener('hardwareBackPress', this.handleBackButtonClick);
-    }
-    componentWillUnmount() {
-        BackHandler.removeEventListener('hardwareBackPress', this.handleBackButtonClick);
-    }
-    handleBackButtonClick() {
+    useEffect(() => {
+        get()
+        const backHandler = BackHandler.addEventListener('hardwareBackPress', handleBackButtonClick);
+
+        return () => {
+            backHandler.remove()
+        }
+    }, [])
+
+    handleBackButtonClick=()=> {
         BackHandler.exitApp();
         return true;
     }
 
-    filterData(text) {
+    const filterData = (text) => {
 
         if (text == '') {
-            this.get()
+            get()
         }
 
         let arr1 = [], CharTitle
-        this.state.masterData.filter(
+        masterData.filter(
             function (item, index) {
                 if (item.title.toUpperCase() == text.charAt(0).toUpperCase()) {
                     CharTitle = text.charAt(0).toUpperCase()
@@ -80,7 +61,8 @@ export default class Detail extends Component {
             })
 
         if (SubData.length == 0) {
-            this.setState({ status: 'No data found', savedData: [] })
+            setStatus('No data found')
+            setSaveData([])
         }
         else {
             const NewArr = [{ title: CharTitle, data: SubData }]
@@ -89,26 +71,21 @@ export default class Detail extends Component {
                 NameArr.push({ Alpha: item.title.toUpperCase() })
             })
             FilterNameArr = NameArr.filter((ele, ind) => ind === NameArr.findIndex(elem => elem.Alpha === ele.Alpha))
-            this.setState({
-                DisplayContactList: FilterNameArr
-            })
-            this.setState({
-                savedData: NewArr
-            })
+            setDisplayContactList(FilterNameArr)
+            setSaveData(NewArr)
         }
     }
 
-    get = async () => {
+    const get = async () => {
 
         await AsyncStorage.getItem(string.ASYNC_DATA)
             .then((data) => {
                 if (JSON.parse(data) == null || JSON.parse(data).length == 0) {
-                    this.setState({
-                        status: 'No Data',
-                        savedData: [],
-                        masterData: [],
-                        isLoader: false
-                    })
+                    setStatus('No Data')
+                    setSaveData([])
+                    setMasterData([])
+                    setIsLoader(false)
+
                 } else {
 
                     let FinalArr = JSON.parse(data)
@@ -122,9 +99,7 @@ export default class Detail extends Component {
                     })
 
                     FilterNameArr = NameArr.filter((ele, ind) => ind === NameArr.findIndex(elem => elem.Alpha === ele.Alpha))
-                    this.setState({
-                        DisplayContactList: FilterNameArr
-                    })
+                    setDisplayContactList(FilterNameArr)
                     let TitleArr = []
                     FilterNameArr.map((item, index) => {
                         TitleArr.push({ title: item.Alpha })
@@ -151,28 +126,26 @@ export default class Detail extends Component {
                     for (var groupName in groups) {
                         myArray.push({ title: groupName, data: groups[groupName] });
                     }
-                    this.setState({
-                        savedData: myArray,
-                        masterData: myArray,
-                        isLoader: false
-                    })
+                    setSaveData(myArray)
+                    setMasterData(myArray)
+                    setIsLoader(false)
                 }
 
             })
             .catch((err) => console.log(err))
     }
 
-    refreshControl() {
-        searchString = ''
-        this.setState({ refreshing: true, })
+    const refreshControl = () => {
+        setSearchString('')
+        setRefreshing(true)
         setTimeout(() => {
-            this.get()
-            this.setState({ refreshing: false })
+            get()
+            setRefreshing(false)
         }, 1500)
     }
 
-    searchContact(text) {
-        const newData = this.state.masterData.filter(
+    const searchContact = (text) => {
+        const newData = masterData.filter(
             function (item, index) {
                 const itemData = item.title
                     ? item.title.toUpperCase()
@@ -181,12 +154,10 @@ export default class Detail extends Component {
                 return itemData.indexOf(textData) > -1;
             });
 
-        this.setState({
-            savedData: newData
-        })
+        setSaveData(newData)
     }
-    subrenderItem = ({ item, index }) => {
-        const { isScheme, } = this.context;
+
+    const subrenderItem = ({ item, index }) => {
         return (
             <View style={[CommonStyle.DSubsubView, { shadowColor: isScheme == 'dark' ? AppColors.WHITE : AppColors.BLACK, backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background }]}>
                 <LinearGradient
@@ -194,28 +165,28 @@ export default class Detail extends Component {
                     angle={150}
                     colors={[AppColors.LIGHT_GREEN, AppColors.DARK_GREEN, AppColors.DDARK_GREEN]}
                     style={CommonStyle.DGradView} >
-                    <View style={{ flex: 1 }}>
+                    <View style={styles.contianer}>
                         <TouchableOpacity
                             activeOpacity={0.8}
                             style={[CommonStyle.DPressItem, {
                                 backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background,
 
                             }]}
-                            onPress={() => { this.props.navigation.navigate('AddContact', { item: item, index: index, get: this.get }) }}>
+                            onPress={() => { navigation.navigate('AddContact', { item: item, index: index, get: get }) }}>
                             <Text style={[CommonStyle.DMainView, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>{item.Name}</Text>
                             <Text style={[CommonStyle.DsubText, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>{item.Email}</Text>
                             <Text style={[CommonStyle.DsubText, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>{item.ContactNumber}</Text>
                         </TouchableOpacity>
                     </View>
-
                 </LinearGradient>
             </View>
         )
     }
-    renderItem = ({ item, index }) => {
+
+    const renderItem = ({ item, index }) => {
         let DataArr = item.data
         return (
-            <View style={{ flex: 1 }}>
+            <View style={styles.contianer}>
                 <LinearGradient
                     useAngle={true}
                     angle={90}
@@ -226,87 +197,97 @@ export default class Detail extends Component {
                 <FlatList
                     showsVerticalScrollIndicator={false}
                     data={DataArr}
-                    renderItem={this.subrenderItem}
+                    renderItem={subrenderItem}
                     scrollEnabled={false}
                 />
             </View>
         )
     }
 
-    render() {
-        const { isScheme } = this.context;
-
-        return (
-            <View style={[CommonStyle.DMainRenderView, { backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background }]}>
-                <View style={{}}>
-                    <Image source={icon.BACKGROUND} style={CommonStyle.BGImg} />
-                    <TouchableOpacity
-                        onPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
-                            LoginManager.logOut()
-                            this.props.navigation.navigate('Login')
-                        }).catch(err => console.log(err))} style={CommonStyle.LImgTouch}>
-                        <Image source={icon.LOGOUT} style={CommonStyle.LImg} resizeMode={'contain'} />
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => {
-                        searchString = ''
-                        this.get()
-                        this.props.navigation.navigate('AddContact', { get: globalThis.get })
-                    }} style={CommonStyle.RImgTouch}>
-                        <Image source={icon.ADD} style={CommonStyle.RImg} resizeMode={'contain'} />
-                    </TouchableOpacity>
-                    <Text style={CommonStyle.HeaderTxt}>{string.ADDRESS_BOOK}</Text>
-                    <View style={CommonStyle.SearchView}>
-                        <TextInput
-                            underlineColorAndroid="transparent"
-                            placeholder={string.SEARCH}
-                            placeholderTextColor={AppColors.DARK_GRAY}
-                            value={searchString}
-                            onChangeText={(val) => { searchString = val, this.filterData(val) }}
-                            returnKeyLabel={'done'}
-                            returnKeyType={'done'}
-                            style={CommonStyle.TextInputTxt}
-                        />
-                    </View>
+    return (
+        <View style={[CommonStyle.DMainRenderView, { backgroundColor: isScheme == 'dark' ? DarkTheme.colors.background : DefaultTheme.colors.background }]}>
+            <View>
+                <Image source={icon.BACKGROUND} style={CommonStyle.BGImg} />
+                <TouchableOpacity
+                    onPress={async () => await AsyncStorage.removeItem(string.ASYNC_USERTOKEN).then(() => {
+                        navigation.navigate('Login')
+                    }).catch(err => console.log(err))} style={CommonStyle.LImgTouch}>
+                    <Image source={icon.LOGOUT} style={CommonStyle.LImg} resizeMode={'contain'} />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => {
+                    setSearchString('')
+                    get()
+                    navigation.navigate('AddContact'
+                        , { get: get })
+                }} style={CommonStyle.RImgTouch}>
+                    <Image source={icon.ADD} style={CommonStyle.RImg} resizeMode={'contain'} />
+                </TouchableOpacity>
+                <Text style={CommonStyle.HeaderTxt}>{string.ADDRESS_BOOK}</Text>
+                <View style={CommonStyle.SearchView}>
+                    <TextInput
+                        underlineColorAndroid="transparent"
+                        placeholder={string.SEARCH}
+                        placeholderTextColor={AppColors.DARK_GRAY}
+                        value={searchString}
+                        onChangeText={(val) => {
+                            setSearchString(val)
+                            filterData(val)
+                        }}
+                        returnKeyLabel={'done'}
+                        returnKeyType={'done'}
+                        style={CommonStyle.TextInputTxt}
+                    />
                 </View>
-
-                {this.state.savedData.length == 0 ?
-                    <View style={CommonStyle.DStatusView}>
-                        <Text style={[CommonStyle.DStatusTxt, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>{this.state.status}</Text>
-                    </View>
-                    :
-                    <View style={{ flex: 1 }}>
-                        <View style={CommonStyle.DContactList}>
-                            {this.state.DisplayContactList.length != 0
-                                ?
-                                this.state.DisplayContactList.map((item, index) => {
-                                    return (
-                                        <View style={CommonStyle.DContctView}>
-                                            <TouchableOpacity style={CommonStyle.DtouchList} activeOpacity={0.5} onPress={() => this.searchContact(item.Alpha)}>
-                                                <Text style={CommonStyle.DChar}>{item.Alpha}</Text>
-                                            </TouchableOpacity>
-                                        </View>
-                                    )
-                                })
-                                : undefined}
-                        </View>
-                        <ScrollView
-                            style={CommonStyle.DlistScroll}
-                            showsVerticalScrollIndicator={false}
-                            refreshControl={<RefreshControl refreshing={this.state.refreshing} onRefresh={() => this.refreshControl()} />}>
-                            <View style={{ flex: 1 }}>
-                                <FlatList
-                                    showsVerticalScrollIndicator={false}
-                                    data={this.state.savedData}
-                                    style={{ paddingTop: hp('4') }}
-                                    renderItem={this.renderItem}
-                                    scrollEnabled={false}
-                                />
-                            </View>
-                        </ScrollView>
-                    </View>
-                }
             </View>
 
-        )
-    }
+            {savedData.length == 0 ?
+                <View style={CommonStyle.DStatusView}>
+                    <Text style={[CommonStyle.DStatusTxt, { color: isScheme == 'dark' ? DarkTheme.colors.text : DefaultTheme.colors.text }]}>{status}</Text>
+                </View>
+                :
+                <View style={styles.contianer}>
+                    <View style={CommonStyle.DContactList}>
+                        {DisplayContactList.length != 0
+                            ?
+                            DisplayContactList.map((item, index) => {
+                                return (
+                                    <View style={CommonStyle.DContctView} key={index}>
+                                        <TouchableOpacity style={CommonStyle.DtouchList} activeOpacity={0.5} onPress={() => searchContact(item.Alpha)}>
+                                            <Text style={CommonStyle.DChar}>{item.Alpha}</Text>
+                                        </TouchableOpacity>
+                                    </View>
+                                )
+                            })
+                            : undefined}
+                    </View>
+                    <ScrollView
+                        style={CommonStyle.DlistScroll}
+                        showsVerticalScrollIndicator={false}
+                        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={() => refreshControl()} />}>
+                        <View style={styles.contianer}>
+                            <FlatList
+                                showsVerticalScrollIndicator={false}
+                                data={savedData}
+                                style={styles.ContactStyle}
+                                renderItem={renderItem}
+                                scrollEnabled={false}
+                            />
+                        </View>
+                    </ScrollView>
+                </View>
+            }
+        </View>
+
+    )
 }
+
+const styles=StyleSheet.create({
+    contianer:{
+        flex:1
+    },
+    ContactStyle:{
+        paddingTop: hp('4')
+    }
+})
+
+export default Detail

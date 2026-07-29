@@ -4,6 +4,7 @@ import {RFValue} from '../Utils/RFValueData'
 let deviceModal = DeviceInfo.getModel()
 const { height, width } = Dimensions.get("window")
 
+
 let Condtion = (deviceModal == 'iPhone 8'
     || deviceModal == 'iPhone 8 Plus'
     || deviceModal == 'iPhone 7'
@@ -16,7 +17,9 @@ let Condtion = (deviceModal == 'iPhone 8'
     || deviceModal == 'iPhone 5'
     || deviceModal == 'iPhone 5C'
     || deviceModal == 'iPhone SE'
-    || deviceModal == 'iPhone SE 2')
+    || deviceModal == 'iPhone SE 2'
+    || deviceModal == 'iPhone 17 Pro'
+)
 
 
 export const font = {
